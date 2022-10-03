@@ -1,4 +1,14 @@
-#red{
-    color: red;
-    background-color: blue;
+body {
+    background-color: #eeeeee;
+    color: #333333;
+}
+figure{
+    background-color: #ffffff
+}
+h1, h2, h3, figcaption, p  {
+    text-align: center;
+}
+ul{
+  max-width:580px;
+  max-height: 500px;
 }
