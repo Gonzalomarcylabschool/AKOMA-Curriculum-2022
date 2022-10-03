@@ -12,24 +12,39 @@
    ```
    In this example, since the green background declaration comes after the orange, it will override it.
 
-* The type selector has the lowest specificity weight and holds a point value of 0-0-1. The class selector has a medium specificity weight and holds a point value of 0-1-0. Lastly, the ID selector has a high specificity weight and holds a point value of 1-0-0. Specificity points are calculated using three columns. The first column counts ID selectors, the second column counts class selectors, and the third column counts type selectors. 
+* Selector have something calles a sepcificity weight, which determains the superiority a selector is given when a styling conflict occurs. A tag holds a low point value of 0-0-1. The class selector has a medium specificity weight and holds a point value of 0-1-0. Lastly, the ID selector has a high specificity weight and holds a point value of 1-0-0. Specificity points are calculated using three columns. The first column counts ID selectors, the second column counts class selectors, and the third column counts type selectors. 
 * The higher the specificity weight of a selector, the more superiority the selector is given when a styling conflict occurs.
 
 * When selectors are combined they should be read from right to left. The selector farthest to the right, directly before the opening curly bracket, is known as the _key selector_. Any selector to the left of the key selector will serve as a _prequalifier_.
   * Example:
     ```CSS
-    .hotdog p {
+    .hotdog, p, ul, a {
         background: brown;
     }	
-    .hotdog p.mustard {
-        background: yellow;
-    }
     ```
+    The browser will locate all of the `a` selectors being that it is the _key selector_ then it will locate the `ul`, then `p`, and finally the `.hotdog`.
 
 ## The Box Model
 
 * *block* elements occupy any available width, regardless of their content, and begin on a new line
+    * Example:
+      ```
+        <div>
+        The following paragraph is a
+        <p class="highlight">block-level element;</p>
+        its background has been colored to display both 
+        the beginning and end of the block-level element's influence.
+        </div>
+       
 * *inline* elements occupy only the width their content requires and line up on the same line, one after the other.
+    * Example
+      ```
+        <div> The following span is an <span class="highlight">
+        inline element</span>; its background has been colored 
+        to display both the beginning and end of the inline element's 
+        influence. </div>
+    
+
 * Every element has a default display property value; however, as with all other property values, that value may be overwritten. `<p>`, for example is `display: block` by default.
 * According to the box model concept, every element on a page is a rectangular box and may have width, height, padding, borders, and margins.
 * Each part of the box model corresponds to a CSS property: width, height, padding, border, and margin.
