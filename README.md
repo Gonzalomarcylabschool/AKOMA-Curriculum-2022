@@ -20,7 +20,7 @@
 
 ### Unit 1 - HTML & CSS (3 weeks + Project week)
 
-* **10/3/22** - HTML Semantics & CSS | [Lecture Slides/Video/Notes/]()
+* **10/3/22** - HTML Semantics & CSS | [Lecture Slides/Video/Notes/](https://github.com/Gonzalomarcylabschool/AKOMA-Curriculum-2022/blob/main/unit-1/lecture-0-semantic-HTML-CSS/semantics-lecture-notes.md)
 
 ### Unit 2 - JavaScript
 ### Unit 3 - Functional Programming (Higher Order Functions)
