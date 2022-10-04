@@ -30,13 +30,33 @@
 
 ## Relative Units
 ## Ems and Rems
-* Ems and rems are proportional to the calculated and root font sizes, respectively. The calculated font size is the height of the current font in pixels. 
-* The root font size is the height of the base font for the document: the font size designated for the html element. 
+* `em` and `rem` are relative to the calculated (from the parent element) or root (from the html element) font sizes, respectively. The calculated font size is the height of the current font in pixels. 
+* The root font size is the height of the base font for the document or the browser's default (usually 16 px).
 * If the calculated font size is 20 pixels and the root font size is 16 pixels, then 1.5em is 30px (20 * 1.5), while 1.5rem is 24px (16 * 1.5).
 * You may find it easier to work with rems instead of ems since rems are consistent. Once you've set the root font size for a document, `1.5rem` means the same thing everywhere in that document. This relationship isn't true for ems; they compound.
-
+  * Example
+  ```CSS
+    /* Root font-size on the document level */
+    html {
+      font-size: 20px;
+    }
+    
+    @media (max-width: 900px) {
+      html { font-size: 16px; }
+    }
+    
+    @media (max-width: 400px) {
+      html { font-size: 12px; }
+    }
+    
+    /* Type will scale with document */
+    h1 {
+      font-size: 2.6rem;
+    }
+  
+  ```
 ## Auto
-* The `auto` specificier, as a `width` or `length` tells the browser to try to fit the entire element including its margins in its container.
+* The `auto` specifier, as a `width` or `length` tells the browser to try to fit the entire element including its margins in its container.
 * As a left or right `margin` on a block element, it tells the browser to push the element all the way to the right or left.
   * You can center a `block` element by setting right and left `margin` to `auto`.
 * As a top or bottom `margin`, `auto` is equal to 0.
