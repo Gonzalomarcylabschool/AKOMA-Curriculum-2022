@@ -7,7 +7,7 @@
 
 ## The Why...
 
-Yesterday we talked about how we need to start think about the structure of what we are working on. Seeing the boxes is the first part, structuring the order of the boxes in HTML is the second part, understanding how to you will arrange them on your page using CSS is the final part. 
+Yesterday we talked about how we need to start thinking about the structure of what we are working on. Seeing the boxes is the first part, structuring the order of the boxes in HTML is the second part, and understanding how you will arrange them on your page using CSS is the final part.
 
 ## CSS review and additional information
 
