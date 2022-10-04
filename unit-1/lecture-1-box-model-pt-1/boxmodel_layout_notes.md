@@ -31,26 +31,7 @@
 
 ## The Box Model
 
-* *block* elements occupy any available width, regardless of their content, and begin on a new line
-    * Example:
-      ```HTML
-        <div>
-        The following paragraph is a
-        <p class="highlight">block-level element;</p>
-        its background has been colored to display both 
-        the beginning and end of the block-level element's influence.
-        </div>
-       
-* *inline* elements occupy only the width their content requires and line up on the same line, one after the other.
-    * Example
-      ```HTML
-        <div> The following span is an <span class="highlight">
-        inline element</span>; its background has been colored 
-        to display both the beginning and end of the inline element's 
-        influence. </div>
-    
 
-* Every element has a default display property value; however, as with all other property values, that value may be overwritten. `<p>`, for example is `display: block` by default.
 * According to the box model concept, every element on a page is a rectangular box and may have width, height, padding, borders, and margins.
 * Each part of the box model corresponds to a CSS property: width, height, padding, border, and margin.
 
@@ -102,6 +83,28 @@ div {
   * ignore the width and height properties (except with the img element), but instead use values computed from the element content.
   * ignore top and bottom margins.
   * padding and borders may extend into rows above and below but will not interfere or shift them but overlap them. See [example](http://d3jtzah944tvom.cloudfront.net/202/images/lesson_2/the-visual-formatting-model-01.png)
+
+* *block* elements occupy any available width, regardless of their content, and begin on a new line
+    * Example:
+      ```HTML
+        <div>
+        The following paragraph is a
+        <p class="highlight">block-level element;</p>
+        its background has been colored to display both 
+        the beginning and end of the block-level element's influence.
+        </div>
+       
+* *inline* elements occupy only the width their content requires and line up on the same line, one after the other.
+    * Example
+      ```HTML
+        <div> The following span is an <span class="highlight">
+        inline element</span>; its background has been colored 
+        to display both the beginning and end of the inline element's 
+        influence. </div>
+    
+
+* Every element has a default display property value; however, as with all other property values, that value may be overwritten. `<p>`, for example is `display: block` by default.
+
 
 ## Inline-Block elements
 * `inline-block` elements act just like `block` elements except they do *not* take up the entire row by default. Thus, you can place `inline-block` elements side-by-side.
