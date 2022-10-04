@@ -1,0 +1,27 @@
+div {
+    background-color: pink;
+    border: 6px solid black;
+    height: 100px;
+    margin: 0px;
+    padding: 50px;
+    width: 400px;
+    box-sizing: border-box;
+} 
+
+img {
+    width: 200px;
+}
+
+ p{
+    color : blue;
+}
+.style{
+    color : red;
+    background-color: black;
+    padding: 10px;
+    border: 5px solid black;
+}
+#og{
+    color: green;
+    background-color: blue;
+}
