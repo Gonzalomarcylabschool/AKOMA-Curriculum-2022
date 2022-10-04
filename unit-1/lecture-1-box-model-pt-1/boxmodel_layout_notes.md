@@ -1,5 +1,10 @@
 # Boxmodel and Layout Foundations Notes
 
+* **0:00 - 0:05** | Introduction /The why/ CSS review /
+* **0:05 - 0:15** | Box Model
+* **0:15 - 0:30** | Semantic HTML
+* **0:30 - 0:60** | Tribute Page (CSS if time)
+
 ## Intro to CSS
 
 * Called _cascade_ because all styles cascade from the top of a stylesheet to the bottom, allowing different styles to be added or overwritten.
@@ -28,7 +33,7 @@
 
 * *block* elements occupy any available width, regardless of their content, and begin on a new line
     * Example:
-      ```
+      ```HTML
         <div>
         The following paragraph is a
         <p class="highlight">block-level element;</p>
@@ -38,7 +43,7 @@
        
 * *inline* elements occupy only the width their content requires and line up on the same line, one after the other.
     * Example
-      ```
+      ```HTML
         <div> The following span is an <span class="highlight">
         inline element</span>; its background has been colored 
         to display both the beginning and end of the inline element's 
