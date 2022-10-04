@@ -110,7 +110,7 @@ div {
     * External information (e.g., size of the screen).
 * The `display` property has almost thirty values, but `block`, `inline-block`, and `inline` are most used.
 * The display property determines how the browser lays out an element relative to its neighbors.
-* 
+
 ## Block elements
 * _block elements_ (headings, paragraphs, sections, tables, forms, etc) by default occupy all horizontal space available within its container, with nothing to its left or right.
 * If a page contains 3 block elements directly inside the `body` and nothing else, then all three elements will display one above the other like a stack of blocks.
