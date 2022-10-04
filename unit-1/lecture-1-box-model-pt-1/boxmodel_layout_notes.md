@@ -146,6 +146,6 @@ div {
         influence. </div>
         ```
 * Every element has a default display property value; however, as with all other property values, that value may be overwritten. `<p>`, for example is `display: block` by default.
-
+[Click here for a list of all of the inline and block elements](https://www.w3schools.com/html/html_blocks.asp)
 [Next steps](https://docs.google.com/presentation/d/1nDpKb5IevlBImPV-znPqrVJ0AgMx8gFRddV8rQNJwMY/edit?usp=sharing)
 
