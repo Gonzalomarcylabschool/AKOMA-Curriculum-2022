@@ -1,0 +1,33 @@
+.div1{
+    
+    width: 500px;
+    height: 500px;
+    margin: 10px;
+    border: solid black 5px;
+    padding: 10px;
+   
+   
+}
+.div2{
+   background-color: red;
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    border: solid black 5px;
+    padding: 40px;
+    float: right;
+}
+.div3{
+    margin: 10px;
+    border: solid black 5px;
+    padding: 40px;
+}
+img {
+    width: 300px;
+    margin: 10px;
+    border: solid black 5px;
+    padding: 40px;
+}
+.inline-text{
+    display: inline-block;
+}
