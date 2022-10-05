@@ -1,9 +1,9 @@
-# Boxmodel and Layout Foundations Notes
+# Boxmodel and Layout Foundations Notes pt. 2
 
 * **0:00 - 0:05** | Introduction / The why
-* **0:05 - 0:25** | Margin border padding review / Block and Inline review and examples.
-* **0:25 - 0:30** | Inline-Block elements
-* **0:35 - 0:60** | Box Sizing / Dimensions / Images / Float / Position
+* **0:05 - 0:20** | Margin border padding review / Block and Inline review and examples
+* **0:20 - 0:30** | Inline-Block elements / Box Sizing 
+* **0:35 - 0:60** | Dimensions / Images / Float / Position
 
 ## The Why...
 
@@ -15,7 +15,13 @@ Continuing building a strong foundation in how we need to think about the struct
 
 ![Box Model](https://static-assets.codecademy.com/Courses/Learn-CSS/Box-Model-in-DevTools/DevToolsTabs.png)
 
-### The main 
+#### Things to remember
+ * The box model is based on the `margin`, `border` and `padding` around the content of block and inlin-block elements. 
+ * The width and height properties only effect the content size. `margin`, `border` and `padding` will not be effected.
+ * Always take in to consideration margin colaps when thinking about your designs. When 2 block elements are stacked on top of eachother only, the larger margin of the 2 will be the one displayed. 
+### Visual Formating Model
+##### Things to remember
+* There are 3 type of elements, `block`, `inline`, and `inline-block`. [Click here for a list of block and inline elements](https://www.w3schools.com/html/html_blocks.asp)
 ## Inline-Block elements
 * `inline-block` elements act just like `block` elements except they do *not* take up the entire row by default. Thus, you can place `inline-block` elements side-by-side.
 * `inline-block` elements observe the `width` and `height` properties. Padding, margin, and boder all work as they do with `block` elements.
