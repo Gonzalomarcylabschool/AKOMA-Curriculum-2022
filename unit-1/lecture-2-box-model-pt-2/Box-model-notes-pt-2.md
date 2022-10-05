@@ -1,3 +1,21 @@
+# Boxmodel and Layout Foundations Notes
+
+* **0:00 - 0:05** | Introduction / The why
+* **0:05 - 0:25** | Margin border padding review / Block and Inline review and examples.
+* **0:25 - 0:30** | Inline-Block elements
+* **0:35 - 0:60** | Box Sizing / Dimensions / Images / Float / Position
+
+## The Why...
+
+Continuing building a strong foundation in how we need to think about the structure of what we are working on. Seeing the boxes is the first part, structuring the order of the boxes in HTML is the second part, and understanding how you will arrange them on your page using CSS is the final part. Today we are going to go in more depth on how CSS allows us to do this using Box and visual formatting model.
+
+## Review
+
+### Box model 
+
+![Box Model](https://static-assets.codecademy.com/Courses/Learn-CSS/Box-Model-in-DevTools/DevToolsTabs.png)
+
+### The main 
 ## Inline-Block elements
 * `inline-block` elements act just like `block` elements except they do *not* take up the entire row by default. Thus, you can place `inline-block` elements side-by-side.
 * `inline-block` elements observe the `width` and `height` properties. Padding, margin, and boder all work as they do with `block` elements.
