@@ -1,4 +1,7 @@
 ## Everything is a box
+
+When Looking at a site we need to remember
+![boxes](Screen Shot 2022-10-06 at 9.55.58 AM.png)
 ### HTML
 
 The Hyper Text Markup Langue, better know as HTML, is the tool Developer usually use the build the stuctor of a website. Once you are able to reconise all of the boxes that need to be on your project you can code them in to you .html document.
