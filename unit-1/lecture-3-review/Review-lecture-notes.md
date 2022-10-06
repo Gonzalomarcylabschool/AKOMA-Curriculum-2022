@@ -99,13 +99,55 @@ Stands for *Cascading Style Sheets*. It is the language used to add style (color
 * The default. statically positioned items are part of the page flow. 
 * They appear in the same order they appear in the markup. 
 * The offset properties do not affect static elements.
+  * Example
+  ```HTML
+    <div class="parent-element">
+      <div class="sample1"></div>
+    </div>
+  ```
+  ```CSS
+  .parent-element{
+    margin:0;
+    border:solid black 5px;
+    width:500px;
+    height:3000px;
+  }
+  .sample1{
+      background-color: red;
+      width: 100px;
+      height:100px;
+      border:black 5px solid;
+      position:static;
+  }
+  ```
 
 ### `position: relative`
 * Relative positioning moves an element to a new position relative to where the browser would otherwise put it. 
 * For example, if you include `left: 50px` and `bottom: 100px` with `position: relative`, the browser will shift the element 50px inward from the left edge and 100px upward from the bottom edge from where the browser would place it otherwise.
 * *Relative positioning does not remove an item from the document flow.* 
   * The browser positions the next element as though the previous one still occupied its pre-offset location.
-
+```HTML
+    <div class="parent-element">
+      <div class="sample1"></div>
+    </div>
+  ```
+  ```CSS
+  .parent-element{
+    margin:0;
+    border:solid black 5px;
+    width:500px;
+    height:3000px;
+  }
+  .sample1{
+      background-color: red;
+      width: 100px;
+      height:100px;
+      border:black 5px solid;
+      position: relative;
+      top: 100px;
+      left:100px;
+  }
+  ```
 ### `position: absolute`
 * Absolute positioning causes the browser to move the element to a new position within a container element.
 * By default, the container is the nearest ancestor element that has a `relative`, `absolute`, or `sticky` position
