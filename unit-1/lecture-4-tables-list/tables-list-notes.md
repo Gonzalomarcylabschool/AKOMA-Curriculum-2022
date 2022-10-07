@@ -1,8 +1,8 @@
 # Tables and Lists
-
-* What is the problem we are tyring to solve 
+## The why
+* What is the problem we are tyring to solve with tables?
     * We want o orginize data  in a way that is easy to understand
-    * display information like stock prices, sports scores, invoice data, and more. This data is tabular in nature, meaning that a table is often the best way of presenting the data.
+    * Display information like stock prices, sports scores, invoice data, and more. This data is tabular in nature, meaning that a table is often the best way of presenting the data.
  
 ## Table elements
 
@@ -18,12 +18,11 @@ The table row element, `<tr>`, is used to add rows to a table before adding tabl
 ### `<td>` Table Data Element
 The table data element, `<td>`, can be nested inside a table row element, `<td>`, to add a cell of data to a table.
 
-
 ### `<tfoot>` Table Footer Element
 The table footer element, `<tfoot>`, uses table rows to give footer content or to summarize content at the end of a table.
 
 
-
+## `colespan` and `rowspan`
 
 ## List
 
