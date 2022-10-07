@@ -30,7 +30,11 @@ The colspan attribute on a table header `<th>` or table data <td> element indica
 ### `rowspan` Attribute
 Similar to colspan, the rowspan attribute on a table header or table data element indicates how many rows that particular cell should span within the table. The rowspan value is set to 1 by default and will take any positive integer up to 65534.
 
+### `scope` Attribute
 
+The `scope` attribute specifies whether a header cell is a header for a column, row, or group of columns or rows.
+
+**Note**: The `scope` attribute has no visual effect in ordinary web browsers, but can be used by screen readers. 
 
 ## code-along! 
 
@@ -183,3 +187,14 @@ The list items will be marked with bullets (small black circles) by default:
         <li>Milk</li>
     </ul>
 ```
+
+### Ordered HTML List
+An ordered list starts with the `<ol>` tag. Each list item starts with the <li> tag.
+
+The list items will be marked with numbers by default:
+```HTML
+    <ol>
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ol>
