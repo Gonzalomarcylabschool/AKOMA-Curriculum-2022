@@ -1,11 +1,7 @@
 # Introduction to the Command Line Interface
 
-## Agenda:
-
-* **0:00-20:00**: Definitions and terms review
-* **20:00-45:00**: guided practice
-* **45:00-60:00**: recap + lab announcements
-
+[Lecture Slides](https://docs.google.com/presentation/d/1JqJp0FtIboZ8afAD3sPYOLQSMfViwAd1mj1wJl4nc3g/edit?usp=sharing)
+[Lecture Video](https://us02web.zoom.us/rec/share/zDNoNXw-6Hh3WXBX56cvG5Q7ZSPmkCKBVcTUr73UtBfV6RQvTdM0ITUImY3bqO40.6htuuuz1KNiX6mDk?startTime=1664204859000)
 ## Objectives
 FWBAT...
 - Understand the origins of the command line interface
