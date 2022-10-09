@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>code along</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <header>
+            <div class="header-div">
+                <h1 id="title">
+                    Throw away journal
+                </h1>
+                <p id="description">
+                    Sometimes we want to just get out our emotions and for get they ever existed. This for will allow you to do just that and theraptacly help you overcome any overwelming emotions.
+                </p>
+            </div>
+        </header>
+        <div class="formCont">
+            <form id="survey-form">
+                <label id="name-label">Whats your name?</label>
+                <input class="input" id="name" type="text" placeholder="Enter your name" required>
+                <label id="email-label">Email</label>
+                <input class="input" id="email" type="email" placeholder="Email" required>
+                <label id="number-label" for="number">How old are you </label>
+                <input class="input" id="number" type="number" placeholder="enter a number" min="13" max="99" required>
+                <label for="Feelings">How are you feeling?</label>
+
+                <select id="dropdown" name="cars" id="cars" required>
+                    <option value="volvo">Sad</option>
+                    <option value="saab">Angry</option>
+                    <option value="mercedes">Anxious</option>
+                    <option value="audi">Depressed</option>
+                </select>
+                <label id="time">Do you often feel this way?</label>
+                <label>
+                    <input name="user-recommend" value="definitely" type="radio" class="input-radio" checked />Definitely</label>
+                <label>
+                    <input name="user-recommend" value="maybe" type="radio" class="input-radio">Maybe</label>
+
+                <label><input name="user-recommend" value="not-sure" type="radio" class="input-radio">Not sure</label>
+                <label id="how">How would you like to feel? check all that apply</label>
+                <label><input name="prefer" value="front-end-projects" type="checkbox" class="input-checkbox">Happy</label>
+                <label>
+                    <input name="prefer" value="back-end-projects" type="checkbox" class="input-checkbox">Jo</label>
+                <label><input name="prefer" value="data-visualization" type="checkbox" class="input-checkbox">Data Visualization</label>
+                <label>
+                    <input name="prefer" value="challenges" type="checkbox" class="input-checkbox">Challenges</label>
+                <textarea placeholder="enter any additional comments"></textarea>
+                <button id="submit" type="submit">click</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
