@@ -32,20 +32,27 @@ Forms are wrapped in a `<form>` tag. This tag _typically_ contains two attribute
     <!--Input elements / submit button go here-->
 </form>
 ```
-Lets take a quick look at 2 real world examples: [Facebook](https://www.facebook.com/login/) [Netflix](https://www.netflix.com/login)
+Lets take a quick look at 2 real world examples: [Facebook](https://www.facebook.com/login/) [Netflix](https://www.netflix.com/login) [Google](https://www.google.com/)
 > For now, we want to focus on how to build forms without actually sending an HTTP message. Our forms can leave these attributes out and we'll return to using these attributes to build functional forms later. 
 
 ## How do you construct a Form?
 
 There are four elements used to create a form: 
 * `<form>`
-    * As mentioned before the `<form>` element is used to create an HTML form for user input.  
+    * As mentioned before the `<form>` element is used to create an HTML form for user input.  Like the `<section>`, `<footer>`, or `table` element, its a container, but the browser know when it see this tag that its main purpose will be to gather information.
 * `<label>`
     * The `<label>` tag defines a label for form elements.
     * It's useful for screen-reader users, because the screen-reader will read out loud the label when the user focus on the input element.
     * The `<label>` element also help users who have difficulty clicking on very small regions (such as radio buttons or checkboxes) - because when the user clicks the text within the <label> element, it toggles the radio button/checkbox.
 * `<input>`
     * This element is whats used to collect the information/ data from the user. It can be displayed in many ways, depending on the `type` attribute used. [Click here](https://www.w3schools.com/html/html_form_input_types.asp) to see all the `type` attribute a `<input>` can use.
+    * the main ones we will be using today will be:
+        * text
+        * number
+        * email
+        * checkbox
+        * radio
+        * submit(for button)
 * `<button>`
    *  Used for submitting the form data to a form-handler.
 
