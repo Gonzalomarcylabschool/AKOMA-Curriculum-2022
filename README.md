@@ -18,9 +18,20 @@
 * **9/29/22 - Paired Programming** | [Slides](https://docs.google.com/presentation/d/1ZKX-IoJtoaowz9vgaVtD1FCLTsYoZbICJUru5SPVw48/edit?usp=sharing) | [Lecture Recording](https://drive.google.com/file/d/1ufFMbEyanSgRCnwwqd3ET7R8MYOjIc6e/view)
 * **9/30/22 - Review** | [Slides](https://docs.google.com/presentation/d/1HJeFBOe1duBSKWVpm0STUV8vfd3VMCsM7r7ITIESg8A/edit?usp=sharing) | [Lecture Recording](https://us02web.zoom.us/rec/play/5FqWJSr9OoEFhHJDYdBb7EW2hAnP8YlmHvxj2BCa-7eaJ9y5UVJjLtUCy1vo-5fAiI-E8W6zNRdD01NC.HLZJVILZSXjBUUvQ?startTime=1664545609000)
 
-### Unit 1 - HTML & CSS (3 weeks + Project week)
+## Unit 1 - HTML & CSS (3 weeks + Project week)
+
+### Week 1
 
 * **10/3/22** - HTML Semantics & CSS | [Lecture Slides/Video/Notes/](https://github.com/Gonzalomarcylabschool/AKOMA-Curriculum-2022/blob/main/unit-1/lecture-0-semantic-HTML-CSS/semantics-lecture-notes.md)
+* **10/4/22 - Box Model Layout** | [Lecture Notes](https://github.com/Gonzalomarcylabschool/AKOMA-Curriculum-2022/tree/main/unit-1/lecture-1-box-model-pt-1) | [Lecture Recording](#)
+* **10/5/22 - Box Model Review** | [Lecture Notes](https://github.com/Gonzalomarcylabschool/AKOMA-Curriculum-2022/tree/main/unit-1/lecture-2-box-model-pt-2) | [Lecture Recording](#) 
+* **10/6/22 - Positioning & Review** | [Lecture Notes](https://github.com/Gonzalomarcylabschool/AKOMA-Curriculum-2022/tree/main/unit-1/lecture-3-review) | [Lecture Recording](#)
+* **10/7/22 - Tables & Lists** | [Table Code Along Lecture Notes](https://github.com/Gonzalomarcylabschool/AKOMA-Curriculum-2022/tree/main/unit-1/lecture-4-tables-list) | [Lecture Recording](https://us02web.zoom.us/rec/share/eLGxyeI2wH_ci6GHs4zGj4Oe1ZmqS3LiEwD2BmGLzeaeKTZjvLrx0JAvoE7IkB5D.7Y_pL_5sgXIkMr-N?startTime=1665150517000) 
+
+### Week 2
+
+* **10/11/22 - Forms** | [Lecture notes](https://github.com/Gonzalomarcylabschool/AKOMA-Curriculum-2022/tree/main/unit-1/lecture-5-forms)
+
 
 ### Unit 2 - JavaScript
 ### Unit 3 - Functional Programming (Higher Order Functions)
