@@ -44,6 +44,8 @@ There are four elements used to create a form:
     * The `<label>` tag defines a label for form elements.
     * It's useful for screen-reader users, because the screen-reader will read out loud the label when the user focus on the input element.
     * The `<label>` element also help users who have difficulty clicking on very small regions (such as radio buttons or checkboxes) - because when the user clicks the text within the <label> element, it toggles the radio button/checkbox.
+    * 
+    
 * `<input>`
     * This element is whats used to collect the information/ data from the user. It can be displayed in many ways, depending on the `type` attribute used. [Click here](https://www.w3schools.com/html/html_form_input_types.asp) to see all the `type` attribute a `<input>` can use.
     * the main ones we will be using today will be:
@@ -53,19 +55,24 @@ There are four elements used to create a form:
         * checkbox
         * radio
         * submit(for button)
-* `<button>`
-   *  Used for submitting the form data to a form-handler.
-
+        
+**Note**
 
 The for attribute of the `<label>` tag should be equal to the id attribute of the `<input>` element to bind them together.
 ```HTML
 <label for="name">Name</label>
 <input name="name" id="name">
 ```
-# VS
+You can just put the input inside of the label like so: 
+
 ```HTML
 <label>
     Name
     <input name="name">
 </label>
 ```
+but using the former is best practice. 
+* `<button>`
+   *  Used for submitting the form data to a form-handler.
+
+### Lets take a look at an example and code it together.
