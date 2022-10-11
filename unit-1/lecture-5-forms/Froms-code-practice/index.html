@@ -1,11 +1,60 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-        <title>forms-code-along</title>
-        <link rel="stylesheet" href="style.css" type="text/css" />
-    </head>
-    <body>
-        
-    </body>
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>forms-code-along</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+    <form>
+        <label for="name">Input your Name</label>
+        <input id="name" type="text" name="name" placeholder="Name" value="John Smith" />
+        <br>
+        <label for="email">Email</label>
+        <input id="email" type="email" name="email" placeholder="example@email.com" required />
+        <br>
+        <label for="age">Input your Age</label>
+        <input id="age" type="number" name="age" min="13" required placeholder="13 and up" />
+        <br>
+        <label for="emotions">What is the feeling that you want to throw away?</label>
+        <br>
+        <select class="dropdown" name="emotions" id="emotions" required>
+            <option value="sad">Sad</option>
+            <option value="angry">Angry</option>
+            <option value="anxious">Anxious</option>
+            <option value="depressed">Depressed</option>
+            <option value="other">Other</option>
+        </select>
+
+        <br>
+        <label for="user-consistency">Do you often feel this way?</label>
+        <input name="user-consistency" value="definitely" type="radio" class="input-radio" checked />
+        Definitely
+
+
+        <input name="user-consistency" value="maybe" type="radio" class="input-radio">
+        Maybe
+
+
+        <input name="user-consistency" value="not-sure" type="radio" class="input-radio">
+        Not sure
+        <hr>
+        <label for="prefer" id="how">How would you like to feel? check all that apply.</label>
+        <input name="prefer" value="happy" type="checkbox" class="input-checkbox">
+        Happy
+        <input name="prefer" value="excited" type="checkbox" class="input-checkbox">
+        Excited
+        <input name="prefer" value="glad" type="checkbox" class="input-checkbox">
+        Glad
+        <input name="prefer" value="relieved" type="checkbox" class="input-checkbox">
+        Relieved
+         <br>
+         <label for="password"></label>
+         <input id="password" name="password" type="password">
+        <input type="submit" value="Submit" />
+    </form>
+</body>
+
 </html>
