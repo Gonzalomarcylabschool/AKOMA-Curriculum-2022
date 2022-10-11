@@ -1,9 +1,9 @@
 # Forms
 
 * **0:00 - 0:05** | Introduction / Warm up question / The why
-* **0:05 - 0:10** | / Quick Pitstop
-* **0:25 - 0:35** | Visual formatting Model / Block, Inline, and Inline-Block elements
-* **0:35 - 0:60** | Box Sizing / Dimensions / Images / Float / Position
+* **0:05 - 0:10** | Quick Pitstop in HTTP
+* **0:25 - 0:35** | How do you construct a Form?
+* **0:35 - 0:60** | Breakdown sample | build the sample in HTML | CSS (if ther is time)
 
 ## Warm-up questions
 * What is the name of the tag we use to make forms?
