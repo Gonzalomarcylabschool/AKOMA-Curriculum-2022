@@ -1,5 +1,15 @@
 # Forms
 
+* **0:00 - 0:05** | Introduction / Warm up question / The why
+* **0:05 - 0:10** | / Quick Pitstop
+* **0:25 - 0:35** | Visual formatting Model / Block, Inline, and Inline-Block elements
+* **0:35 - 0:60** | Box Sizing / Dimensions / Images / Float / Position
+
+## Warm-up questions
+* What is the name of the tag we use to make forms?
+* What tag do we use collect informaiton from the user?
+* What how do we set the kind of input we want the user to submit?
+
 ## Why do we use Forms?
 
 Forms are the main point of interaction between the user and a website. 
@@ -15,7 +25,7 @@ Facebook (now Meta), Apple, Netflix, Instagram, Snapchat, Google, Spotify and so
 
 **But how!?!**
 
-### Quick pitstop
+### Quick Pitstop
 **HTTP** (or Hypertext Transfer Protocol) defines a set of rules for _how_ data is formatted and transmitted over the internet. We'll learn more about this in Unit 7 but here is the basic idea:
 * A user submits a form and they are either **sending information** to a server or **requesting information** from a server.
 * There are two "methods" that HTTP requires us to specify
