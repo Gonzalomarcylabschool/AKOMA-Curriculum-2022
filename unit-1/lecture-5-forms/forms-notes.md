@@ -86,3 +86,17 @@ but using the former is best practice.
    *  Used for submitting the form data to a form-handler.
 
 ### Lets take a look at an example and code it together.
+
+
+## Next Steps
+
+* Tuesday, October 11 (by EOD)
+    * Find the assignment on [canvas](https://canvas.instructure.com/courses/5098447/assignments/32808561?module_item_id=73085074). Click on the custom repo link to make your custom repo
+        * Clone it down into your clound9 enviorment.
+        * Create your index.html and index.css files with a link connecting them.
+    * Be working on your flexbox Codecademy lessons
+
+* Wednesday October 12 — HTML structure / basic content is in place. Start CSS (colors first, then display, spacing last)
+* Thursday October 13 — Layout is complete. Final check for code cleanliness.
+
+**The assigment is due 8am this Friday, October 14!**

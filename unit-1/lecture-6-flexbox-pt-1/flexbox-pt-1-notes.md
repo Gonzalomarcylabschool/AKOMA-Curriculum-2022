@@ -8,10 +8,12 @@ Flexbox is
 
 ### The why:
 
-* Repsonsive sites
-* Make it easier to posistion elements. 
+* Repsonsive and mobile firendly 
+* Make it easier to posistion child elements. 
+* No margin collapse.
+* No need for floats.
 * Better for content flow.
-* Supported across browser
+* Supported across browsers.
 
 ### Axis
 
