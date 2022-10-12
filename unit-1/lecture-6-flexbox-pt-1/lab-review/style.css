@@ -1,0 +1,45 @@
+header {
+    display: flex;
+    Justify-content: space-between;
+    align-items: center;
+    margin: 0 10%;
+}
+
+#articles {
+    display: flex;
+
+}
+
+#banner {
+    display: flex;
+    width: 100%;
+    height: auto;
+    margin: 0;
+}
+
+#image-banner {
+    margin: 0;
+}
+
+
+.articleOne {
+    width: 25%;
+    padding: 20px;
+}
+
+.articleTwo {
+    padding: 20px;
+}
+
+.banner-img {
+    width: 100%;
+}
+
+.small-img {
+    display: flex;
+    overflow: auto;
+}
+
+.img-width {
+    align-self: auto;
+}

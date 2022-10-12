@@ -1,6 +1,7 @@
 .flexbox-container {
-   
+   display: flex;
     background-color: #f7df02;
+    justify-content: space-evenly;
 }
 
 .flexbox-item {
@@ -20,4 +21,13 @@
 
 .flexbox-item-3 {
     min-height: 300px;
+}
+
+ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+ol {
+    display: flex;
 }
