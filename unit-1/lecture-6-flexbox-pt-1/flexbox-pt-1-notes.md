@@ -1,10 +1,14 @@
 # Flexbox 
 ### Agenda
-* **0:00 - 0:05** | Introduction / Warm up question / The why
-* **0:05 - 0:15** | Axis | Flex container | Flex items
+* **0:00 - 0:05** | Introduction / Warm up question / The What and Why
+* **0:05 - 0:15** | Parent and child relationship| Axis | Flex container | Flex items
 * **0:15 - 0:35** | Flex Container Properties | Demo
 * **0:35 - 0:60** | Flex Item Properties | Demo
 
+### Warm-up question:
+* What is a parent element VS a child element
+* How do we acrtivate Flexbox?
+* 
 ## The what and why
 
 ### The what:
@@ -24,6 +28,21 @@
 * Better for content flow.
 * Supported across browsers.
 
+### Parent and child relationship
+* A parent is an element that is directly above and connected to an element in the document tree. In the diagram below, the `<div>` is a parent to the `<ul>`.
+
+* A child is an element that is directly below and connected to an element in the document tree. In the diagram above, the `<ul>` is a child to the `<div>`.
+```HTML
+  <div class="parent">
+    <ul class="child parent">
+      <li class="child sibling"></li>
+      <li class="child sibling"></li>
+      <li class="child sibling"></li>
+    </ul>
+  </div>
+```
+
+[Click here ](http://web.simmons.edu/~grabiner/comm244/weekfour/document-tree.html#:~:text=Parent%20and%20Child,element%20in%20the%20document%20tree.)to read more about HTML document tree.
 ### Axis
 
 * There are 2 axis that flexbox used
@@ -31,8 +50,11 @@
 * Axis are dictated by the `flex-direciton` property.
     * By default `flex-direction` is set to `row`. This will make the `main` axis go from left to right of the screen and the `cross` go from top to bottom.
     * To change this you must set the `flex-direction` to a value of `column`. The `main` will then go from top to bottom and `cross` to go from left to right of the screen.
-    * 
-## Flex Container Properties
+* There are 2 other values that will change the axis: `row-reverse` and `column-reverse`
+
+![flex-direciton properties  and their effect on the main and corss axis](https://samanthaming.gumlet.io/flexbox30/4-flexbox-axes.jpg.gz)
+
+### Flex Container Properties
 * `display`
   Defines a flex container. Can be block or inline, given the value.
   ```css
