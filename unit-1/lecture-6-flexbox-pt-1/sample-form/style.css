@@ -1,5 +1,6 @@
 .flexbox-container {
-    
+    display: flex;
+    background-color: #f7df02;
 }
 
 .flexbox-item {
