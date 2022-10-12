@@ -8,7 +8,7 @@
 ### Warm-up question:
 * What is a parent element VS a child element
 * How do we acrtivate Flexbox?
-* 
+* What are some of the properties we use with flexbox?
 ## The what and why
 
 ### The what:
