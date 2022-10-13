@@ -1,5 +1,12 @@
+# Flexbox pt 2
 
+**[00:00 - 00:05]**- | Introduction | the why | Warm up Question
 
+**[00:05 - 00:15]**- | Axis Review | Flex container and Flex item
+
+**[00:15 - 00:35]**- | Flex Container Properties continued |
+
+**[00:35 - 00:60]**- | Flex items Properties
 ### Axis Review
 
 ![flex-direciton properties  and their effect on the main and corss axis](https://samanthaming.gumlet.io/flexbox30/4-flexbox-axes.jpg.gz)
