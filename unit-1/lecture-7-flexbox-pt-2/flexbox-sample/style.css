@@ -1,0 +1,33 @@
+.flexbox-container {
+   display: flex;
+    background-color: #f7df02;
+    justify-content: space-evenly;
+}
+
+.flexbox-item {
+    width: 200px;
+    margin: 10px;
+    border: solid #333 5px;
+    background-color: #ddd;
+}
+
+.flexbox-item-1 {
+    min-height: 100px;
+}
+
+.flexbox-item-2 {
+    min-height: 200px;
+}
+
+.flexbox-item-3 {
+    min-height: 300px;
+}
+
+ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+ol {
+    display: flex;
+}
