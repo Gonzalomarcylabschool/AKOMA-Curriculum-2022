@@ -1,8 +1,12 @@
 .flexbox-container {
    display: flex;
     background-color: #f7df02;
-    justify-content: space-evenly;
+  
+    height: 800px;
+    
+    flex-wrap: wrap;
 }
+
 
 .flexbox-item {
     width: 200px;
@@ -10,24 +14,27 @@
     border: solid #333 5px;
     background-color: #ddd;
 }
-
+.flexbox-items {
+    width: 200px;
+    margin: 10px;
+    border: solid black 5px;
+    background-color: green;
+}
 .flexbox-item-1 {
-    min-height: 100px;
+
+    display: flex;
+    justify-content: center;
+ flex-grow:1;
 }
 
 .flexbox-item-2 {
-    min-height: 200px;
+   
+ flex-grow:1;
 }
 
 .flexbox-item-3 {
-    min-height: 300px;
-}
-
-ul {
-    display: flex;
-    justify-content: space-around;
-}
-
-ol {
-    display: flex;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow:1;
 }

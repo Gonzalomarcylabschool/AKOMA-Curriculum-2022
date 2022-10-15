@@ -44,13 +44,7 @@
   ```
 
 ### Flex Item Properties
-* `order`
-  By default, flex items are laid out in source order. The `order` property can be used to override the default position of a particular flex item.
-  ```css
-  .item {
-    order: <integer>; /* default is 0 */
-  }
-  ```
+
 * `flex-grow`
   Determines the extent to which a flex item can grow to fill unused space in a flex-container.
   ```css
@@ -65,3 +59,13 @@
     align-self: auto | flex-start | flex-end | center | baseline | stretch;
   }
   ```
+`order`
+  By default, flex items are laid out in source order. The `order` property can be used to override the default position of a particular flex item.
+  ```css
+  .item {
+    order: <integer>; /* default is 0 */
+  }
+  ```  
+
+[Click here for more on flexbox!](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+[And here for a video ]
