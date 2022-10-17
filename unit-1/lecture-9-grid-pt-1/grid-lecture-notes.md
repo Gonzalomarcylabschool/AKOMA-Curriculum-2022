@@ -1,3 +1,4 @@
+[Link to video](https://us02web.zoom.us/rec/play/csMcdFcJ3ArXVXfSMjO_bFpycWrI_0DYVy8ixmV7epGDv-b8KF-buZsDmxWoeOJ0CyUNomJpgAgDwbJf.b1npAsRBVaOuLPQK?autoplay=true&startTime=1666018858000)
 # Grid part 1
 
 **[00:00 - 00:05]**- | Introduction | The why | Warm up Question

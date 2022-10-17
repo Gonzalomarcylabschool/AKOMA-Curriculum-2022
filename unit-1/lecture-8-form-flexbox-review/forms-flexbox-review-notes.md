@@ -1,3 +1,5 @@
+[Link to lecture video.](https://us02web.zoom.us/rec/share/vtU4sjonoJOM2-m-NCAfT86-aE3itt3po2hNTC63zH9NOcAvWglSBhUVUJLOZwDi.FPSnHc_PzLLs7NOR)
+
 ## Agenda
 * Review 
     * Forms
