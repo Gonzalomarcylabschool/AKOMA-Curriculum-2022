@@ -2,11 +2,9 @@
 
 **[00:00 - 00:05]**- | Introduction | The why | Warm up Question
 
-**[00:05 - 00:15]**- |  | 
+**[00:05 - 00:35]**- | Parts of Grid 
 
-**[00:15 - 00:35]**- |  |
-
-**[00:35 - 00:60]**- | 
+**[00:35 - 00:60]**- | Code-along | Question | Next Steps
 
 ## The Why
 
@@ -24,13 +22,12 @@ Grid containers consist of grid items, placed inside columns and rows.
 
 #### Grid Container Properties
 * `display: grid`
-* `grid-template-columns: <number>fr | <number>% | repeat (<number> <number> fr)`
+* `grid-template-columns: <number> fr | <number>% | repeat (<number of times> <number unit> unit)`
+    * set the size and amount of colums we want for our grid. 
 * `grid-template-rows`
-* `grid-template-areas`
+    * instead of setting up your grid by colums you can do it by rows 
 * `grid-auto-rows`
 * `grid-auto-columns`
-* `grid-column-gap`
-* `grid-row-gap`
 * `minmax()`
 
 ### Grid Item
@@ -40,17 +37,61 @@ A grid container contains grid items.
 By default, a container has one grid item for each column, in each row, but you can style the grid items so that they will span multiple columns and/or rows.
 
 #### Grid Item Properties
-* `grid-column-start`
-* `grid-column-end`
-* `grid-row-start`
-* `grid-row-end`
-* `grid-area`
 
+* `align-self: `
+* `justify-self: `
+
+### Grid Tracks
+
+A grid track is the space between two grid lines. They are defined in the explicit grid by using the grid-template-columns and grid-template-rows properties. 
+
+```HTML
+<div class="wrapper">
+  <div>One</div>
+  <div>Two</div>
+  <div>Three</div>
+  <div>Four</div>
+  <div>Five</div>
+</div>
+```
+
+```CSS
+.grid-container {
+  display: grid;
+  grid-template-columns: 200px 1fr 3fr;
+}
+```
+
+### Grid lines
+
+Grid lines are created when you define tracks.
+
+![grid line example](https://developer.mozilla.org/en-US/docs/Glossary/Grid_Lines/1_diagram_numbered_grid_lines.png)
 
 ### Grid Gap
 
 The gap CSS property sets the gaps (gutters) between rows and columns. It is a shorthand for row-gap and column-gap.
 
-### Grid Tracks
+## Next Step
 
-A grid track is the space between two adjacent grid lines. They are defined in the explicit grid by using the grid-template-columns and grid-template-rows properties or the shorthand grid or grid-template properties. Tracks are also created in the implicit grid by positioning a grid item outside of the tracks created in the explicit grid.
+Here are the things you need to look forward to this week: 
+
+### Lab Assignment: Product Landing Page
+
+**10/17 EOD** - Start looking at this assigment that due at the end of the week. By the end of today you should have started your HTML and at best finished it by the end of lab.
+
+**10/18** -  You should try to have your CSS styles Finished by this day.
+**10/19** - Start working on the layout so that its not only responsive but can also fit on mobile.
+**10/20** - You should complete and submit the assigment. 
+
+### Grid part 2 and Responsive layout. 
+
+**10/18** -  We will finish up going over grid.
+**10/19** - We will start on responsive layouts covering and covering the following
+* Fluid Layout
+* Responsive Web Design
+* Media Queries
+* Breakpoints
+
+**10/20** - We will finish up Responsive layouts.
+**10/21** - We will review all the contents covered this week. 

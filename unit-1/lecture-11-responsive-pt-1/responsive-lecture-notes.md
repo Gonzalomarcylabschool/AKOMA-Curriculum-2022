@@ -7,3 +7,8 @@
 **[00:15 - 00:35]**- |  |
 
 **[00:35 - 00:60]**- | 
+
+* Fluid Layout
+* Responsive Web Design
+* Media Queries
+* Breakpoints
