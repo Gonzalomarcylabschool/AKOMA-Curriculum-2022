@@ -49,5 +49,8 @@ By default, a container has one grid item for each column, in each row, but you 
 
 ### Grid Gap
 
+The gap CSS property sets the gaps (gutters) between rows and columns. It is a shorthand for row-gap and column-gap.
+
 ### Grid Tracks
 
+A grid track is the space between two adjacent grid lines. They are defined in the explicit grid by using the grid-template-columns and grid-template-rows properties or the shorthand grid or grid-template properties. Tracks are also created in the implicit grid by positioning a grid item outside of the tracks created in the explicit grid.
