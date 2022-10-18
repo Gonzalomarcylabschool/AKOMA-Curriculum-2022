@@ -1,0 +1,45 @@
+body, html {
+    height: 100vh ;
+      margin: 0;
+}
+body {
+    background-color: #ddd;
+    color: white;
+}
+main{
+    height: 100%;
+}
+.grid-container {
+    border: 2px solid white;
+    display: grid;
+    grid-template-columns: 25% auto auto;
+    grid-template-rows: 10% auto 20%;
+    grid-template-areas:  
+    "sidebar header header"
+    "sidebar main main"
+    "sidebar footer footer";
+    
+}
+
+.grid-item {
+    background-color: #3b77d9;
+    border: 2px solid red;
+}
+.one, .four, .seven{
+    grid-area: sidebar;
+}
+
+.two, .three {
+    grid-area: header;
+}
+ .six{
+    grid-area: main;
+}
+ 
+ .five{
+    grid-area: main;
+}
+
+.eight, .nine {
+    grid-area: footer;
+}
