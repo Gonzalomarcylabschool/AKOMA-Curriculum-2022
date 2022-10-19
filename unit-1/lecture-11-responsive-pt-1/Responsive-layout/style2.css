@@ -71,7 +71,7 @@ div {
     
 }
 
-@media all and (max-width: 481px){
+@media all and (max-width: 576px ){
     * {
     margin: 0;
     }

@@ -12,7 +12,7 @@
 
 To make sure that your page can support the media queries tha you will add to them, you need to make sure that you have the following `meta` tag in the head:
 ```HTML
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
 ```
 ## Fluid Layout
 
@@ -46,10 +46,10 @@ A CSS media query can be used to adapt a website’s display and layout to diffe
 
 ### Conditions
 
-* Width:
-* Height: 
-* orientation
-* aspect-ratio
+* Width: min or max 
+* Height: min or max 
+* orientation: landscape, portrait
+* aspect-ratio: 4:3
 * [click here for more](https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries)
 
 ### Breakpoints
