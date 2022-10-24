@@ -1,4 +1,6 @@
 # Unit 1 Project: HTML/CSS Foundations
+[Intro video](https://vimeo.com/763377238)
+[slides](https://docs.google.com/presentation/d/1KlRIo7ukg4FTW3p66LuvmsfvCC0LZjbJZjCD6jGcHBE/edit?usp=sharing)
 ## Raising Awareness on the Web
 
 ### Purpose
