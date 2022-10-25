@@ -31,8 +31,21 @@
 ### Week 2
 
 * **10/11/22 - Forms** | [Lecture notes](https://github.com/Gonzalomarcylabschool/AKOMA-Curriculum-2022/tree/main/unit-1/lecture-5-forms)
+* **10/12/22 - Flexbox pt 1** | [Lecture notes](https://github.com/Gonzalomarcylabschool/AKOMA-Curriculum-2022/tree/main/unit-1/lecture-6-flexbox-pt-1) [Video](#)
+* **10/13/22 - Flexbox pt 2** | [Lecture notes](https://github.com/Gonzalomarcylabschool/AKOMA-Curriculum-2022/tree/main/unit-1/lecture-7-flexbox-pt-2) | [Video](#)
+* **10/14/22 - Froms and Flexbox Review** | [Lecture notes](https://github.com/Gonzalomarcylabschool/AKOMA-Curriculum-2022/tree/main/unit-1/lecture-8-form-flexbox-review) | [Video](https://us02web.zoom.us/rec/share/KJv9vXHZNSqBe3pNieohBk3uTGeNhmkYfMRovfXOO4SGYJVWXkJxNGwZB2D4te2Q.yb2qfOXV6XpSoHuY)
 
+### Week 3
 
+* **10/17/22 - Grid pt 1** | [Lecture notes](https://github.com/Gonzalomarcylabschool/AKOMA-Curriculum-2022/tree/main/unit-1/lecture-9-grid-pt-1) | [Video](https://us02web.zoom.us/rec/share/xm_YdA6NGrtbAO_xYCZuxy68a0dc1ixo3przDTNUaqOI6vQ5nTJVBdfstDun4pXH.8mq5sunJC1ktRbTX)
+* **10/18/22 - Grid pt 2** | [Lecture notes](https://github.com/Gonzalomarcylabschool/AKOMA-Curriculum-2022/tree/main/unit-1/lecture-10-grid-pt-2) | [Video]()
+* **10/19/22 - Responsive Layout pt 1** | [Lecture notes](https://github.com/Gonzalomarcylabschool/AKOMA-Curriculum-2022/tree/main/unit-1/lecture-11-responsive-pt-1) | [Video](#)
+* **10/120/22 - Responsive Layout pt 2** | [Lecture notes](https://github.com/Gonzalomarcylabschool/AKOMA-Curriculum-2022/tree/main/unit-1/lecture-12-reponsive-pt2) | [Video](#)
+* **10/21/22 - Grid and Responsive Layout Review** | [Lecture notes](https://github.com/Gonzalomarcylabschool/AKOMA-Curriculum-2022/tree/main/unit-1/lecture-13-review-grid-responsive) | [Video](https://us02web.zoom.us/rec/play/XG0AF-H_-HXX50BOsUqjX8knZyR2LhtQQlnzaee6l48lpYurNC1u3mW2aBifT8PbW42JuU8cEgj9PJ_u.jFK8aDZPHN7s4JXM?autoplay=true&startTime=1666360042000) 
+
+### Unit 1 Project Week
+
+**Project week Roll out** | [Unit 1 Project: HTML/CSS Foundations](https://github.com/Gonzalomarcylabschool/AKOMA-Curriculum-2022/tree/main/unit-1/unit-1-project-week) | [Video](https://us02web.zoom.us/rec/share/gE3yjgdztGsSE6dVOoI17MCO0PD6nvWRDi5uikdW60k9HPuhuRBDkgTx6fE4_7YO.AP6Dp941OOLceHOY)
 ### Unit 2 - JavaScript
 ### Unit 3 - Functional Programming (Higher Order Functions)
 ### Unit 4 - Object-Oriented Programming (Classes)
