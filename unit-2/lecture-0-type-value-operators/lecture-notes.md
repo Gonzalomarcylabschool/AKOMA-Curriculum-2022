@@ -1,9 +1,19 @@
-# Unit 2 - Lesson 1: Types, Values, and Operators
+# Types, Values, and Operators
 
-## Essential Questions
-* What are the seven primiative data types in JavaScript? What is the last non-primitive data type?
+**[00:00 - 00:05]**- | Introduction | The why | Warm up Question
+
+**[00:05 - 00:15]**- | Primiative data types | 
+
+**[00:15 - 00:35]**- |  CSS Basics |
+
+**[00:35 - 00:60]**- | Fluid and Responsive Layouts
+
+## The Why
+
+## Warm-up Questions
+* Name some of the primiative data types in JavaScript? What is the last non-primitive data type?
 * What are some examples of unary, binary, and ternary operators?
-* What are logical operators and what is their purpose?
+* What are logical operators?
 * What is the difference between the equality `==` and strict-equality `===` operators?
 * What is short-circuit evaluation and why might it be useful?
 * When does JavaScript automatically change the type of a value?
@@ -19,8 +29,4 @@
 * short-circuit evaluation
 * type coercion
 
-## Learning Assignments
 
-* **Book**: [Eloquent JavaScript - Chapter 1](https://eloquentjavascript.net/01_values.html)
-* **Article**: [Type coercion in JavaScript](https://github.com/The-Marcy-Lab-School/se-unit-2/blob/master/lesson-1-types_values_operators/type-coercion.md)
-* **Video**: [Logical Operators && Tricks with short-circuit evaluation](https://www.youtube.com/watch?v=r7v6EIiHfVA)
