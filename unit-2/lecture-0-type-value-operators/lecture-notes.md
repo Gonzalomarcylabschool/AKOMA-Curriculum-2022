@@ -102,6 +102,7 @@ Anytime there are 2 operands you will be using a binary operartor:
     let a = 1 + 2;
     let b = 5 - 3;
 ```
+Something to keep in mind when doing arithmetic is to think about precedence of the operators:
 
 ### Ternary 
 
