@@ -98,6 +98,11 @@ The minus operator can be used both as a binary operator and as a unary operator
 
 Anytime there are 2 operands you will be using a binary operartor:
 
+```js
+    let a = 1 + 2;
+    let b = 5 - 3;
+```
+
 ### Ternary 
 
 
