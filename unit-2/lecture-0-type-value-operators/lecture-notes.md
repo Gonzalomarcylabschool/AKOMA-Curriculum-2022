@@ -100,6 +100,38 @@ Anytime there are 2 operands you will be using a binary operartor:
 
 ### Ternary 
 
+
+```js
+    function getFee(isMember) {
+      return (isMember ? '$2.00' : '$10.00');
+    }
+    
+    console.log(getFee(true));
+    // expected output: "$2.00"
+    
+    console.log(getFee(false));
+    // expected output: "$10.00"
+    
+    console.log(getFee(null));
+    // expected output: "$10.00"
+```
+## Type Coercion
+
+```js
+    console.log(8 * null)
+    // → 0
+    console.log("5" - 1)
+    // → 4
+    console.log("5" + 1)
+    // → 51
+    console.log("five" * 2)
+    // → NaN
+    console.log(false == 0)
+    // → true
+```
+
+[More type coercion](https://github.com/Gonzalomarcylabschool/AKOMA-Curriculum-2022/blob/main/unit-2/lecture-0-type-value-operators/type-coercion.md)
+
 ## Key Terms
 * type
 * `typeof`
