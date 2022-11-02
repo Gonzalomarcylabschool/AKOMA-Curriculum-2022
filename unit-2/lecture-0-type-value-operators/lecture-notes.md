@@ -1,5 +1,7 @@
 # Types, Values, and Operators
 
+[video](https://drive.google.com/file/d/1sQcaubna9s6cW4-7h67BS4YeoNgZNkck/view?usp=sharing)
+
 **[00:00 - 00:05]**- | Introduction with Ani | The why | Warm up Question
 
 **[00:05 - 00:15]**- | Primiative data types | 

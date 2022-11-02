@@ -47,6 +47,11 @@
 
 **Project week Roll out** | [Unit 1 Project: HTML/CSS Foundations](https://github.com/Gonzalomarcylabschool/AKOMA-Curriculum-2022/tree/main/unit-1/unit-1-project-week) | [Video](https://us02web.zoom.us/rec/share/gE3yjgdztGsSE6dVOoI17MCO0PD6nvWRDi5uikdW60k9HPuhuRBDkgTx6fE4_7YO.AP6Dp941OOLceHOY)
 ### Unit 2 - JavaScript
+
+### Week 1
+
+* **11/1/22 - Type Value Operators** | [Lecture notes](https://github.com/Gonzalomarcylabschool/AKOMA-Curriculum-2022/blob/main/unit-2/lecture-0-type-value-operators/lecture-notes.md) | [Video](https://drive.google.com/file/d/1sQcaubna9s6cW4-7h67BS4YeoNgZNkck/view?usp=sharing)
+* 
 ### Unit 3 - Functional Programming (Higher Order Functions)
 ### Unit 4 - Object-Oriented Programming (Classes)
 ### Unit 5 - The Document Object Model (DOM)
