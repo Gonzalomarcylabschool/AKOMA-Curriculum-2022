@@ -50,8 +50,8 @@
 
 ### Week 1
 
-* **11/1/22 - Type Value Operators** | [Lecture notes](https://github.com/Gonzalomarcylabschool/AKOMA-Curriculum-2022/blob/main/unit-2/lecture-0-type-value-operators/lecture-notes.md) | [Video](https://drive.google.com/file/d/1sQcaubna9s6cW4-7h67BS4YeoNgZNkck/view?usp=sharing)
-* 
+* **11/1/22** - Type Value Operators** | [Lecture notes](https://github.com/Gonzalomarcylabschool/AKOMA-Curriculum-2022/blob/main/unit-2/lecture-0-type-value-operators/lecture-notes.md) | [Video](https://drive.google.com/file/d/1sQcaubna9s6cW4-7h67BS4YeoNgZNkck/view?usp=sharing)
+* **11/2/22** - Variable and Control Flow | [Lecture notes](https://github.com/Gonzalomarcylabschool/AKOMA-Curriculum-2022/tree/main/unit-2/lecture-1-variables-control-flow) | [Video](https://drive.google.com/file/d/1vCJG8zAcdAVqMvyUeLMckv_RAEfvH2Wr/view?usp=share_link)
 ### Unit 3 - Functional Programming (Higher Order Functions)
 ### Unit 4 - Object-Oriented Programming (Classes)
 ### Unit 5 - The Document Object Model (DOM)

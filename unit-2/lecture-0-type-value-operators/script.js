@@ -4,12 +4,11 @@ let c = true;
 let d = [1, 2, 3]
 
 
-/*
-function myFunction(){
-    for (let i = 0; i<=10; i++){
-        console.log(i);
-    }
+
+function myFunction() {
+    var one = 1;
+
 }
+
 debugger
-console.log(myFunction());
-*/
+console.log(one);
