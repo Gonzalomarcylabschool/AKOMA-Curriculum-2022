@@ -1,3 +1,5 @@
+[Video](https://us02web.zoom.us/rec/play/egMHErxTyQpvPMC025QJXJBWw7soxRPN6mlADWxdb2AhNKklmY3mLi8sTdIZ9krr3nbFBXts5WQ0CjOe.FbB8-sGX2QhncbYt?autoplay=true&startTime=1667569570000)
+
 ## Data Types
 
 The values can be one of the following:
