@@ -1,3 +1,4 @@
+[video](https://drive.google.com/file/d/1WP9K1D434TT0mWIOHo5kG1j5vX58Zrmx/view?usp=share_link)
 **[00:00 - 00:05]**- | Introduction | The why |
 
 **[00:05 - 00:10]**- | Scope | 
@@ -108,7 +109,7 @@ declaration functions can be hiosted
 
 arrow and expressions functions can't
 
-Reminders
+
 study guide pratice assesment 
 
 bring question to lecture always
