@@ -27,7 +27,7 @@ You will be using operartors to do the following:
 * Arithmetic
 * Comparison
 * Logic
-* 
+
 ### Unary Binary and Ternary Operators
 
 ```js
@@ -112,3 +112,29 @@ Sequence: What is the order we want to to make things happen, where are we start
 Selection: What things will effect how we get to the end?
 
 Itertaiton: Do we have to repeat any part of our code?
+
+### How do we write a function?
+
+funtion expressions and arrow functions
+function decleartions
+
+```js
+    //how to write a function:
+    function functionName(){
+        //code to run;
+    }
+    // example declaration
+    function print(){
+        console.log("test");
+    }
+    
+    // expressions
+    
+    let funName = function() {
+        //code
+    }
+    // arrow 
+    cosnt arFunName = () => {
+        //code
+    }
+```
