@@ -39,14 +39,27 @@ A function is a tool in programing that we use to break up the code that we want
 
 ### How do we write a function?
 
+funtion expressions and arrow functions
+function decleartions
+
 ```js
     //how to write a function:
     function functionName(){
         //code to run;
     }
-    // example
+    // example declaration
     function print(){
         console.log("test");
+    }
+    
+    // expressions
+    
+    let funName = function() {
+        //code
+    }
+    // arrow 
+    cosnt arFunName = () => {
+        //code
     }
 ```
 
@@ -54,8 +67,48 @@ A function is a tool in programing that we use to break up the code that we want
 
 ```js
     print();
+    funName;
+    arFunName;
+    
 ```
 
 ### Functions with Parameters
 
 When you want to pass through data into your functions you can use parameters. They act like variables that only work in the function. 
+
+
+```js
+    //how to write a function:
+    function functionName(parameters){
+        //code to run;
+    }
+    // example declaration
+    function print(text){
+        console.log(text);
+    }
+    
+    // expressions
+    
+    let funName = function(text) {
+        console.log(text);
+    }
+    // arrow 
+    cosnt arFunName = (text) => {
+        console.log(text);
+    }
+```
+### Hoisting
+
+JavaScript Hoisting refers to the process whereby the interpreter appears to move the declaration of functions, variables or classes to the top of their scope, prior to execution of the code.
+
+So while the code is compiled it see's where the keywords are for the and stores them into memory
+
+
+declaration functions can be hiosted 
+
+arrow and expressions functions can't
+
+Reminders
+study guide pratice assesment 
+
+bring question to lecture always
