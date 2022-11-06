@@ -53,6 +53,8 @@
 * **11/1/22** - Type Value Operators** | [Lecture notes](https://github.com/Gonzalomarcylabschool/AKOMA-Curriculum-2022/blob/main/unit-2/lecture-0-type-value-operators/lecture-notes.md) | [Video](https://drive.google.com/file/d/1sQcaubna9s6cW4-7h67BS4YeoNgZNkck/view?usp=sharing)
 * **11/2/22** - Variable and Control Flow | [Lecture notes](https://github.com/Gonzalomarcylabschool/AKOMA-Curriculum-2022/tree/main/unit-2/lecture-1-variables-control-flow) | [Video](https://drive.google.com/file/d/1vCJG8zAcdAVqMvyUeLMckv_RAEfvH2Wr/view?usp=share_link)
 * **11/3/22** - Functions | [Lecture notes](https://github.com/Gonzalomarcylabschool/AKOMA-Curriculum-2022/tree/main/unit-2/lecture-2-scope-and-funcitons) | [Video](https://drive.google.com/file/d/1WP9K1D434TT0mWIOHo5kG1j5vX58Zrmx/view?usp=share_link)
+* **11/4/22** - Review | [Lecture notes](https://github.com/Gonzalomarcylabschool/AKOMA-Curriculum-2022/tree/main/unit-2/lecture-3-review) | [Video](https://us02web.zoom.us/rec/play/egMHErxTyQpvPMC025QJXJBWw7soxRPN6mlADWxdb2AhNKklmY3mLi8sTdIZ9krr3nbFBXts5WQ0CjOe.FbB8-sGX2QhncbYt?autoplay=true&startTime=1667569570000) 
+
 ### Unit 3 - Functional Programming (Higher Order Functions)
 ### Unit 4 - Object-Oriented Programming (Classes)
 ### Unit 5 - The Document Object Model (DOM)
