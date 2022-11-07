@@ -55,12 +55,12 @@
 // myfunction();
 
 // this is also an example of function scope
-   // var x = 1;
-   // console.log(x);//will print 1 to the console.
-   // {
-   //   console.log(x);//still available in the scope and will print 1 to the console.
-   // }
-   //  console.log(x);//will print 1 to the console.
+// var x = 1;
+// console.log(x);//will print 1 to the console.
+// {
+//   console.log(x);//still available in the scope and will print 1 to the console.
+// }
+//  console.log(x);//will print 1 to the console.
 //**********************************************************
 // //redeclare example
 // var b = 1; // variable declared; global scope
@@ -175,16 +175,47 @@
 //   console.log(x)
 
 
-// let example
-let x = 1; //global scope
-console.log(x)// will print 1
-if (true){
-    let x = 2;// block scope
-    let y = 3; // block scope
-    console.log(x); //will print 2
-    console.log(y); // will print 3
+
+
+// let z = 1; //initialized
+// let a; //declared
+// a = "you were right people!!";
+// console.log(a);
+// console.log(z); //print out 1
+
+// if (true) {
+//     const z = 2;
+//     const w = 3;
+//     console.log(z); //print out 2
+//     console.log(w); // print out 3
+// }
+// console.log(z); // print out 1
+
+// //z = 4; // w
+// console.log(theTest("testing this function"));
+
+// function myFunction(parameter){
+//       console.log(parameter)
+//     }
+//   //  console.log(parameter);
+// myFunction("this is a function");
+
+// function theTest(testing){
+//     let x = testing;
+//     return x;
+// }
+
+
+let x = "hello";
+console.log(x)
+{
+    let z = 1;
+    console.log(z)
+    {
+        console.log(z)
+    }
 }
-console.log(x);// will print 1
-//console.log(y); // 
-x = 4; //reassign the value
-console.log(x); // will print out 4 
+
+x = "hello";
+
+
