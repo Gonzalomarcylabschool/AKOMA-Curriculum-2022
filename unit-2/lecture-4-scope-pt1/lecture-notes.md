@@ -8,8 +8,6 @@ lexical scope
 creation (compile) phase
 execution phase
 
-Before introducing ES6 (ECMAScript 6) in 2015, JavaScript had only two types of scopes: Global Scope and Local Scope. 
-
 
 How do variables declared with var, let, and const differ when it comes to redeclaration, reassignment, and hoisting?
 What is global, function, and block scoping?
@@ -19,8 +17,11 @@ How does JavaScript reconcile variables declared with the same name in different
 
 What is scope:
 
+Before introducing ES6 (ECMAScript 6) in 2015, JavaScript had only two types of scopes: Global Scope and Local Scope. 
+
 With the introduction of let and const keywords, it added a new type of Scope in JavaScript. You cannot access the variables declared inside a particular block (represented by {}) from outside the block. 
 
+**In plain english**
 Where certain variales are available (what is available to me in my function)
 They are between the `{ }`
 `{ }` this is a block
