@@ -1,4 +1,4 @@
-
+[slides](https://docs.google.com/presentation/d/1SNaebwauarFSp4HhQUUc4P5p-atF4yrIXDmWDx8RiW8/edit#slide=id.g18410043d65_0_86)
 Primitive data types are store as single values:
 
 ```js
