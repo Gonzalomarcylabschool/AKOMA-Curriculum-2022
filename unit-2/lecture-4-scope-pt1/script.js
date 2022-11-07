@@ -69,3 +69,10 @@
 //   //console.log(w);
 //   z = 4; // will return and error
 //   console.log(z);
+
+ function hello() {
+      var a = 'hello';
+    }
+
+    hello();
+    console.log(a);
