@@ -9,8 +9,6 @@
 
 **[0045 - 00:60]**- | Hoisting |
 
-
-
 ## Scope
 
 What is scope:
@@ -156,6 +154,10 @@ This however, does not mean that it will carry its assigment when it is hoisted.
 the parameters inside of a function will only have a local scope. 
 
 ```js
+	function myFunction(parameter){
+	  
+	  console.log(parameter)
+	}
 	
 ```
 lexical environment
