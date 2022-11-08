@@ -168,6 +168,7 @@ const c = a;
 console.log(a == c);
 ```
 
+# What to go over for the next lecture
 ## Iterating arrays
 How do we iterate over arrays?
 
