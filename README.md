@@ -46,6 +46,9 @@
 ### Unit 1 Project Week
 
 **Project week Roll out** | [Unit 1 Project: HTML/CSS Foundations](https://github.com/Gonzalomarcylabschool/AKOMA-Curriculum-2022/tree/main/unit-1/unit-1-project-week) | [Video](https://us02web.zoom.us/rec/share/gE3yjgdztGsSE6dVOoI17MCO0PD6nvWRDi5uikdW60k9HPuhuRBDkgTx6fE4_7YO.AP6Dp941OOLceHOY)
+
+**Project presentation** | [First block of presentations](https://us02web.zoom.us/rec/share/TzmsPUkQo9EghjJPtKwnWQ_roGubDLfx7b-WBOiZMsxCKzI4YW8VEd94B49sydba.lN39TfUAdZlv8vC_?startTime=1667228769000)| [Second block of presentations](https://us02web.zoom.us/rec/share/hfXOcC8PAVKP8mtC3q27F4Ks9lr34P-jxx_7Nl3_Clyqw4ro5b6EJ62fABQ5Zw.EZh08EwFktjL8V76?startTime=1667235903000)
+
 ### Unit 2 - JavaScript
 
 ### Week 1
@@ -54,6 +57,12 @@
 * **11/2/22** - Variable and Control Flow | [Lecture notes](https://github.com/Gonzalomarcylabschool/AKOMA-Curriculum-2022/tree/main/unit-2/lecture-1-variables-control-flow) | [Video](https://drive.google.com/file/d/1vCJG8zAcdAVqMvyUeLMckv_RAEfvH2Wr/view?usp=share_link)
 * **11/3/22** - Functions | [Lecture notes](https://github.com/Gonzalomarcylabschool/AKOMA-Curriculum-2022/tree/main/unit-2/lecture-2-scope-and-funcitons) | [Video](https://drive.google.com/file/d/1WP9K1D434TT0mWIOHo5kG1j5vX58Zrmx/view?usp=share_link)
 * **11/4/22** - Review | [Lecture notes](https://github.com/Gonzalomarcylabschool/AKOMA-Curriculum-2022/tree/main/unit-2/lecture-3-review) | [Video](https://us02web.zoom.us/rec/play/egMHErxTyQpvPMC025QJXJBWw7soxRPN6mlADWxdb2AhNKklmY3mLi8sTdIZ9krr3nbFBXts5WQ0CjOe.FbB8-sGX2QhncbYt?autoplay=true&startTime=1667569570000) 
+
+### Week 2
+
+* **11/7/22** - Scope | [Lecture notes](https://github.com/Gonzalomarcylabschool/AKOMA-Curriculum-2022/blob/main/unit-2/lecture-4-scope/lecture-notes-b.md) | [Lecture Video](https://us02web.zoom.us/rec/share/9SN7k-lEX88wh39EDqy2yclTqItirO1G7mtjrWI427VZCDMCbXF5vNubrhgXpUD1.sbWFCN0vmYtffoHU?startTime=1667836887000) | [Lab Review](https://us02web.zoom.us/rec/share/2sk6ypOvNwLScdnAz8H4WHbPBuH3agUt5CkU-1eRcko-eq_Y1fNJNAtQIt3zK90.EgYNStxGFUDhKVXr?startTime=1667851452000)
+
+)
 
 ### Unit 3 - Functional Programming (Higher Order Functions)
 ### Unit 4 - Object-Oriented Programming (Classes)

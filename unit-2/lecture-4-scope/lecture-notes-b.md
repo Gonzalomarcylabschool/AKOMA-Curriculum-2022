@@ -1,4 +1,4 @@
-[video TBD]()
+[Video](https://us02web.zoom.us/rec/share/qAuHp5h2EFixaYsyVxFNfRQBCJzRR_XvtvFwXOeFA1sTnXqwront7w_dTFbC9UBa.K5iXV8BFeJBwiO9a?startTime=1667569570000)
 **[00:00 - 00:05]**- | Introduction | The why |
 
 **[00:05 - 00:10]**- | Scope | 
