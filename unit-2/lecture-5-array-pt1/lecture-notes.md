@@ -1,7 +1,7 @@
 [slides](https://docs.google.com/presentation/d/1SNaebwauarFSp4HhQUUc4P5p-atF4yrIXDmWDx8RiW8/edit#slide=id.g18410043d65_0_86)
 
 [video TBD]()
-**[00:00 - 00:05]**- | Introduction | The why |
+**[00:00 - 00:05]**- | Default parameters | The why |
 
 **[00:05 - 00:05]**- | Data Stuctures| 
 
@@ -13,6 +13,15 @@
 
 **[00:45 - 00:60]**- | Iterating arrays|
 
+## Default parameters
+
+```js
+function myFunction(){
+
+}
+
+
+```
 
 ## The why
 Primitive data types are store as single values
@@ -143,8 +152,8 @@ So when we want to
 	cont nums = arr;
 	console.log(nums);
 ```
-![](https://i0.wp.com/javaconceptoftheday.com/wp-content/uploads/2014/11/CopyAnArray.png?w=1300)
-
+![](https://i0.wp.com/javacoQuick reivew: nceptoftheday.com/wp-content/uploads/2014/11/CopyAnArray.png?w=1300)
+Quick reivew: 
 ```js
 	arr[0] = 2;
 	console.log(arr, nums);
@@ -215,14 +224,19 @@ scores.forEach((score) => console.log(score));
 ```
 
 
-
-Well 
-
-
 What are the key methods for manipulating arrays?
+```js
+    array.push();
+    array.pop();
+    array.indexOf();
+    array.join();
+    array.unshift();
+    array.shift();
+    array.latIndexOf();
+    array.slice();
 
-I found this great [article](https://levelup.gitconnected.com/how-to-manipulate-arrays-in-js-like-a-pro-b8f6f5cff5ac) that has alof 
-
+```
+If we look up the documentation of arrays on [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array) we can see all of the methods we can use.  
 
 
 Tomorrow we will go over the following: 

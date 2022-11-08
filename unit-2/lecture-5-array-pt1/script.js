@@ -1,3 +1,37 @@
+function add(par1, par2){
+    return par1 + par2;
+}
+
+console.log(add(1, 2));
+console.log(add(1));
+
+// function addDefault(par1, par2 = 10){
+//     return par1 + par2;
+// }
+// console.log(addDefault(1, 2));
+// console.log(addDefault(1));
+
+// const array = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+// function loop(start, end){
+//     for (let i = start; i < end; i++){
+//        console.log(array[i]);
+//     }
+//     return "done";
+// }
+// console.log(loop(1, 4));
+// console.log(loop(5));
+
+// function loop2(start, end = array.length){
+//     for (let i = start; i < end; i++){
+//        console.log(array[i]);
+//     }
+//     return "done";
+// }
+
+// console.log(loop2(1, 4));
+// console.log(loop2(5));
+
+
 // let csScientistOne = "Vint Cerf"
 
 // let csScientistTwo = "Grace Hopper"
@@ -8,7 +42,7 @@
 
 //****************************************************************
 // const csScientists = ["Vint Cerf", "Grace Hopper", "Alna Turing", "Barbara Liskov"]
-// for(let i =0; i<csScientists.length;i++){
+// for(let i = 0; i < csScientists.length; i++){
 // 	console.log(csScientists[i]);
 // }
 
