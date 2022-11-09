@@ -1,14 +1,13 @@
 **[00:00 - 00:05]**- | Introduction | The why |
 
-**[00:05 - 00:10]**- | methods for manipulating arrays | 
+**[00:05 - 00:20]**- | Iterating arrays | 
 
-**[00:05 - 00:15]**- | arrays |
+**[00:20 - 00:30]**- | methods for manipulating arrays |
 
-**[00:15 - 00:30]**- | Bracket Notation | coding examples
+**[00:30 - 00:45]**- | Rest and spread | 
 
-**[00:30 - 00:45]**- | Passed by reference |
+**[00:45 - 00:60]**- | destructure |
 
-**[00:45 - 00:60]**- | Iterating arrays|
 
 ## Warm up question and quick review.
 ## Iterating arrays
