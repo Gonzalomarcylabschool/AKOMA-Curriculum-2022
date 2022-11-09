@@ -82,11 +82,11 @@ What are the key methods for manipulating arrays?
 If we look up the documentation of arrays on [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array) we can see all of the methods we can use.  
 
 
-## Spread operator
+## Rest and Spread (...)
+
+The the **rest** and **spread** operator is denoted by three dots (...). This allows us to make things os much easier when we code. 
 
 ### What is the purpose of the spread operator? 
-
-The spread operator is denoted by three dots (...). this allows us to and an interable and makes them in to indiviual elements.
 
 ```js
     const array = ["h","e","y"]
@@ -138,8 +138,24 @@ There are so many ways we can use this!!!
 
 What is the purpose of rest parameters? 
 
+lets say that we want to create a function that can take in as many arguments as we want.
+
+```js
+    function sumAll(...args) { // args is the name for the array
+      let sum = 0;
+
+      for (let arg of args) sum += arg;
+
+      return sum;
+    }
+
+    alert( sumAll(1) ); // 1
+    alert( sumAll(1, 2) ); // 3
+    alert( sumAll(1, 2, 3) ); // 6
+```
 How do they differ from the arguments object?
 
+These are based on the arguments that already exist. the rest parameter will let you add as many as you want once the functions has been written
 
 * What does it mean to destructure a JavaScript array?
 
@@ -151,3 +167,15 @@ take an array and make them smaller object elemetns or arrays
     console.log(a);
     console.log(b);
 ```
+
+```js
+
+    function runners(){
+        return ["Sandra", "Ola", "Chi"];
+    }
+
+    var [a, b, c] = runners();
+    console.log(a); //Output: Sandra
+    console.log(b); //Output: Ola
+    console.log(c); //Output: Chi
+ ```
