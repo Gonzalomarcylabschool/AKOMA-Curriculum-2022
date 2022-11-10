@@ -10,7 +10,7 @@
 
 **[00:45 - 00:60]**- | Objects and arrays |
 
-## the why
+## The why
 
 You have learned all of the parts putting together you code. think of all of these topics of lego blocks and objects is the last lego block that we need to learn about so that we can build out legos into amazing code. 
 
