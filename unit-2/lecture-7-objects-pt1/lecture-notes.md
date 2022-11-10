@@ -1,4 +1,4 @@
-#Objects
+# Objects
 
 **[00:00 - 00:05]**- | Introduction | The why |
 
@@ -133,7 +133,7 @@ Now bracket notation doesnt only need to be done in this way.
 	//this will still work 
 	//this is an expression that will evaluate 
 	programmer.x// will this work??
-	
+	//when we want to acces our objects in a more dynamic way (when we dontknow the key name) we can use bracket notation.
 	
 	//dot notation needs the exact name of the key
 	//bracket notation will evaluate whats in the brackets then use that as the name of the key.
