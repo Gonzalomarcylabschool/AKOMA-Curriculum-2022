@@ -1,6 +1,21 @@
-You have learned all of the parts putting together you code. think of all of these topics of lego blocks and 
+#Objects
 
-What is an object and why are they useful?
+**[00:00 - 00:05]**- | Introduction | The why |
+
+**[00:05 - 00:20]**- | What is an object | 
+
+**[00:20 - 00:30]**- | What can we store in Objects |
+
+**[00:30 - 00:45]**- | Access object properties | 
+
+**[00:45 - 00:60]**- | Objects and arrays |
+
+## the why
+
+You have learned all of the parts putting together you code. think of all of these topics of lego blocks and objects is the last lego block that we need to learn about so that we can build out legos into amazing code. 
+
+## What is an object 
+#### why are they useful?
 
 Objects are a type of data Structure. Remeber that data structures is how we store our data.
 
@@ -24,6 +39,9 @@ Object are like description, using properties (the key-value pairs)
 	ram: "16gb" 
 }
 ```
+
+### What can we store in Objects 
+
 What data types can be valid object keys? 
 
 Each key in your JavaScript object must be a string, symbol, or number.
@@ -63,6 +81,8 @@ What data types can be valid object values in JavaScript?
 		hello2: (name) => {console.log(`hello ${name}again!`)}//funciton
 	}
 ```
+##  Access object properties
+
 How do we access object properties? 
 
 When we want to acces a property in an object we need to use dot notation. to use dot notation we need to use the name of the object we want to acces, and the key of the property with a dot in between the two.
@@ -105,6 +125,7 @@ the work around here is to use bracket notation
 	programmer["current project name"]
 ```
 Now bracket notation doesnt only need to be done in this way.
+
 ```js
 	programmer["age"]
 	let x = "firstname"
@@ -122,9 +143,7 @@ Now bracket notation doesnt only need to be done in this way.
 	console.log(computer2.capacity[1]);
 	
 ```
-
-
-
+## Objects and arrays
 What is the relationship between arrays and objects in JavaScript?
 
 arrays are JS object
@@ -152,6 +171,58 @@ object[2]
 Arrays are just object whos keys are only number( but don't forget there is an order to them).
 
 
+## Methods
+how do we delete properties(key-value) from an object
+
+`delete`
+`in`
+`for...in` loop
+`Object.keys`
+`hasOwnProperty`
+`Object.assign`
+
+How do we delete properties(key-value) from an object?
+
+```js
+delete computer2.cpu;
+```
+how do we find somthing inside of an object?
+```js
+	const programmer = {
+	   firstname: "Phil",
+	   age: 21,
+	   backendDeveloper: true,
+	   languages: ["Python", "JavaScript", "Java", "C++"],
+	   "current project name": "The Amazing App"
+	};
+	
+	if ( age in programmer){
+		console.log("the dr. is away")
+	}
+```
+
 What does it mean for a property to be enumerable?
+
+It is one of the properties that was created by the developer, not the inheret properties that objects have. We can check to see if something is enumerble by using `hasOwnProperty`.
+```js
+	programmer.hasOwnProperty("age");
+```
 What are the ways that we can iterate over objects?
+using the method object.keys
+```js
+	console.log(object.keys(programer))
+	//we get an array with the keys
+	
+	let y = Object.keys(programmer);
+	for (let i = 0; i < y.length;i++){
+		let key = y[i]
+		console.log(y[i]);//prints the keys
+		console.log(programmer[key]);//prints the values
+	}
+	for (let a in programmer){
+		console.log(`the key is ${a}`);//
+		console.log(`the value is ${programmer[a]}`);
+	}
+	//if we did this with an array key would be the index value will be the element.
+```
 How can we copy the properties from one object to another?
