@@ -226,3 +226,16 @@ using the method object.keys
 	//if we did this with an array key would be the index value will be the element.
 ```
 How can we copy the properties from one object to another?
+
+```js
+	const target = { a: 1, b: 2 };
+	const source = { b: 4, c: 5 };
+
+	const returnedTarget = Object.assign(target, source);
+
+	console.log(target);
+	// expected output: Object { a: 1, b: 4, c: 5 }
+
+	console.log(returnedTarget === target);
+	// expected output: true
+```
