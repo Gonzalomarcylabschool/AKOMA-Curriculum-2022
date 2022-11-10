@@ -66,17 +66,25 @@ const scores = [22, 54, 101, 92, 43, 33];
 // let desserts2 = ['icecream', 'flan', ...baked_desserts, 'frozen yoghurt'];
 // console.log(desserts2);
 
-function sum(x, y, z, d) {
-    return x + y + z + d;
-  }
+// function sum(x, y, z, d) {
+//     return x + y + z + d;
+//   }
 const numbers = [75, 10, 12, 99, 9];
 
-console.log(sum(...numbers));
+// console.log(sum(75, 10, 12, 99, 9, 10, 123,  15, 20));
 
 
 
 //************************************************************************************
 //rest Parameter
+// function sumAll(...args) { // args is the name for the array
+//       let sum = 0;
+
+//       for (let arg of args) sum += arg;
+//         console.log(arguments[1]);
+//       return sum;
+//     }
+// console.log(sumAll(1, 2, 3 , 4, ...numbers));
 
 //************************************************************************************
 
@@ -84,12 +92,28 @@ console.log(sum(...numbers));
 // const alpha = ["a","b", "c", "d", "e"];
 // let a = nums[0];
 // let b = nums[1];
-// const [a, b] = nums;
-// const [a, b, c] = nums;
-// const [a,,, d] = nums; //lets what happens when we change the ammount of commas.
+// const [,,,,...a] = nums;
+// const [a, b, c, d] = nums;
+// const [a,,,b] = nums; //lets what happens when we change the ammount of commas.
 // const [a,, c, ...all] = nums;
+// console.log(first);
+// console.log(second);
+
 // console.log(a);
 // console.log(b);
 // console.log(c);
 // console.log(d);
 // console.log(all);
+
+
+ function runners(){
+        return ["Sandra", "Ola", "Chi", "jason", "amber", "sodiq", "vin"];
+    }
+
+    let [t, g, l] = runners();
+    console.log(runners());
+    console.log(t); //Output: Sandra
+    console.log(g); //Output: Ola
+    console.log(l); //Output: Chi
+    
+    
