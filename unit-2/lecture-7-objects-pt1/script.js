@@ -22,9 +22,11 @@
 // 	capacity : ["1TB", "500GB", "500GB"], // array
 // 	ram: 16, // number
 // 	graphicsCard: {gpu1: "3090", gpu2:"3070ti"},//more objects
-// 	hello: () => console.log("hello"),//function
+// 	hello: function(){console.log("hello")},//function
 // 	hello2: (name) => {console.log(`hello ${name}again!`)}//funciton
 // }
+
+
 // computer2.greet();
 // // using dot notation
 // console.log(computer.cpu);
@@ -48,17 +50,18 @@
 // }
 
 // // console.log(character);
-const programmer = {
-	   firstname: "Phil",
-	   age: 21,
-	   backendDeveloper: true,
-	   languages: ["Python", "JavaScript", "Java", "C++"],
-	   "current project name": "The Amazing App"
-	};
-	// let x= "age";
-	// if ( x in programmer){
-	// 	console.log("you are young")
-	// }
+// const programmer = {
+// 	   firstname: "Phil",
+// 	   age: 21,
+// 	   backendDeveloper: true,
+// 	   languages: ["Python", "JavaScript", "Java", "C++"],
+// 	   "current project name": "The Amazing App",
+// 	  a1: true
+// 	};
+// 	let x = "age";
+// 	if ( x in programmer){
+// 		console.log("you are young")
+// 	}
 	// let y = Object.keys(programmer);
 	// for (let i = 0; i < y.length;i++){
 	// 	let key = y[i]
@@ -66,7 +69,23 @@ const programmer = {
 	// 	console.log(programmer[key]);
 	// }
 	
-	for (let a in programmer){
-		console.log(`the key is ${a}`);//
-		console.log(`the value is ${programmer[a]}`);
-	}
+	// for (let a in programmer){
+	// 	console.log(`the key is ${a}`);//
+	// 	console.log(`the value is ${programmer[a]}`);
+	// }
+	
+	// const shoppingCart = {
+ //      1: "apple",
+ //      2: "oranges"
+ //   };
+ 
+ let array = ["Vincent", "Oshawn", "Koumba"];
+array[0];
+array[1];
+array[2];
+const object = {
+	0: "Vincent", 
+	1: "Oshawn", 
+	2: "Koumba"
+	
+}
