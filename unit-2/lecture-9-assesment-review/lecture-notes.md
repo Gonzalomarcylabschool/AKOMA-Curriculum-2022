@@ -49,7 +49,85 @@ Unlike `var`, `let` and `const` cannot be redeclared nor hoisted. This is thanks
  
 
 ## spread operator, rest parameter, `arguments` objects.
+The the **spread** operator is denoted by three dots (...). 
 
+### So how is it used with arrays?
+
+There are so many ways we can use this!!!
+
+#### copy arrays
+
+```js
+    let nums;
+    const numArray = [1, 2, 3, 4, 5, 6]
+    nums = [...numArray];
+    console.log(numArray);
+    console.log(nums);
+```
+
+ #### Inserting the elements of one array into another
+
+```js
+    const baked_desserts = ['cake', 'cookie', 'donut'];
+    const desserts = ['icecream', 'flan', 'frozen yoghurt', ...baked_desserts];
+    console.log(desserts);
+    //Appending baked_desserts after flan
+    const desserts2 = ['icecream', 'flan', ...baked_desserts, 'frozen yoghurt'];
+    console.log(desserts2);
+```
+
+#### Array to arguments
+
+```js
+    function sum(x, y, z) {
+        return x + y + z;
+    }
+    const numbers = [1, 2, 3];
+    console.log(sum(...numbers));
+
+
+    const minNum = [1,2,300,-1,0,-100];
+    console.log(Math.min(...minNum));
+
+    
+```
+## rest parameters
+
+What is the purpose of rest parameters? 
+
+lets say that we want to create a function that can take in as many arguments as we want.
+
+```js
+    function sumAll(...args) { // args is the name for the array
+      let sum = 0;
+
+      for (let arg of args) sum += arg;
+
+      return sum;
+    }
+
+    alert( sumAll(1) ); // 1
+    alert( sumAll(1, 2) ); // 3
+    alert( sumAll(1, 2, 3) ); // 6
+```
+### `arguments` objects
+
+```js
+function argFunc(x, y, z){
+	console.log(arguments);
+}
+
+function argFuncNoArg(){
+  
+  console.log(arguments);
+}
+
+argFunc(1, 2, 3)
+argFuncNoArg(4, 5, 6)
+
+
+//argFunc(1, 2, 3, 4, 5, 6)
+```
 ## passed by value vs passed by refrences.
 
 Primitive data types are passed by value, meaning that the values are store in a single space in moemory. When they are copied to a new variables, they are copied from their location in memory and stored in their own space in memory from the original variable to the new variable. When we change the value to the orginal variable, it will not change the value in the variable where we copied its original value.
@@ -80,7 +158,38 @@ obj.key = "values2";
 console.log(obj2)// => { key: "values2" }
 obj2.key = "this is the new value."
 console.log(obj)// => { key: "this is the new value" }
-##
+```
+## Mutable Vs Unmutable and Reassignments
+
+A mutable value is one that can be changed without creating an entirely new value. In JavaScript, objects and arrays are mutable by default, but primitive values are not — once a primitive value is created, it cannot be changed, although the variable that holds it may be reassigned.
+
+```js
+
+//Mutating
+let obj = {
+	key: "value1"
+}
+console.log(obj.key)
+
+obj.key = "value"
+console.log(obj.key)
+
+let arr = [1, 2, 3]
+console.log(arr);
+arr[1] = 5;
+console.log(arr);
+
+//unmutable
+1;// this value is one and will always be one and it will never change making it unmutable.
+let a = 1; //make a space in memory to store the value of 1, which can still never change. 
+// reassignment
+a = 2;//when we reassign a variable a new value, 1 never changed it will always be 1, the variable where it was store removed it and now is storing a new value.
+
+//object reassignments
+
+
+arr = obj;//
+console.log(arr);
+```
 
 ## Types Values Operators
-
