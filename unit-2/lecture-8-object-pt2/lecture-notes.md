@@ -158,10 +158,15 @@ Arrays are just object whos keys are only number( but don't forget there is an o
 how do we delete properties(key-value) from an object
 
 `delete`
+
 `in`
+
 `hasOwnProperty`
+
 `for...in` loop
+
 `Object.keys`
+
 `Object.assign`
 
 How do we delete properties(key-value) from an object?

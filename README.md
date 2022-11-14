@@ -61,8 +61,14 @@
 ### Week 2
 
 * **11/7/22** - Scope | [Lecture notes](https://github.com/Gonzalomarcylabschool/AKOMA-Curriculum-2022/blob/main/unit-2/lecture-4-scope/lecture-notes-b.md) | [Lecture Video](https://us02web.zoom.us/rec/share/9SN7k-lEX88wh39EDqy2yclTqItirO1G7mtjrWI427VZCDMCbXF5vNubrhgXpUD1.sbWFCN0vmYtffoHU?startTime=1667836887000) | [Lab Review](https://us02web.zoom.us/rec/share/2sk6ypOvNwLScdnAz8H4WHbPBuH3agUt5CkU-1eRcko-eq_Y1fNJNAtQIt3zK90.EgYNStxGFUDhKVXr?startTime=1667851452000)
+* **11/8/22** - Arrays pt1 | [Lecture notes](https://github.com/Gonzalomarcylabschool/AKOMA-Curriculum-2022/tree/main/unit-2/lecture-5-array-pt1) | [Video]() | 
+* **11/9/22** - Arrays pt2 | [Lecture notes](https://github.com/Gonzalomarcylabschool/AKOMA-Curriculum-2022/tree/main/unit-2/lecture-6-array-pt2arrays) | [Video](https://drive.google.com/file/d/1LbaqJgTj0CECfMmJywjvgpN0E4PVSq8X/view?usp=share_link) | [Lab Review]()
+* **11/10/22** - Objects pt1 | [Lecture notes](https://github.com/Gonzalomarcylabschool/AKOMA-Curriculum-2022/tree/main/unit-2/lecture-7-objects-pt1) | [Video](https://us02web.zoom.us/rec/share/SMVrCyED5DhHX5BepII22EWEnfRvE9SFzs1e4EvSBJTfTdKdDibiKCW-P0c-UfbQ.ezUCaAcK9fM0s840) |
 
-)
+### Week 3
+
+* **11/14/22** - Objects pt2 | [Lecture notes](https://github.com/Gonzalomarcylabschool/AKOMA-Curriculum-2022/tree/main/unit-2/lecture-8-object-pt2) | [Video](https://us02web.zoom.us/rec/share/AY6P0rE31fBJELhnQ0eQiJErpBtxpT5IBe7NaIw60BEKQoZ8sM5abzBHAyhYsrY.UazJ7OSfP7e6BUGW) | [Lab Review](https://us02web.zoom.us/rec/share/v1bz-r6Tkpe4_mcd6hpjGjsouP5xgYQSLFxUgp-ZRgys0X5S5EGOBJoIIGS_tKfx.57hRhQbhFPT0r-UW)
+
 
 ### Unit 3 - Functional Programming (Higher Order Functions)
 ### Unit 4 - Object-Oriented Programming (Classes)

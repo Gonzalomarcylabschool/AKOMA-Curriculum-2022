@@ -1,6 +1,6 @@
 # Unit 2 Review 
 
-## Hoisting
+## Hoisting 
 
 JavaScript Hoisting refers to the process whereby the interpreter appears to move the declaration of functions, variables or classes to the top of their scope, prior to execution of the code.
 
@@ -33,7 +33,7 @@ Any variables declared with `var` would be hoisted as well, meaning the variable
     console.log(x); // will print 5.
     x = 4; //the variable has been reassigned and will  print 4.
   ```
-## Variable keywords
+## Variable keywords and Scope
 
 Before ES6, `var` was the only keyword avaible to declare variables in JavaScript. Any variables declared with `var` would be hoisted, meaning the variable is defined through out its scope. This happens because of the two phases JavaScript runs in.: creation (compile) phase and the execution phase. During the creation phase the code will be compiled and variable declared with the `var` keyword in memory to be able to access them in the code. This way during the execution phase It knows exactly where to refrence them. 
 
@@ -47,6 +47,30 @@ Unlike `var`, `let` and `const` cannot be redeclared nor hoisted. This is thanks
 
  `const` is effected by block scope just like the `let` keyword. The main diffrences between `const` and `let` its abilty to be reassigned.  
  
+ ### global, function, and block scope
+
+What is global, function, and block scoping?
+
+lets start from small to largest
+```js
+    //this is the area of the global scope
+    let a = 1;
+    
+    function myFunction(){
+        //this is the function scope
+        let b = 2; 
+        if (true){
+            //this is a block scope
+            let c = 3;
+        }
+        {
+        	//anything in here would also be blockscope
+        	let d = 15;
+        }
+    }
+
+```
+**NOTE**If there are no function inside of the code and only blocks the entire file would be consided the function.
 
 ## spread operator, rest parameter, `arguments` objects.
 The the **spread** operator is denoted by three dots (...). 
