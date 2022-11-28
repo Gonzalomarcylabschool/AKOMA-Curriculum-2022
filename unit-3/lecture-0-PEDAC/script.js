@@ -7,14 +7,52 @@ If the phone number is 11 digits and the first number is not 1, then it is a bad
 If the phone number is is more than 11 digits, assume that it is a bad number.
 For bad numbers, just a return a string of 10 0s.
 
-P
+P 
+input is a string
+ouput is a string
+
+1. valid US number(s) return the number(s)
+     10 or 11 digits(only if 1 is the first number and cut the 1)
+3. if not valid number return "0000000000"
+    negative numbers
+    more than 11
+    less than 10
+    its 11 and the first number is not 1
+    
+4. remove any special charaters
 
 E
 
+cleanNumbers('2342342344') => '2342342344'
+cleanNumbers('12342342344') => '2342342344'
+cleanNumbers('(234)-234-2344') => '2342342344'
+cleanNumbers('+1(234)-234-2344') => '2342342344'
+
+Edge cases
+cleanNumbers() => "0000000000"
+cleanNumbers('+1(234)-234') => '000000000'
+cleanNumbers('19292348871x8322');
+cleanNumbers(''); => '000000000'
+
 D
+Strings
 
 A
+1. variable to store the numbers after we strip any characters that is not a number. (use regex)
+2. check the length of the string is < 10 or > 11 => "0000000000"
+
+3. check the string if its === 11 and the first digit is != 1  => "0000000000"
+
+4. return the string 
+
+
+
 
 C
 
 */
+
+function cleanNumbers(str) {
+   let filterNum = str.replace(/[^0-9]/g, "");
+   
+}
