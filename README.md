@@ -71,6 +71,20 @@
 
 
 ### Unit 3 - Functional Programming (Higher Order Functions)
+
+### Week 1
+
+* **11/28/22** - PEDAC | [Lecture files and notes](https://github.com/Gonzalomarcylabschool/AKOMA-Curriculum-2022/tree/main/unit-3/lecture-0-PEDAC) | [Lecture Video](https://drive.google.com/file/d/10l6z412141_9FT9zYEp-PDzwNmXiBGUm/view?usp=share_link) |[Lab Review]() | [Lab Review Video]()
+* Break
+* **11/30/22** - RegEx pt1 | [Lecture files and notes](https://github.com/Gonzalomarcylabschool/AKOMA-Curriculum-2022/tree/main/unit-3/lecture-1-RegEx-pt1) | [Lecture Video]() | 
+* **12/01/22** - RegEx pt2 | [Lecture files and notes](https://github.com/Gonzalomarcylabschool/AKOMA-Curriculum-2022/tree/main/unit-3/lecture-2-RegEx-pt2) | [Lecture Video]() |
+* **12/02/22** - Review | [Lecture files and notes]() | [Lecture Video]() |
+
+### Week 2
+* **12/05/22** - Functional Abstraction pt1 | [Lecture files and notes]() | [Lecture Video]() | [Lab Review]() | [Lab Review Video]()
+* **12/06/22** - Functional Abstraction pt2 | [Lecture files and notes]() | [Lecture Video]() |
+* **12/07/22** - Review | [Lecture notes]() | [Lecture files and notes]() | [Lab Review]() | [Lab Review Video]()
+
 ### Unit 4 - Object-Oriented Programming (Classes)
 ### Unit 5 - The Document Object Model (DOM)
 ### Unit 6 - Asynchronous JavaScript
