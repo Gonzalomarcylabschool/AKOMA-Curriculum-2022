@@ -25,7 +25,7 @@ This is why we need to take a structured approach to solving complex problems.
 
 ### Data Structure
 
-A data structure is a data organization, management, and storage format that is usually chosen for efficient access to data. There are several types of data structures in JavaScript. We know about objects and arrays which are built into JavaScript, but here are 8 other data structure you should know about that you can build yourself: 
+A data structure is a data organization, management, and storage format that is usually chosen for efficient access to data. There are several types of data structures in JavaScript. We know about objects and arrays which are built into JavaScript, but here are 8 other data structure you should know you can build yourself: 
 
 * Stack
 * Queue
@@ -60,7 +60,7 @@ Non-trivial edge cases can result in the failure of an object that is being engi
 ## Structured Approach
 What is the benefit of taking a structured approach to solving complex problems?
 
-There are many was of solving coding problems but a proven method of doing so is taking a sturctred approach.
+There are many ways of solving coding problems but a proven method of doing so is taking a sturctred approach.
 When you are trying to solve a problem you should be thinking of these questions:
 
 1. Did you understand the problem fully?
