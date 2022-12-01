@@ -33,6 +33,7 @@ cleanNumbers() => "0000000000"
 cleanNumbers('+1(234)-234') => '000000000'
 cleanNumbers('19292348871x8322');
 cleanNumbers(''); => '000000000'
+cleanNumbers("whatever") +> "0000000000"
 
 D
 Strings
@@ -45,14 +46,24 @@ A
 
 4. return the string 
 
-
-
-
 C
 
 */
 
 function cleanNumbers(str) {
-   let filterNum = str.replace(/[^0-9]/g, "");
-   
+   let filterNum = str.replace(/[\D]/g, "");
+   if (filterNum.length === 11 && filterNum[0] !== "1"){
+       return "0000000000";
+   }
+   else if (filterNum.length < 10 || filterNum.length > 11 ){
+       return "0000000000";
+   } else {
+       if(filterNum.length === 11){
+           return filterNum.slice(1, filterNum.length);
+       }
+       else{
+           return filterNum;
+       }
+   }
 }
+console.log(cleanNumbers('12342342344'));
