@@ -1,15 +1,5 @@
 # Function Abstraction
 
-**[00:00 - 00:05]**- | Introduction | The why | Quick Review |
-
-**[00:05 - 00:10]**- | Functions in JavaScript| 
-
-**[00:10 - 00:30]**- | Structured Approach | PEDAC |
-
-**[00:30 - 00:60]**- | Pratice PEDAC | 
-
-## The Why
-Before we begin lets do a quick review!
 
 How do we write a function? How do we invoke a function
 
