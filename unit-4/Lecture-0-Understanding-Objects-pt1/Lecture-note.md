@@ -74,6 +74,24 @@ The behavior is what the program can do.
 Which part of the object do you think is the behavior?
 THE METHODS!!!
 
+```js
+const person = {
+	name: 'Gonzalo',//this is state
+	age: 34,//this is state
+	sayHello: function() {// this is the behavior
+		console.log('Hello')
+	}
+}
+
+const shoppingCart = {
+        amountOfItems: 5,//this is state
+        cost: 1.99,// this is also state
+        total(){ // this is a behavior. 
+            return this.amountOfItems * this.cost;
+        }
+    }
+```
+
 By keeping track of the data and running functions altogether, we are doing what is known as *Encapsulation*
 
 ## `this` keyword 
@@ -103,6 +121,39 @@ We actually need to change it to the following:
 	console.log(`Hello ${name}. My name is ${this.name}`)
 ```
 
+```js
+    const shoppingCart = {
+        amountOfItems: 5,
+        cost: 1.99,
+        total(){
+            return this.amountOfItems * this.cost;
+        }
+    }
+```
+## Factory Functions
+
+A factory function returns a new object with all of the properties set in the function. This allows us to create multiple ojects that have all of the same properties again and again.
+
+```js
+function makePerson(name, age){
+  return{
+    name: name,
+    age: age,
+  }
+}
+const gonzalo = makePerson('gonzalo', 34);
+```
+
+Here we are going to make a dynamic 
+```js
+    function shoppingCart(item,  price) {
+        amountOfItems: item,
+        cost: price,
+      	total(){
+            return this.amountOfItems * this.cost;
+        }
+    }
+```
 
 ## Essential Questions
 
@@ -112,8 +163,8 @@ What is encapsulation? Why do we use it? How do objects enable it?
 
 How do objects encapsulate state? How do they encapsulate behavior?
 
-What are private variables? What is the JavaScript naming convention for private variables?
-
 What are factory functions and why are they useful?
 
 What are examples of how we can create factory functions?
+
+What are private variables? What is the JavaScript naming convention for private variables?
