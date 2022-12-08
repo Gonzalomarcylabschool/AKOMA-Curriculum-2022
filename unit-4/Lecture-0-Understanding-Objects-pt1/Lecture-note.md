@@ -149,6 +149,7 @@ Here we are going to make a dynamic
     function shoppingCart(item,  price) {
         amountOfItems: item,
         cost: price,
+		_storeName: 'shoperight'
       	total(){
             return this.amountOfItems * this.cost;
         }
