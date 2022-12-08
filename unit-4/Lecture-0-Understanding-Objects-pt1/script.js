@@ -15,7 +15,7 @@ const person = {
 	name: 'Gonzalo',
 	age: 34,
 	sayHello: function() {
-		console.log(`Hello`)
+		console.log(`Hello `)
 	}
 }
 
@@ -34,3 +34,11 @@ let newWord = word.replace('p', 'd') // returns 'dark'
 // 		console.log(`Hello ${name}.`)
 // 	}
 // }
+
+const shoppingCart = {
+	amountOfItems: 5,//this is state
+	cost: 1.99,// this is also state
+	total() {
+		return this.amountOfItems * this.cost;
+	}
+}
