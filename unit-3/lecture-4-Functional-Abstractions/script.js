@@ -17,12 +17,12 @@
 //     return "Student";
 // }
   
-// function greet(user){
-//     console.log("Welcome", user());    
-// }
-// function number(){
-//     return 1234;
-// }
+function greet(user){
+    console.log("Welcome", user());    
+}
+function number(){
+    return 1234;
+}
     
 // // Prints "Welcome Teacher"
 // const message0 = greet(number)

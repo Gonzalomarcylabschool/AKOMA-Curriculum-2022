@@ -1,6 +1,6 @@
 # Functional Abstraction pt 2
 
-##Higher-Order Functions(methods)
+## Higher-Order Functions(methods)
 
 A powerful concept of functional programming is higher-order functions. They are a great way to abstract out functionality and write better code.
 
