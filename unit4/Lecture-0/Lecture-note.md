@@ -29,8 +29,8 @@ But there is another programming paradigm that we will be diving into this unit:
 ## What is an Object:
 
 Lets practice first:
-* Lets make an object named person. 
-* The object must have at least 2 property.
+* Let's make an object named `person`. 
+* The object must have at least two properties.
 	* These two properties are known as our data properties.
 * Lets add a function that says hello.
 
@@ -43,7 +43,6 @@ const person = {
 	}
 }
 ```
-
 The function that we have added here is called a method!
 
 ## Function vs Method
@@ -65,7 +64,7 @@ Although all methods are functions, not all functions are methods. A *method* is
 
 ## State, Behavior and Encapsulation
 
-If we want to code in away that is data oriented OOP is the best way to go. We no longer want procces data we want to also keep track of it and do things with. This is where *state* and *behavior* come in.
+If we want to code in a data-oriented way, OOP is the best way to go. We no longer want to process data; we also want to keep track of it and do things with it. This is where *state* and *behavior* come in.
  
 The state is the part of the program that keeps track of the data.
 How does it keep track of data:
@@ -75,5 +74,46 @@ The behavior is what the program can do.
 Which part of the object do you think is the behavior?
 THE METHODS!!!
 
-By keeping track of the data and doing things all together we are doing what is knonw as *Encapsulation*
+By keeping track of the data and running functions altogether, we are doing what is known as *Encapsulation*
 
+## `this` keyword 
+
+We won't go into the detail of `this` but I will show you how it works: 
+
+```js
+const person = {
+	name: 'Gonzalo',
+	age: 34,
+	sayHello: function(name = 'friend') {
+		console.log(`Hello ${name}. My name is Gonzalo`)
+	}
+}
+
+```
+So we just hard-coded a more formal greeting. We need to make this more dynamic because in the real world, the value of name might change
+
+```js
+	console.log(`Hello ${name}. My name is ${name}`)
+	//Why will this not work?
+```
+
+We actually need to change it to the following:
+
+```js
+	console.log(`Hello ${name}. My name is ${this.name}`)
+```
+
+
+## Essential Questions
+
+Let's take a moment to answer the essential question. 
+
+What is encapsulation? Why do we use it? How do objects enable it?
+
+How do objects encapsulate state? How do they encapsulate behavior?
+
+What are private variables? What is the JavaScript naming convention for private variables?
+
+What are factory functions and why are they useful?
+
+What are examples of how we can create factory functions?
