@@ -1,3 +1,16 @@
+function myFuction0(x) {
+	myFuction1(x);
+}
+
+function myFuction1(y) {
+	myFuction2(y + 1)
+}
+
+function myFuction2(z) {
+	console.log(z * 2)
+}
+
+
 const person = {
 	name: 'Gonzalo',
 	age: 34,
@@ -6,13 +19,13 @@ const person = {
 	}
 }
 
-function sayHello(name = 'friend'){
+function sayHello(name = 'friend') {
 	console.log(`Hello ${name}.`)
 }
 
-sayHello('Saida')// outputs: 'Hello Saida'
+sayHello('Saida') // outputs: 'Hello Saida'
 let word = 'park'
-let newWord = word.replace('p','d')// returns 'dark'
+let newWord = word.replace('p', 'd') // returns 'dark'
 
 // const person = {
 // 	name: 'Gonzalo',
