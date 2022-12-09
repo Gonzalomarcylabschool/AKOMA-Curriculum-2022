@@ -8,10 +8,11 @@ function makeAmazonCart(userAccount) {
         },
         removeItem(itemName) {
             const indexToRemove = this.items.findIndex(item => item.itemName === itemName);
-            if (indexToRemove >= 0) {
-                if(target !== -1){ 
-                this.contacts.splice(target,1)
+            if (indexToRemove !== -1) {
+                this.items.splice(indexToRemove,1)
+                return `${itemName} has been removed.`
             }
+            
         },
         getTotal() {
             return this.items.reduce((total, item) => total + item.price, 0)
@@ -27,16 +28,16 @@ function makeAmazonCart(userAccount) {
 }
 
 const cart = makeAmazonCart("Gonzalo");
-console.log(cart);
+// console.log(cart);
 cart.addItem("Mechanical Keyboard", 26.99);
 cart.addItem("Large Mouse Pad", 10);
 cart.addItem("Gaming Mouse", 8.5);
 cart.addItem("Office chair", 160);
 cart.addItem("Clock", 10);
-
-console.log(cart.items);
-console.log(cart.getTotal());
-
-cart.removeItem("Clock")
-cart.removeMostExpensiveItem()
 console.log(cart);
+// console.log(cart.getTotal());
+
+cart.removeItem("Office chair");
+console.log(cart.items);
+// cart.removeMostExpensiveItem()
+// console.log(cart);
