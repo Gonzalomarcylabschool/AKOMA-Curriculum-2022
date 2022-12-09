@@ -14,23 +14,22 @@ Lets go over what Private variable are.
 
 In general, private variables are those variables that can be visible and accessible only within the class they belong to and not outside the class or any other class. 
 ```js
-class Rectangle {
-  constructor(height, width) {
-    this.height = height;
-    this.width = width;
+class Animal {
+  constructor(legs, width) {
+    this.legs = legs;
   }
 }
 
-class  Square {
-  constructor(height, width) {
-    this.height = height;
-    this.width = width;
+class  Dog {
+  constructor(dogBreed) {
+    this.legs = Animal.legs;
+    this._dogBreed = dogBreed
   }
 }
-class Circle {
-  constructor(height, width) {
-    this.height = height;
-    this.width = width;
+class Cat {
+  constructor(catBreed) {
+    this.legs = Animal.legs;
+    this._catBreed = 
   }
 }
 ```
