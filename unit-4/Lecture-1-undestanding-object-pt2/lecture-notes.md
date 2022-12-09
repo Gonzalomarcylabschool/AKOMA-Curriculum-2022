@@ -2,10 +2,36 @@ Let's take a moment to answer the essential question. To check our understanding
 
 What is encapsulation? Why do we use it? How do objects enable it?
 
+When we hold in an object the state and behavior that is realted to eachother. 
+```js
+const computer = {
+    ram: 16,//this is a state
+    space: 256,
+    cpu: 'intel',
+     
+}
+const perif = {
+    mousePad: true//this is state
+}
+``` 
+
 How do objects encapsulate state? How do they encapsulate behavior?
 
-What are factory functions and why are they useful?
 
+What are factory functions and why are they useful?
+```js
+function makeComputer(ram, space, cpu){
+    return {
+        ram,
+        space, 
+        cpu,
+        start(){
+            console.log("computer has started!")
+        }
+    }
+}
+const computer1 = makeComputer(8, 512, 'AMD');
+```
 What are examples of how we can create factory functions?
 
 ## Private Variables
@@ -15,7 +41,7 @@ Lets go over what Private variable are.
 In general, private variables are those variables that can be visible and accessible only within the class they belong to and not outside the class or any other class. 
 ```js
 class Animal {
-  constructor(legs, width) {
+  constructor(legs) {
     this.legs = legs;
   }
 }
@@ -29,7 +55,7 @@ class  Dog {
 class Cat {
   constructor(catBreed) {
     this.legs = Animal.legs;
-    this._catBreed = 
+    this._catBreed = catBreed
   }
 }
 ```
