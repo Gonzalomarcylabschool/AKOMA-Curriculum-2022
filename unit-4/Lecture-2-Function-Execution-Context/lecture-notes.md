@@ -1,9 +1,10 @@
 # Execution Context
 
+When you run any JavaScript, a special environment is created to handle the transformation & execution of code. This is called the execution context. It contains the currently running code and everything that aids in its execution(variables, values etc...).
+
+There is a global execution context as well as a function execution context for every function invoked.
+
 ## Global Execution Context
-When you run any JavaScript, a special environment is created to handle the transformation & execution of code. This is called the execution context. It contains the currently running code and everything that aids in its execution
-There is a global execution context as well as a function execution context for
-every function invoked
 
 Memory Creation Phase (compile phase):
 1. Create the global object (browser = window, Node.js = global)
@@ -20,7 +21,7 @@ let y = 2;// => undefined
 function myFunction() { // The whole function is stored.
     console.log('this is a function'); // will not run until the function is invoked in the execution phase.
 }
-myFunction(); 
+myFunction(); //does not run yet.
 ```
 Execution Phase:
 1. Execute code line by line
@@ -38,8 +39,21 @@ function myFunction() { // The whole function is stored.
 myFunction(); // will run durring this phase.
 ```
 ## Function Execution Context
+```js
+function add(num1, num2) { 
+    console.log('this is a function'); 
+}
+var aaaa = add(aa, aaa);
+var aaaaa = add(5, 10);
+```
+## `this`
 
+In the last lecture we went over how we can use `this` but we didn't go indepth why it works, and what execution context has to to do with `this`.
 
+Quick reminder of what it does:
+```js
+    
+```
 
 ## Essential Questions
 * When and how is the binding of `this` determined?
