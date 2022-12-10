@@ -16,3 +16,7 @@ myFunction();
 // var aaaaa = add(5, 10);
 
 console.log(this)
+
+function hello(){
+    console.log(this);
+}
