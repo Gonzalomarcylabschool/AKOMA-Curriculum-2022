@@ -6,15 +6,15 @@ In short we are talking about how we are running this code.
 
 There is a global execution context as well as a function execution context for every function invoked.
 
+## Scope Review
 To futher understand this we need to review scope.
 What is Block scope?
-
+What is Function Scope?
 What about gloabl scope?
 
 ## Global Object
 
 When JS runs in node or a browser, it creates a global object that stores all of the inherent properties of JS. In a browser it create the `window` object that represents the browser window and cotains the JS properties. In node its just the `global` object. We will see examples of this as we talk about Execution Context. 
-
 
 ## Global Execution Context
 
@@ -96,6 +96,15 @@ function hello(){
 ```
 When we invoke a **function** `this === window`
 when we inkoke a **method** `this === currentObject`
+
+## Strict mode
+
+JavaScript's strict mode is a way to opt in to a restricted variant of JavaScript, thereby implicitly opting-out of "sloppy mode". Strict mode isn't just a subset: it intentionally has different semantics from normal code.
+Strict mode makes several changes to normal JavaScript semantics: 
+
+1. Eliminates some JavaScript silent errors by changing them to throw errors.
+2. Fixes mistakes that make it difficult for JavaScript engines to perform optimizations: strict mode code can  sometimes be made to run faster than identical code that's not strict mode.
+3. Prohibits some syntax likely to be defined in future versions of ECMAScript.
 
 ## Essential Questions
 * When and how is the binding of `this` determined?
