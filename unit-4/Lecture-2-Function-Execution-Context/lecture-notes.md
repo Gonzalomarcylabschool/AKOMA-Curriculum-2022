@@ -1,13 +1,26 @@
 # Execution Context
 
-When you run any JavaScript, a special environment is created to handle the transformation & execution of code. This is called the execution context. It contains the currently running code and everything that aids in its execution(variables, values etc...).
+When you run any JavaScript, a special environment is created to handle the transformation & execution of code. This is called the execution context. It contains the currently running code and everything that aids in its execution(variables, values etc...). 
+
+In short we are talking about how we are running this code. 
 
 There is a global execution context as well as a function execution context for every function invoked.
+
+To futher understand this we need to review scope.
+What is Block scope?
+
+What about gloabl scope?
+
+## Global Object
+
+When JS runs in node or a browser, it creates a global object that stores all of the inherent properties of JS. In a browser it create the `window` object that represents the browser window and cotains the JS properties. In node its just the `global` object. We will see examples of this as we talk about Execution Context. 
+
 
 ## Global Execution Context
 
 Memory Creation Phase (compile phase):
 1. Create the global object (browser = window, Node.js = global)
+    * We'll talk more about this later. 
 2. Create the 'this' object and bind it to the global object
 3. Setup memory heap for storing variables and function references as key value pairs in the global object.
 4. Store functions and variables in global execution context and set the varaibles to "undefined"
@@ -40,7 +53,8 @@ myFunction(); // will run durring this phase.
 ```
 ## Function Execution Context
 
-Like global exicution we are going to have 2 phases. 
+Function Execution Context revolves around the JavaScript engine executing function during the execution phase of the global execution context. Like global execution context we are going to have 2 phases Memoty creation then execution. 
+
 Memory Creation Phase: 
 1. the is space allocated in memory for num1 and num2. 
 Execution Phase:
@@ -72,8 +86,16 @@ Quick reminder of what it does:
 In the case of this object what is `this` refering to?
 It refers to the object that it is currently in, pets in this case.
 
-What happens if were are not in side of an object and we use `this`? lets run it and see what happens.
+What happens if were are not inside of an object and we use `this`? lets run it and see what happens.
 
+```js
+function hello(){
+    console.log(this);
+}
+
+```
+When we invoke a **function** `this === window`
+when we inkoke a **method** `this === currentObject`
 
 ## Essential Questions
 * When and how is the binding of `this` determined?
