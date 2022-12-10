@@ -29,9 +29,9 @@ Execution Phase:
 
 ```js
 // name, x, and y will be stored in the global object and not assign the values during this phase.
-let name = 'Gonzalo';// => Gonzalo
-let x = 1;// => 1
-let y = 2;// => 2
+var a = 'Gonzalo';// => Gonzalo
+var aa = 1;// => 1
+var aaa = 2;// => 2
 // The function myFunction() was already stored.
 function myFunction() { // The whole function is stored.
     console.log('this is a function');
@@ -39,21 +39,41 @@ function myFunction() { // The whole function is stored.
 myFunction(); // will run durring this phase.
 ```
 ## Function Execution Context
+
+Like global exicution we are going to have 2 phases. 
+Memory Creation Phase: 
+1. the is space allocated in memory for num1 and num2. 
+Execution Phase:
+num1 and num2 are assigned their values 
+the calculation is done and returned.
+and then it's ran again!
 ```js
 function add(num1, num2) { 
-    console.log('this is a function'); 
+    return num1 + num2; 
 }
 var aaaa = add(aa, aaa);
 var aaaaa = add(5, 10);
 ```
+
 ## `this`
 
 In the last lecture we went over how we can use `this` but we didn't go indepth why it works, and what execution context has to to do with `this`.
 
 Quick reminder of what it does:
 ```js
-    
+    const pet = {
+        type: 'dog',
+        sound: 'woof',
+        makeSound(){
+            console.log(`The ${this.type} make a ${this.sound}.`)
+        }
+    }
 ```
+In the case of this object what is `this` refering to?
+It refers to the object that it is currently in, pets in this case.
+
+What happens if were are not in side of an object and we use `this`? lets run it and see what happens.
+
 
 ## Essential Questions
 * When and how is the binding of `this` determined?

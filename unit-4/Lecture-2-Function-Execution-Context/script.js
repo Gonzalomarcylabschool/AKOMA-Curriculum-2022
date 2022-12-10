@@ -9,8 +9,10 @@ function myFunction() { // The whole function is stored.
 myFunction(); 
 
 
-function add(num1, num2) { 
-    console.log('this is a function'); 
-}
-var aaaa = add(aa, aaa);
-var aaaaa = add(5, 10);
+// function add(num1, num2) { 
+//     console.log('this is a function'); 
+// }
+// var aaaa = add(aa, aaa);
+// var aaaaa = add(5, 10);
+
+console.log(this)
