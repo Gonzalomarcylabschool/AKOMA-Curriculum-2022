@@ -28,9 +28,9 @@ Memory Creation Phase (compile phase):
 ```js
 // name, x, and y will be stored in the global object and not assign the values during this phase.
 debugger;
-let name = 'Gonzalo';// => undefined
-let x = 1;// => undefined
-let y = 2;// => undefined
+var name = 'Gonzalo';// => undefined
+var x = 1;// => undefined
+var y = 2;// => undefined
 // The function myFunction() will be stored into memory and be hosited
 function myFunction() { // The whole function is stored.
     console.log('this is a function'); // will not run until the function is invoked in the execution phase.
