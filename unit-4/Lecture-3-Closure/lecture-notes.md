@@ -68,7 +68,8 @@ function makeCounter() {
         console.log(`the value of the counter is ${counter}`);
     }
 }
-let increment = makeCounter();// notice how I stored the function. This works becuse of functions are frist class citizens! what does that mean again?
+//
+let increment = makeCounter();// notice how I stored the function. This works becuse of functions are first class citizens! what does that mean again?
 debugger
 ;
 
@@ -85,7 +86,7 @@ let count = 0;
 function myFunction() {
   debugger;
   count++
-  console.log(coutn);
+  console.log(count);
 }
 
 let x = myFunction;

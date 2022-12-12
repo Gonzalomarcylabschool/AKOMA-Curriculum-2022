@@ -27,6 +27,7 @@ Memory Creation Phase (compile phase):
 
 ```js
 // name, x, and y will be stored in the global object and not assign the values during this phase.
+debugger;
 let name = 'Gonzalo';// => undefined
 let x = 1;// => undefined
 let y = 2;// => undefined
