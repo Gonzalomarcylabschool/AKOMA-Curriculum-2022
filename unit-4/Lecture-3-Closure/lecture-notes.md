@@ -91,3 +91,8 @@ function myFunction() {
 let x = myFunction;
 ```
 Note that there is no closure section inside of the scope. That is because Closures can only happen when you have a nested loop.
+
+## Essential Questions
+* What is a closure?
+* How do the concepts of lexical scope and first-class functions relate to closures in JavaScript?
+* How can we use closures to create private data?
