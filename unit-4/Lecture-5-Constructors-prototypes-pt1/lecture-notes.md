@@ -92,6 +92,15 @@ Person.prototype.hello = function (){
 const Gonzalo = new Person('Gonzalo', 34, 'Teacher')
 const Bayzed = new Person('Bayzed', , 'Fellow')
 ```
+Now that we have done this, lets console.log(Gonzalo). Do we see the property hello?
+
+Where is it, and how do we accese it?
+
+```js
+Gonzalo.prototype//what does this give us
+Gonzalo.__proto__ == Person.protptype// but why?
+
+```
 What are the benefits of using constructors to create objects?
 What is the benefit of storing methods on the prototype of the constructor?
 What is the association between an object's prototype and its constructor?
