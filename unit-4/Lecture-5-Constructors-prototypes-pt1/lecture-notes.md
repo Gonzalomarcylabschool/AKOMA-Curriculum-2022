@@ -1,6 +1,11 @@
 #  Constructors Prototypes
 
+## Why
+
+Let reminder ourselver of why we need to learn OOP? 
+
 ## 
+
 What are the benefits of using constructors to create objects?
 What is the benefit of storing methods on the prototype of the constructor?
 What is the association between an object's prototype and its constructor?
