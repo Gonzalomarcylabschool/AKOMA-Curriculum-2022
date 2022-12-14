@@ -95,7 +95,7 @@ By putting all of these properties inside of the object we have now made an obje
 All methods are functions but not all functions are methods! This is because all functions that are inside of an object are considerd methods, anything function outide of object is not a moethod. 
 
 ```js
-// moethod or not?
+// method or not?
 
 hello();
 
