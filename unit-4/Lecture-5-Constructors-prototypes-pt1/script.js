@@ -21,9 +21,9 @@ function Person (name, age, occupation){
     //     return `Hello, I'm ${this.name}, at ${this.age} ${occupation}`
     // }
 }
-Person.prototype.hello = function (){
-    return `Hello, I'm ${this.name}, a ${this.age} ${this.occupation}`
-}
+// Person.prototype.hello = function (){
+//     return `Hello, I'm ${this.name}, a ${this.age} ${this.occupation}`
+// }
 const Gonzalo = new Person('Gonzalo', 34, 'Teacher')
 const Bayzed = new Person('Bayzed', 19, 'Fellow')
 
