@@ -18,9 +18,9 @@ function makePerson(name, age, occupation) {
 }
 const Gonzalo = makePerson('Gonzalo', 34, 'Teacher')
 ```
-In the example above I have created an intance called `Gonzalo`. 
+In the example above, I have created an instance called `Gonzalo`. 
 
-Now factory function are great but thats if we want to use the function programing paridimg. There is a better way of creating instances. We are going to use a constructor function and the new keywrod. 
+Now factory functions are great, but that's if we want to use the functional programming paradigm. There is a better way of creating instances. We are going to use a constructor function and the new keyword. 
 
 ```js
 function Person (name, age, occupation){
@@ -32,16 +32,16 @@ function Person (name, age, occupation){
 const Gonzalo = new Person('Gonzalo', 34, 'Teacher')
 ```
 
-There are few things that happen here that abstract some of the things that happen in a factory function
+Few things happen here that abstract some of the things that happen in a factory function.
 
-1. When we uswe the constuctor we are saything that `this` will be the name of that constructor. 
+1. When we use the constructor, we are saying that `this` will be the name of that constructor. 
 
 ```js
 function Person{
     //this === {}
 }
 ```
-2. We have abstracted the need to return an object. So when we create a new instance it will automatically be am object.
+2. We have abstracted the need to return an object. So when we create a new instance, it will automatically be am an object
 ```js
 function Person{
     //this === {}
@@ -49,7 +49,7 @@ function Person{
 }
 ```
 
-## Methos in constuctor
+## Methods in constructors
 
 ```js
 function Person (name, age, occupation){

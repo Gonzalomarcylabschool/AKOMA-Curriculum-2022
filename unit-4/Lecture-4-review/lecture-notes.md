@@ -19,13 +19,12 @@ why is it essential to learn about this.
 
 1. **It will come up in interviews.** They will often be tasked to design and implement a class, possibly multiple classes, that interact with each other. 
 
-2. **It is foundational for future units.** Unit X (Data Structures and Algorithms) will rely heavily on this unit as fellows will be expected to create their own abstract data structures using classes. Units 5 (DOM) and 6 (AJAX) can utilize classes for organization purposes. Unit 7 will review classes as fellows learn about MVC in server-side applications. Finally, Unit 8 (React) can be taught exclusively using functions, but it's good to touch on legacy React classes.  
-
+2. **It is foundational for future units.** Unit X (Data Structures and Algorithms) will rely heavily on this unit as fellows will be expected to create their own abstract data structures using classes. Units 5 (DOM) and 6 (AJAX) can utilize classes for organization purposes. Unit 7 will review classes as fellows learn about MVC in server-side applications. Finally, Unit 8 (React) can be taught, exclusively using functions, but it's good to touch on legacy React classes.  
 3. **It will come up on the job.** This is perhaps the most important reason to spend time with this unit. As companies build applications to scale, it’s very like they will use classes in their code-base to organize better, encapsulate, and abstract their logic.
 
 ## What is an object
 
-An object is a data type inside that consist of propperties. These properties are made of key-value pairs. The key will usually be the name of the property, and the value will of the data or function that we store inside of the property. Let take a look an an example of this. 
+An object is a data type inside that consist of properties. These properties are made of key-value pairs. The key will usually be the property's name, and the value will of the data or function that we store inside the property. Let's take a look at an example of this. 
 
 ```js
 const obj = {
@@ -38,7 +37,7 @@ const obj = {
 
 ## State, Behavior and Encapsulation
 
-Usually when we create an object the properties are realted to eachother. Let say that we create an object that is a shape. We may want the properties of that shape. 
+Usually, when we create an object, the properties are related to each other. Let's say that we create an object that is a shape. We may want the properties of that shape. 
 
 ```js
 const square = {
@@ -46,7 +45,7 @@ const square = {
     sides: 4,
 }
 ```
-This properties are all related to the square. this data that we are storing inside of the object is know as the state of the object. but lest say that we wanted to do thing with this data, we would need to add the behaviors: 
+These properties are all related to the square. This data that we are storing inside of the object is known as the state of the object. But lest say that we wanted to do things with this data, we would need to add the behaviors: 
 
 ```js
 const square = {
@@ -67,7 +66,7 @@ The function that we have added are now our behaviors of this object. We actuall
 
 Lets's try!
 
-Not only can were use the state of our object but using our behaviors we can change the state. 
+Not only can we use the state of our object, but by using our behaviors, we can change the state. 
 ```js
 const square = {
     length: 3,
@@ -88,11 +87,11 @@ const square = {
 }
 ```
 
-By putting all of these properties inside of the object we have now made an object that has all realted poperties. This is Encapsulation.
+B putting all of these properties inside the object, we have now made an object with all related properties This is Encapsulation.
 
 ## Function Vs Method
 
-All methods are functions but not all functions are methods! This is because all functions that are inside of an object are considerd methods, anything function outide of object is not a moethod. 
+All methods are functions but not all functions are methods! This is because all functions that are inside of an object are considered methods, anything function outside of object is not a method. 
 
 ```js
 // moethod or not?
@@ -115,7 +114,7 @@ phone.makeCall();
 
 ## Factory Functions
 
-A factory function returns a new object with all of the properties set in the function. This allows us to create multiple ojects that have all of the same properties again and again.
+A factory function returns a new object with all of the properties set in the function. This allows us to create multiple objects that have all of the same properties again and again.
 
 ```js
 function makePolygon(length = 1, sides = 2){
@@ -168,7 +167,7 @@ Strict mode makes several changes to normal JavaScript semantics:
 
 ## Closure
 
-When we want to create an enviorment where the variable are closed off to the rest of the scope of our program we would use closure. There are 3 part to this: the inner function, this hold the code that we want to execute, the outer function whice hold the data we want to keep track of with out habing it be accesible to the rest of the code, and the variable where we store the outer function which when invoked it stores the inner function. 
+When we want to create an environment where the variable is closed off to the rest of the scope of our program, we would use closure. There are 3 part to this: the inner function; which hold the code that we want to execute; the outer function, which hold the data we want to keep track of without having it be accessible to the rest of the code; and the variable where we store the outer function which when invoked it stores the inner function. 
 ```js
 function makeCoutner() { //outer function
     let counter = 0; //data we are keeping track of
