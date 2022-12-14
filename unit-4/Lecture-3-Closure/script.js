@@ -3,9 +3,37 @@
 //     _counter++
 //     return `the value of the counter is ${_counter}`;
 // }
-// function makeCoutner(){
+// function makeCounter(){
 //     let counter = 0;
 // }
-// //makeCoutner();
+// makeCounter();
 // console.log(counter)
 
+// function makeCoutner() {
+    
+//     let counter = 0; 
+//     return () => {
+//         counter++; 
+//         console.log(`the value of the counter is ${counter}`);
+//     }
+// }
+
+// let increment = makeCoutner();
+// debugger;
+// increment();
+// increment();
+// increment();
+// increment();
+
+
+
+function myFunction() {
+  let count = 0;
+  return () => {
+    count++
+    console.log(count);
+  }
+  
+}
+
+let x = myFunction();
