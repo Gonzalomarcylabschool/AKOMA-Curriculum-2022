@@ -136,3 +136,46 @@ function makePolygon(length = 1, sides = 2){
 }
 const triangle = makePolygon(1, 3);
 ```
+
+## Scope Review
+To futher understand this we need to review scope.
+What is Block scope?
+What is Function Scope?
+What about gloabl scope?
+
+How does lexical Scope work?
+
+## Global Object
+
+When JS runs in node or a browser, it creates a global object that stores all of the inherent properties of JS. In a browser it create the `window` object that represents the browser window and cotains the JS properties. In node its just the `global` object. We will see examples of this as we talk about Execution Context. 
+
+## Execution Context
+
+When you run any JavaScript, a special environment is created to handle the transformation & execution of code. This is called the execution context. It contains the currently running code and everything that aids in its execution(variables, values etc...). 
+
+In short we are talking about how we are running this code. 
+
+There is a global execution context as well as a function execution context for every function invoked. The Global Execution Context is everything that is having in our code from the compile phase to the execution phase. The function execution context does the same thing just during the invokation of a function. Exeeuction context allows us to use the `this` keyword to refer to the object that we are currently executing code in. 
+
+## Strict mode
+
+JavaScript's strict mode is a way to opt in to a restricted variant of JavaScript, thereby implicitly opting-out of "sloppy mode". Strict mode isn't just a subset: it intentionally has different semantics from normal code.
+Strict mode makes several changes to normal JavaScript semantics: 
+
+1. Eliminates some JavaScript silent errors by changing them to throw errors.
+2. Fixes mistakes that make it difficult for JavaScript engines to perform optimizations: strict mode code can  sometimes be made to run faster than identical code that's not strict mode.
+3. Prohibits some syntax likely to be defined in future versions of ECMAScript.
+
+## Closure
+
+When we want to create an enviorment where the variable are closed off to the rest of the scope of our program we would use closure. There are 3 part to this: the inner function, this hold the code that we want to execute, the outer function whice hold the data we want to keep track of with out habing it be accesible to the rest of the code, and the variable where we store the outer function which when invoked it stores the inner function. 
+```js
+function makeCoutner() { //outer function
+    let counter = 0; //data we are keeping track of
+    return () => {//inner function that the outer function returns
+        counter++; //code we want to run.
+        console.log(`the value of the counter is ${counter}`);
+    }
+}
+let increment = makeCoutner(); //variable we store the return value of the function, which is a function
+```
