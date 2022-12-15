@@ -14,9 +14,12 @@ function makePerson(name, age, occupation) {
         age,
         occupation,
         friends: []
+        hello: function(){
+            //code
+        }
     }
 }
-const Gonzalo = makePerson('Gonzalo', 34, 'Teacher')
+const gonzalo = makePerson('Gonzalo', 34, 'Teacher')
 ```
 In the example above I have created an intance called `Gonzalo`. 
 
@@ -29,7 +32,7 @@ function Person (name, age, occupation){
     this.occupation = occupation;
     this.friends = []
 }
-const Gonzalo = new Person('Gonzalo', 34, 'Teacher')
+const itzel = new Person('Itzel', 22, 'Teacher')
 ```
 
 There are few things that happen here that abstract some of the things that happen in a factory function
