@@ -86,6 +86,8 @@
 * **12/07/22** - Review | [Lecture notes]() | [Lecture files and notes]() | [Lab Review]() | [Lab Review Video]()
 
 ### Unit 4 - Object-Oriented Programming (Classes)
+
+* **12/16/22** Constructors and Prototypes pt2 | [Lecture files and notes](https://github.com/Gonzalomarcylabschool/AKOMA-Curriculum-2022/tree/main/unit-4/Lecture-6-Constructors-prototypes-pt2) | [Lecture Video](https://us02web.zoom.us/rec/share/RxtNjLz4R37lXEeQkPxOfVIRqUEJNcoEuNixnp1osI6JEnf_Z0WWHqZUt6ow78cI.gKFARYLqsrQKWlbt)
 ### Unit 5 - The Document Object Model (DOM)
 ### Unit 6 - Asynchronous JavaScript
 ### Unit 7 - Server-side Web Development with Node.js
