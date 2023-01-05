@@ -49,7 +49,7 @@ These properties are all related to the square. This data that we are storing in
 
 ```js
 const square = {
-    lenght: 3,
+    length: 3,
     sides: 4,
     area(){
         return this.length * 2;
@@ -94,7 +94,7 @@ B putting all of these properties inside the object, we have now made an object 
 All methods are functions but not all functions are methods! This is because all functions that are inside of an object are considered methods, anything function outside of object is not a method. 
 
 ```js
-// moethod or not?
+// method or not?
 
 hello();
 

@@ -20,7 +20,7 @@ const Gonzalo = makePerson('Gonzalo', 34, 'Teacher')
 ```
 In the example above, I have created an instance called `Gonzalo`. 
 
-Now factory functions are great, but that's if we want to use the functional programming paradigm. There is a better way of creating instances. We are going to use a constructor function and the new keyword. 
+Now factory functions are great, but that's if we want to use the functional programming paradigm. There is a better way of creating instances. We are going to use a constructor function and the `new` keyword. 
 
 ```js
 function Person (name, age, occupation){
