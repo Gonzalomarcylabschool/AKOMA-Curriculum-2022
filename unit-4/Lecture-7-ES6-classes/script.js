@@ -22,4 +22,4 @@ const objName = {
 
 /* Make new object above this line */
 
-//Lets make a 
+//Let's make a Person class and then a few instances!!

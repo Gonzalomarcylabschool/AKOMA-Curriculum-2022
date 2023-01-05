@@ -9,11 +9,39 @@ It's been some time so lets go over some of the things we learn about OOP!
 * Behavior
 * Encapsulation 
 ```js
-const Gonzalo
+const Gonzalo = {
+  
+}
 ```
 ### Factory Functions
 
+```js
+function makePerson(name, age, occupation)){
+  name,
+  age,
+  occupation,
+  friends: []
+  hello(){
+     return `Hello, I'm ${this.name}, at ${this.age} ${occupation}`
+  }
+}
+```
+
 ### Constructor
+
+```js
+function Person (name, age, occupation){
+    this.name = name;
+    this.age = age;
+    this.occupation = occupation;
+    this.friends = []
+}
+Person.prototype.hello = function (){
+        return `Hello, I'm ${this.name}, at ${this.age} ${occupation}`
+    }
+const gonzalo = new Person('Gonzalo', 34, 'Teacher')
+const bayzed = new Person('Bayzed', 19, 'Fellow')
+```
 
 ## ES6 Classes
 In JavaScript, a class is a type of function that is used to define a blueprint for creating objects. Classes in JavaScript are a simple way to create objects that have similar properties and methods.
@@ -54,9 +82,19 @@ function Point(x, y) {
   this.x = x;
   this.y = y;
 }
+// vs
+class Point {
+  constructor(x, y) {
+    this.x = x;
+    this.y = y;
+  }
+}
 ```
+Let's make a Person class and then some instances.
 
-Another difference between classes and constructor functions is in how inheritance is implemented. In JavaScript, inheritance is implemented using the prototype chain. When you define a constructor function, you can use the prototype property to add methods and properties to the constructor's prototype, which will be inherited by all instances of the object.
+### Inheritance
+
+Another difference between classes and constructor functions, which e will go into more detail in a future lecture,  is in how inheritance is implemented. In JavaScript, inheritance is implemented using the prototype chain. When you define a constructor function, you can use the prototype property to add methods and properties to the constructor's prototype, which will be inherited by all instances of the object.
 
 With ES6 classes, inheritance is implemented using the extends keyword. You can define a class that extends from another class, and the subclass will inherit all of the methods and properties of the superclass.
 
@@ -72,3 +110,55 @@ class Circle extends Point {
 
 ```
 In this example, the Circle class extends the Point class and adds a radius property. It also calls the super method, which calls the constructor method of the superclass (in this case, the Point class) to set up the inheritance relationship.
+
+## Instance Method VS Class Method
+
+So far, we have only been creating and using Instance methods in our Objects. We have used Class Method before. 
+
+```js
+  let arr = [1, 2, 3];
+  arr.push(4);//this is the instance method because we are doing on an instance of an array.
+  Array.isArray(arr)//this is a Class method
+  
+```
+
+```js
+class Person {
+  constructor(name, age, occupation){
+      this.name = name;
+      this.age = age;
+      this.occupation = occupation;
+      this.friends = []
+  }
+  
+  hello() { //this is the instance method
+    return `Hello, I'm ${this.name}, at ${this.age} ${occupation}` 
+  }
+  
+  static onlyPerson() {
+    return `this only prints out here`
+  }
+}
+
+//going back to the array example
+
+class Array{
+  constructor(){
+    this.length = 0;
+  }
+  push(newElemet){
+    //code
+  }
+  pop() {
+    //code
+  }
+  map(func) {
+    //code
+  }
+  
+  static isArray(arr){
+    //code
+  }
+}
+```
+
