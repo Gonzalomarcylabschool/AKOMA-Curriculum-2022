@@ -94,14 +94,21 @@ Let's make a Person class and then some instances.
 
 ### Inheritance
 
-Another difference between classes and constructor functions, which e will go into more detail in a future lecture,  is in how inheritance is implemented. In JavaScript, inheritance is implemented using the prototype chain. When you define a constructor function, you can use the prototype property to add methods and properties to the constructor's prototype, which will be inherited by all instances of the object.
+Another difference between classes and constructor functions, which we will go into more detail latere, is in how inheritance is implemented. In JavaScript, inheritance is implemented using the prototype chain. When you define a constructor function, you can use the prototype property to add methods and properties to the constructor's prototype, which will be inherited by all instances of the object.
 
-With ES6 classes, inheritance is implemented using the extends keyword. You can define a class that extends from another class, and the subclass will inherit all of the methods and properties of the superclass.
+With ES6 classes, inheritance is implemented using the extends keyword. You can define a class that extends from another class. This subclass(child class) will inherit all of the methods and properties of the superclass(parent class).
 
 Here is an example of how you might define a subclass using the extends keyword:
 
 ```js
-class Circle extends Point {
+class Point {//superclass
+  constructor(x, y) {
+    this.x = x;
+    this.y = y;
+  }
+}
+
+class Circle extends Point {//subclass
   constructor(x, y, radius) {
     super(x, y);
     this.radius = radius;
