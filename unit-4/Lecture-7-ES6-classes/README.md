@@ -16,7 +16,7 @@ const Gonzalo = {
 ### Factory Functions
 
 ```js
-function makePerson(name, age, occupation)){
+function makePerson(name, age, occupation){
   name,
   age,
   occupation,
