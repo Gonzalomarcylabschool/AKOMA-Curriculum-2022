@@ -1,7 +1,7 @@
-const square = {
-    length: 3,
-    hight: 3,
-    sides: 4,
+// const square = {
+//     length: 3,
+//     hight: 3,
+//     sides: 4,
     // area(){
     //     return this.length * 2;
     // },
@@ -15,4 +15,20 @@ const square = {
     //     this.length = newLength
     //     return "the new lenght is " + newLength + "."
     // }
+// }
+const obj = {
+
+    objReturn(){
+        return'hi'
+    },
+    hiFunction(){
+        return this.objReturn()
+    }
 }
+
+// function newObj(name){
+//     return {
+//         name,
+//     }
+// }
+

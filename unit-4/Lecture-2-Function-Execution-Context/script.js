@@ -1,5 +1,5 @@
 
-
+"use strict";
 // // //debugger;
 // var a = 'Gonzalo';
 // var aa = 1;
@@ -32,7 +32,7 @@
 //     }
 // }
 // pet.makeSound();
-a = 1;
+// a = 100;
 function hello(){
    return this;
 }
@@ -45,3 +45,13 @@ const math = {
         return this.value1 + this.value2
     }
 }
+function strictTest(){
+  "use strict"
+  let name = "gonzalo"
+  return () => {
+    name = "steve";
+    return `the new name is ${name}`
+  }
+}
+
+const nameChange = strictTest();
