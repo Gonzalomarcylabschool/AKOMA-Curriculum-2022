@@ -10,7 +10,15 @@ It's been some time so lets go over some of the things we learn about OOP!
 * Encapsulation 
 ```js
 const Gonzalo = {
-  
+  hasBaby: true,
+  age: 34,
+  height: "5'11\"",
+  sayILoveYou: function(){
+    console.log('I Love you')
+  },
+  dab: function() {
+    console.log('Gonzalo hit a dab')
+  }
 }
 ```
 ### Factory Functions
