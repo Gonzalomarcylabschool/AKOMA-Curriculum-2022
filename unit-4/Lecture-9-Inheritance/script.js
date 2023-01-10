@@ -1,3 +1,9 @@
+const gonzalo = {
+  name: 'Gonzalo',
+  age: 34,
+  job: 'teacher'
+}
+
 function Book(title, author, year) {
   this.title = title;
   this.author = author;
@@ -15,8 +21,8 @@ function Magazine(title, author, year, month) {
     // Inherit Prototype
 Magazine.prototype = Object.create(Book.prototype) ;
     // Instantiate Magazine Object
-const mag1 = new Magazine( 'Mag One', 'John Doe', '2018','Jan' );
-  console. log (mag1) ;
+// const mag1 = new Magazine( 'Mag One', 'John Doe', '2018','Jan' );
+// console. log (mag1) ;
 
 
   //Using ES6

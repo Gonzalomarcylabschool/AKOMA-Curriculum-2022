@@ -1,6 +1,8 @@
 # Inheritance 
-n JavaScript, inheritance is implemented using prototype-based inheritance, where objects can inherit properties and methods from other objects.
+In JavaScript, inheritance is implemented using prototype-based inheritance, where objects can inherit properties and methods from other objects.
+```js
 
+```
 To create a class that can be inherited from, you can define a constructor function and add properties and methods to its prototype object. For example:
 ```JS
 function Book(title, author, year) {
