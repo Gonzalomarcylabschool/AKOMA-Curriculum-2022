@@ -78,16 +78,25 @@
 * Break
 * **11/30/22** - RegEx pt1 | [Lecture files and notes](https://github.com/Gonzalomarcylabschool/AKOMA-Curriculum-2022/tree/main/unit-3/lecture-1-RegEx-pt1) | [Lecture Video]() | 
 * **12/01/22** - RegEx pt2 | [Lecture files and notes](https://github.com/Gonzalomarcylabschool/AKOMA-Curriculum-2022/tree/main/unit-3/lecture-2-RegEx-pt2) | [Lecture Video]() |
-* **12/02/22** - Review | [Lecture files and notes]() | [Lecture Video]() |
+* **12/02/22** - Review | [Lecture files and notes](https://github.com/Gonzalomarcylabschool/AKOMA-Curriculum-2022/tree/main/unit-3/lecture-3-review) | [Lecture Video](https://us02web.zoom.us/recording/detail?meeting_id=J8RRhafLQdmfiYrHb2tV5w%3D%3D) |
 
 ### Week 2
-* **12/05/22** - Functional Abstraction pt1 | [Lecture files and notes]() | [Lecture Video]() | [Lab Review]() | [Lab Review Video]()
-* **12/06/22** - Functional Abstraction pt2 | [Lecture files and notes]() | [Lecture Video]() |
-* **12/07/22** - Review | [Lecture notes]() | [Lecture files and notes]() | [Lab Review]() | [Lab Review Video]()
+* **12/05/22** - Functional Abstraction pt1 | [Lecture files and notes]() | [Lecture Video](https://us02web.zoom.us/rec/share/BMKgJcOYOCWYoG_mRn0vZpjw4jq4AmPuk7iGHlB1kJ4V8M1tTe8X0Kt4dC6VHMYp.eR0y4xCFhKDeDZG9) | [Lab Review]() | [Lab Review Video](https://us02web.zoom.us/rec/share/3X6bYCN1LxEiFPPIjUT1tdgkjkrL4sbOVxwPzWBmu5Nw7YqjoyiJ0ICFSNDM9XXM.-LFQc90FSoRzRD8_)
+* **12/06/22** - Functional Abstraction pt2 | [Lecture files and notes](https://us02web.zoom.us/rec/share/iaKbE_BYitXltPUtAS1PkC9uGnd2n4OEkTqJNNGgm4iIgwmnWtmd7Z0rQs1zHfRX.CKqxPUlVMZIYLFeW) | [Lecture Video]() |
+* **12/07/22** - Review | [Lecture notes]() | [Lecture files and notes](https://us02web.zoom.us/recording/detail?meeting_id=J8RRhafLQdmfiYrHb2tV5w%3D%3D) 
 
 ### Unit 4 - Object-Oriented Programming (Classes)
-
+* **12/8/22** Understanding Objects pt1 | [Lecture files and notes](https://github.com/Gonzalomarcylabschool/AKOMA-Curriculum-2022/tree/main/unit-4/Lecture-0-Understanding-Objects-pt1) | [Lecture Video](https://us02web.zoom.us/rec/share/nU7B6l9NX9KGoqsL35ih5BiA74Z42nG-Q_LZlpt0T5nCtTM_z_yl2vFm3hwfN4oV.OL3rUOsG7qbBjOXO) 
+* **12/9/22** Understanding Objects pt2 | [Lecture files and notes](https://github.com/Gonzalomarcylabschool/AKOMA-Curriculum-2022/tree/main/unit-4/Lecture-1-undestanding-object-pt2) | [Lecture Video](https://us02web.zoom.us/rec/share/nU7B6l9NX9KGoqsL35ih5BiA74Z42nG-Q_LZlpt0T5nCtTM_z_yl2vFm3hwfN4oV.OL3rUOsG7qbBjOXO) 
+* **12/12/22** Function Execution Context | [Lecture files and notes[]()](https://github.com/Gonzalomarcylabschool/AKOMA-Curriculum-2022/tree/main/unit-4/Lecture-2-Function-Execution-Context) | [Lecture Video](https://us02web.zoom.us/rec/play/lksZULw5xGvVCOr3qmAZbvOiIoJdcUiLJIYTcfdzH0uoNBlc07kBUjC56Wdr89Uq0Fdv25p_eUTut6Mz.9P2B60X7FmplT9Bh?autoplay=true&startTime=1670860998000)
+* **12/13/22** Closures | [Lecture files and notes](https://github.com/Gonzalomarcylabschool/AKOMA-Curriculum-2022/tree/main/unit-4/Lecture-3-Closure) | [Lecture Video](https://us02web.zoom.us/rec/share/7xv_mu-cVIs9pNg1uci4UYea_u0YrnH4ge2atlONA7qqXJdaqFYUu9_hb7QjghfS.kLMBO7EqZlmUifME)
+* **12/14/22** Review | [Lecture files and notes](https://github.com/Gonzalomarcylabschool/AKOMA-Curriculum-2022/tree/main/unit-4/Lecture-4-review) | [Lecture Video](https://drive.google.com/file/d/1-7mYTlFXK_3fvipQGSg13ltVBIfBM_Y2/view?usp=share_link) 
+* **12/15/22** Constructors and Prototypes pt1 | [Lecture files and notes](https://github.com/Gonzalomarcylabschool/AKOMA-Curriculum-2022/tree/main/unit-4/Lecture-5-Constructors-prototypes-pt1) | [Lecture Video](https://drive.google.com/file/d/1_xcmAvV3y3hSARl8BJv_z4WhKheZAMrk/view?usp=share_link) |
 * **12/16/22** Constructors and Prototypes pt2 | [Lecture files and notes](https://github.com/Gonzalomarcylabschool/AKOMA-Curriculum-2022/tree/main/unit-4/Lecture-6-Constructors-prototypes-pt2) | [Lecture Video](https://us02web.zoom.us/rec/share/RxtNjLz4R37lXEeQkPxOfVIRqUEJNcoEuNixnp1osI6JEnf_Z0WWHqZUt6ow78cI.gKFARYLqsrQKWlbt)
+
+* **1/9/23** ES6 Classes | [Lecture files and notes](https://github.com/Gonzalomarcylabschool/AKOMA-Curriculum-2022/tree/main/unit-4/Lecture-7-ES6-classes) | [Lecture Video](https://us02web.zoom.us/rec/share/1fqlW7oLifK0t6674xULhycMWu8t9bZd60SaF7U7JIATk6g6Nptajxka2nXqr5mi.vvN2le-QfZjFzRoS) | [Lab Review]() | [Lab Review Video](https://us02web.zoom.us/rec/share/jOxt6tmYh9BaB8TIMMbhqQUkV0qhpVx624vanQEoFlKu_u_YvFY_55n9jbjMJYQs.JLhBKPUQWpluvoAW)
+* **1/10/23** ES6 Classes pt2 | [Lecture files and notes](https://github.com/Gonzalomarcylabschool/AKOMA-Curriculum-2022/tree/main/unit-4/Lecture-8-ES6-classes) | [Lecture Video](https://us02web.zoom.us/rec/share/3Knixl686oStPDhomn96N6uEaHWP2mb-iaMYBUVsO0n8ynpYN3U49NqlcPUcVetg.iqyvYQ69WnhsLxrs) 
+* **1/11/23** Inheritance | [Lecture files and notes](https://github.com/Gonzalomarcylabschool/AKOMA-Curriculum-2022/tree/main/unit-4/Lecture-9-Inheritance) | [Lecture Video](https://drive.google.com/file/d/1U7ZZ7jAxH8wqsUKTrgMpMdPYsi1m2_3X/view?usp=share_link) 
 ### Unit 5 - The Document Object Model (DOM)
 ### Unit 6 - Asynchronous JavaScript
 ### Unit 7 - Server-side Web Development with Node.js
