@@ -17,7 +17,36 @@ more than what's in the account**, in which case, return
 */
 
 // **Bank**
+// function makeAccount(owner, balance){
+//   return{
+//     owner, 
+//     balance
+//   }
+// }
+class Account{
+  constructor(owner, balance){
+    this.owner = owner;
+    this.balance = balance;
+  };
+  checkBalance(){
+    return `${this.owner} has $${this.balance} in this account.`
+  };
+  deposit(depositedAmount){
+    this.balance += depositedAmount;
+    return `$${depositedAmount} was deposited to this account.`
+  };
+  withdraw(withdrawnAmount){
+    if (this.balance < withdrawnAmount){
+      return `Not enough funds.`
+    }
+    else {
+      this.balance -= withdrawnAmount;
+      return `$${withdrawnAmount} was withdrawn from this account.`;
+    };
+  };
+};
 
+const myAccount = new Account("Ann", 100);
 
 // **Neopet**
 /* 1. Using ES6 Classes. Create a class called `Neopet`
