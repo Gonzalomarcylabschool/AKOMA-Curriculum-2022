@@ -68,3 +68,59 @@ veggies. This method subtracts 6 points from happiness and subtracts
 This method adds 3 points to happiness and subtracts 2 points from 
 hunger and returns `"Yumm!"`.
 */
+class User {
+  constructor(name){
+    this.name = name;
+    this.pets = [];
+    this.veggies = 10;
+    this.junkFood = 10;
+    this.money = 100
+  }
+  buyNeopet(petName, type){
+    
+  };
+}
+class Neopet { //superclass
+  constructor(name){
+    this.name = name;
+    this.happiness = 100;
+    this.hunger = 50;
+    this.health = 5;
+  };
+  play(){
+    if (this.health > 0){
+      this.happiness += 4;
+      this.hunger += 5;
+      return `Weee!`;
+    } else {
+      return `Cannot play, need more veggies!`
+    }
+  };
+  eatVeggies(){
+    this.happiness -= 6;
+    this.hunger -= 8;
+    this.health += 1;
+    return "Bleh!"; 
+  };
+  eatJunkFood() {
+    this.happiness += 3;
+    this.hunger -= 2;
+    this.health -= 1;
+    return "Yumm!";
+  };
+};
+class FireNeopet extends Neopet{
+  constructor(name){
+    super(name);
+    this.type = 'fire';
+  };
+};
+class WaterNeopet extends Neopet{
+  constructor(name){
+    super(name);
+    this.type = 'water';
+  }
+}
+const gonzalo = new User('gonzalo');
+const pet2 = new FireNeopet('cookie', 'dragon');
+const pet = new Neopet("Krawk");

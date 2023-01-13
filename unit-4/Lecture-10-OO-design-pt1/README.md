@@ -19,8 +19,7 @@ To simplify things, you can take the following approach for any OOD question you
 * Clarify the requirements.
     * Understand the expectations.
         * If possible, ask clarifying questions.
-    * 
-* Figure out the primary use cases.
+* Figure out the primary use cases (test cases).
     * Think and talk though, what the Object(s) is/are supposed to do. 
 * Identify key Objects.
     * How many Objects do you need? What are they? 
@@ -61,7 +60,7 @@ Simple OO [Neopets](https://preview.redd.it/fkzfbleimvxy.jpg?auto=webp&s=dc6f789
 Neopets are virtual pets that you can play and interact with. The better you take care of them, the happier and healthy they will be!
 
 1. Using ES6 Classes. Create a class called `Neopet`
-2. The class should have three data properties, `name` which is the argument provided, happiness which is initialized to `100` and hunger with is initizlied to `50`. There is no min nor max value for `happiness` and `hunger`.
+2. The class should have three data properties, `name` which is the argument provided, happiness which is initialized to `100` and hunger which is initizlied to `50`. There is no min nor max value for `happiness` and `hunger`.
 3. The Class should have three methods: `play()`, `eatVeggies()` and `eatJunkFood()`.
 4. `play()` increases their happiness and also makes them more hungry. This method adds 4 points to happiness and adds 5 points to hunger and returns `"Weee!"`.
 5. `eatVeggies()` decreases their hunger, but no one enjoys eatting veggies. This method subtracts 6 points from happiness and subtracts 8 points from hunger and returns `"Bleh!"`.
