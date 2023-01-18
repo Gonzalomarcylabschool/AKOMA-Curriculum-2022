@@ -7,22 +7,16 @@ Encapsulation is a concept in software design that refers to the practice of kee
 JavaScript classes provide a way to create encapsulated objects. By defining a class, you can create a blueprint for creating objects that have specific states and behaviors. The states and behaviors of a class are defined using the constructor function and the class methods, respectively. You can then create instances of the class using the new keyword, and these instances will have the properties and methods defined by the class.
 
 ```js
-const gonzaloAccount={
+const gonzalo = {
   firstName: 'Gonzalo',
   lastName: 'Romero',
-  showBalance() {
-    return `Your balance is $${this._balance.toFixed(2)}`;
+  friends: [],
+  sayHi() {
+    return `Hi, my name is ${firstName} ${lastName}`;
   },
-  deposit(amount) {
-    this._balance += amount;
-    return this.showBalance();
-  },
-  withdraw(amount) {
-    if (amount > this._balance) {
-        return 'You do not have enough funds.';
-    }
-    this._balance -= amount;
-    return this.showBalance();
+  addFriends(friendName) {
+    this.friends.push(friendName);
+    return `${friendName} has been added`;
   }
 }
 ```
@@ -85,6 +79,7 @@ function makeCounter(startingValue) {
 }
 
 let counter = makeCounter(0);
+
 console.log(counter());  // Outputs: 1
 console.log(counter());  // Outputs: 2
 console.log(counter());  // Outputs: 3
@@ -116,6 +111,9 @@ function Person (name, age, occupation){
   this.age = age;
   this.occupation = occupation;
   this.friends = []
+  // sayHi(){
+
+  // }
 }
 Person.prototype.hello = function (){
   return `Hello, I'm ${this.name}, at ${this.age} ${this.occupation}`
@@ -127,10 +125,10 @@ const gonzalo = new Person('Gonzalo', 34, 'Teacher')
 //ES6 class
 class Person {
   constructor (name, age, occupation) {
-  this.name = name;
-  this.age = age;
-  this.occupation = occupation;
-  this.friends = [];
+    this.name = name;
+    this.age = age;
+    this.occupation = occupation;
+    this.friends = [];
   }
   hello(){
     return `Hello, I'm ${this.name}, at ${this.age} ${this.occupation}`;
@@ -223,6 +221,5 @@ for (let pet of pets) {
   pet.speak();
 }
 ```
-
 
 In this example, the speak method is implemented differently in the Pet, Cat and Dog classes, but the code that calls the method does not need to know the specific type of the object. This is polymorphism, because the code can work with objects of different types and the specific implementation of the method is determined when executed.
