@@ -1,0 +1,19 @@
+- OO Design
+    - Clarify Requirements (ask questions if possible)
+    - Figure out primary use cases
+    - Identify key objects and their properties
+    - Identify behaviors of Objects
+    - Identify behaviors between Objects
+    - Trivial vs non-trivial methods (demonstration vs. useful)
+        - Methods should change object properties
+        - Error handling
+        - Success/Error messages
+- `this` (global scope, global function, object method. Arrow functions are a “nice-to-have”)
+    - closure
+    - encapsulation
+    - polymorphism
+    - factory function
+    - classes
+    - `this`
+    - `extends` and `super()`
+    - `instanceof`
