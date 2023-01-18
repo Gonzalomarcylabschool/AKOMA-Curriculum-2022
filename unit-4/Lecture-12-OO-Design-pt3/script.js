@@ -53,14 +53,16 @@
 /*
 item class:
   properties:
-    name 
-    price 
-    discription
-    itemId; this will be a closure
-    review 
+    name : p
+    price : p
+    discription : P
+    * _itemId; this will be a closure
+    review : []
   behaviors:
     addReview
     item name toString
+  nice to have:
+    similar items
 */
 
 /*
@@ -80,13 +82,31 @@ class User{
     this.address = address;
     this.cart = new Cart();
   }
+  addToCart(item){//this takes in a object
+    this.cart.items.push(item)
+  }
 }
 
 class Cart{
   constructor(){
     this.items =[]
   }
-  addToCart(item){//this takes in a object
-    this.items.push(item)
+}
+
+class Item{
+  constructor(name, price, description){
+    this.name = name;
+    this.price = price;
+    this.description = description;
+    this.review = [];
+  }
+  addReview(newReview){
+    //How do I know I'm getting the correct input/ 
+    //are there any limts
+    this.review.push(newReview);
+    return `Thank you for your review!`
   }
 }
+
+const gonzalo = new User('Gonzalo', 'gonzalo@marcylabschoo.org', 0000111122223333, 'prime', '123 marcy way, brooklyn 11234')
+const marker = new Item('marker', 9.99, 'this marker draws for you!')
