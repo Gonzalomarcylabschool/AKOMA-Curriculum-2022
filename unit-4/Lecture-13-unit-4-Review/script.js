@@ -106,12 +106,13 @@ class Person {
     return `Hello, I'm ${this.name}, at ${this.age} ${this.occupation}`;
   }
   callPerson(personToCall){
-    if(personToCall instanceof Person){
-      return `this is a domestic call`
-    }
-    else if(personToCall instanceof InternationalPerson){
+    if(personToCall instanceof InternationalPerson){
       return `this is an international call`
     }
+    else {
+      return `this is a domestic call`
+    }
+    
   }
   toString(){
     return this.name;
