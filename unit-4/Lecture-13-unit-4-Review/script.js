@@ -106,13 +106,14 @@ class Person {
     return `Hello, I'm ${this.name}, at ${this.age} ${this.occupation}`;
   }
   callPerson(personToCall){
+
+    //if (personToCall instanceof Person)> true 
     if(personToCall instanceof InternationalPerson){
       return `this is an international call`
     }
     else {
       return `this is a domestic call`
     }
-    
   }
   toString(){
     return this.name;
@@ -120,6 +121,8 @@ class Person {
 }
 
 const gonzalo5 = new Person('Gonzalo', 34, 'Teacher');
+const itzel = new Person ('Itzel', 12, 'Teacher');
+
 
 class InternationalPerson extends Person {
   constructor(name, age, occupation, nationality){

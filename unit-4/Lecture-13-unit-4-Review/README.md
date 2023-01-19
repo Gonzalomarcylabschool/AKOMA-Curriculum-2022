@@ -40,13 +40,26 @@ In a standalone function: this refers to the global object (or window object in 
 let showThis = function() {
   console.log(this);
 }
-showThis(); // Outputs: window (in browser) or global (in node)
+showThis();     
+
+                           // Outputs: window (in browser) or global (in node)
 ```
 In a constructor function: this refers to the object that is being constructed. For example, in the following code, this inside the Person constructor function refers to the new object that is being created:
 ```js
+function makePerson(name){
+  return {
+    name
+    this.name
+    sayHi(){
+      return this
+    }
+  }
+}// gonzalo {name: 'Gonzalo Romero'}
+
 function Person(name) {
   this.name = name;
-}
+} //=> gonzalo Person{name: 'Gonzalo Romero'}
+
 
 //or 
 
