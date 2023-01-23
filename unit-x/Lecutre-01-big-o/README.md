@@ -11,11 +11,84 @@ Tell me the directions of how to get to campus from your home.
 
 ## How do we measure the efficiency of an algorithm?
 
-There are several ways to measure the efficiency of an algorithm, but some common methods include:
+There are several ways to measure the efficiency of an algorithm, but we will talk about Big O!
 
-Time Complexity: This measures the amount of time an algorithm takes to complete as a function of the size of the input. Common time complexity classes include O(1), O(n), O(log n), and O(n^2).
+Big O notation is a way to describe the performance of an algorithm in terms of the amount of resources (usually time, and space) it takes to run, as the size of the input data increases. In JavaScript, we typically use Big O notation to describe the time complexity of an algorithm, although it can also be used to describe space complexity.
 
-Space Complexity: This measures the amount of memory an algorithm uses as a function of the size of the input. Like time complexity, space complexity is typically expressed using big O notation.
+*Time Complexity*: This measures the amount of time an algorithm takes to complete as a function of the size of the input. 
+
+*Space Complexity*: This measures the amount of memory an algorithm uses based the size of the input into the function. 
+
+There are several different types of time complexity that can be described using Big O notation, including:
+
+O(1), or constant time: An algorithm that takes the same amount of time to run regardless of the size of the input data.
+
+O(log n), or logarithmic time: An algorithm that takes a logarithmic amount of time to run based on the size of the input data.
+
+O(n), or linear time: An algorithm that takes a linear amount of time to run based on the size of the input data.
+
+O(n log n): An algorithm that takes n log n time to run based on the size of the input data.
+
+O(n^2), or quadratic time: An algorithm that takes a quadratic amount of time to run based on the size of the input data.
+
+O(2^n) or exponential time: An algorithm that takes an exponential amount of time to run based on the size of the input data.
+
+It's important to note that the time complexity is not always the only thing that matters when choosing an algorithm, other factors such as memory usage, readability, and maintainability also play an important role.
+
+Here are some examples of how to analyze the time complexity of a few JavaScript functions:
+
+Example 1:
+
+```js
+function addUpTo(n) {
+  let total = 0;
+  for (let i = 1; i <= n; i++) {
+    total += i;
+    console.log(total);
+  }
+  return total;
+};
+```
+This function has a time complexity of O(n) because the amount of operations being performed is directly proportional to the input size.
+
+Example 2:
+
+```js
+function printAllPairs(n) {
+  for (let i = 0; i < n; i++) {
+    for (let j = 0; j < n; j++) {
+      console.log(i, j);
+    }
+  }
+}
+```
+This function has a time complexity of O(n^2) because for each element in the input size, it performs n operations.
+
+Example 3:
+```js
+function binarySearch(arr, target) {
+  let left = 0;
+  let right = arr.length - 1;
+  while (left <= right) {
+    let middle = Math.floor((left + right) / 2);
+    if (arr[middle] === target) {
+      return middle;
+    } else if (arr[middle] < target) {
+      left = middle + 1;
+    } else {
+      right = middle - 1;
+    }
+  }
+  return -1;
+}
+```
+This function has a time complexity of O(log n) because with each iteration of the while loop, the size of the input data is being divided in half.
+
+It's important to note that these are examples of the worst-case scenarios for each function. The
+
+
+
+
 
 Number of operations: The number of operations an algorithm performs to solve a problem is another way of measuring its efficiency. For example, a sorting algorithm that uses a simple comparison operation to sort a list is more efficient than one that uses multiple comparison operations.
 
