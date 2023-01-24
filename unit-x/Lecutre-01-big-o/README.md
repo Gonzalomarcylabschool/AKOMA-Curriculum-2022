@@ -107,8 +107,26 @@ This function has a time complexity of O(n^2) because for each element in the in
 Example 5:
 
 ```js
-
+function permute(str, l, r) {
+  if (l == r) {
+        console.log(str);
+  } else {
+    for (let i = l; i <= r; i++) {
+      str = swap(str, l, i);
+      permute(str, l + 1, r);
+      str = swap(str, l, i);
+    }
+  }
+}
+function swap(str, i, j) {
+  let temp = str[i];
+  str[i] = str[j];
+  str[j] = temp;
+  return str;
+}
 ```
+This is an example of O(2^n)
+
 
 It's important to note that these are examples of the worst-case scenarios for each function, and that the most efficient algorithm is not always the best choice, as other factors such as ease of implementation and maintainability should also be considered.
 
@@ -116,7 +134,7 @@ It's important to note that these are examples of the worst-case scenarios for e
 
 Assessing how an algorithm's runtime grows in relation to the size of its input is important because it allows us to understand the performance of the algorithm and make informed decisions about which algorithm to use for a given problem.
 
-When the size of the input data is small, the difference in performance between different algorithms may not be significant, but as the input size grows, the difference in performance can be huge! can help identify performance bottlenecks and optimize the algorithm to improve its performance. It can also help to identify and prevent performance issues in large-scale systems.
+When the size of the input data is small, the difference in performance between different algorithms may not be significant, but as the input size grows, the difference in performance can be huge! It can help identify performance bottlenecks and optimize the algorithm to improve its performance. It can also help to identify and prevent performance issues in large-scale systems.
 
 * What are common algorithm runtime and how do they describe how and which algorithms are associated with them?
 
