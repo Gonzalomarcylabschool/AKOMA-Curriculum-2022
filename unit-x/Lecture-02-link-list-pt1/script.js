@@ -59,30 +59,28 @@ const node1 = {//node
 
 //ES6 classes
 class Node {
-  constructor(data) {
-    this.data = data;
-    this.next = null;
+  constructor(data, next = null) {// 
+    this.data = data; // holds the data
+    this.next = next; // points to the next node
   }
 }
 
 class LinkedList {
   #length = 0
   constructor() {
-    this.head = null;
-    this.tail = null;
+    this.head = null; // this will keep track of the front of the list.
+    this.tail = null; // this will keep track of the end of the list.
   }
 
-  append(data) {
-    debugger;
-    let newNode = new Node(data);
-    if (!this.head) {
-      this.head = newNode;
-      this.tail = newNode;
-    } else {
-      this.tail.next = newNode;
-      this.tail = newNode;
+  append(data) { // adds a new node to the end of the list or makes a list with it. 
+    let newNode = new Node(data);//create the new node to be add to the list.
+    if (!this.head) {//check to see if there is a list If there is no list run the following:
+      this.head = newNode; // change the data of this.head from null to the new node to start the list.
+    } else { // if there is a node: 
+      this.tail.next = newNode; //the current tail point to null and we need it to point to the new node.
     }
-    this.#length++;
+    this.tail = newNode; // after the current tail can point to the new node we can make the tail the new node.
+    this.#length++;//keeps track of how many nodes we have in our list.
   }
 
   remove(data) {
@@ -121,8 +119,8 @@ list.append(3);
 list.append(4);
 
 class NodeDoubly {
-  constructor(value, prev=null, next=null) {
-    this.value = value;
+  constructor(data, prev=null, next=null) {
+    this.data = data;
     this.prev = prev;
     this.next = next;
   }
@@ -136,8 +134,8 @@ class DoublyLinkedList {
   }
 
   // Add a new node to the end of the list
-  append(value) {
-    let newNode = new Node(value);
+  append(data) {
+    let newNode = new Node(data);
     if (!this.head) {
       this.head = newNode;
       this.tail = newNode;
@@ -150,8 +148,8 @@ class DoublyLinkedList {
   }
 
   // Add a new node to the beginning of the list
-  prepend(value) {
-    let newNode = new Node(value, null, this.head);
+  prepend(data) {
+    let newNode = new Node(data, null, this.head);
     if (!this.head) {
       this.head = newNode;
       this.tail = newNode;
@@ -162,10 +160,10 @@ class DoublyLinkedList {
     this.length++;
   }
 
-  remove(value) {
+  remove(data) {
     let currentNode = this.head;
     while (currentNode) {
-      if (currentNode.value === value) {
+      if (currentNode.data === data) {
         if (currentNode === this.head && currentNode === this.tail) {
           // If it's the only node in the list
           this.head = null;
