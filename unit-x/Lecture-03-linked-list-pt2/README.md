@@ -10,10 +10,10 @@ These are the methods that are typically associated with Linked List:
 
 ```js
  // If the head node contains the value, remove it and return the new head
- // Create a pointer to traverse the list
- // Traverse the list
+ // Create a pointer to traverse the list current
+ // Traverse the list using a while loop
 // If the next node contains the value, remove it
-// else the pointer become the next node
+// else the pointer become the next node current = current.next
 ```
 
 `removeFirst()`/`removeLast()` : This method is used to remove the first or last node in the Linked list.(also known as `removeHead()`/`removeLastTail()`).
@@ -30,11 +30,13 @@ remove first(or head)
 
 `length()`: This method returns the number of nodes in the Linked list.
 
+```js
 
+```
 `isEmpty()`: This method returns a boolean indicating whether the Linked list is empty or not.
 ```js
 //check to see if there is a head
-//if yes then it's true
+//if no then it's true
 //else false
 ```
 
@@ -213,6 +215,12 @@ This function uses an if statement to compare the values of the two head nodes, 
 ## Remove duplicates
 
 <details><summary>Solution</summary>
+// Create a set to store the unique values
+// Create pointers to traverse the list
+// Traverse the list
+// If the current value is already in the set, remove it
+// else Add the current value to the set
+// Move the current pointer to the next node
 
 ```js
 function removeDuplicates(head) {
