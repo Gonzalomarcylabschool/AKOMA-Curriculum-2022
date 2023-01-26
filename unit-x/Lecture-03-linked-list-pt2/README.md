@@ -88,7 +88,7 @@ function isCyclic(head){
 
 ```js
 function hasCycle(head) {
-  // Create a set to store the visited nodes
+  // Create a set to store the visited nodes can also be an array
   let visited = new Set();
 
   // Create a pointer to traverse the list
@@ -118,10 +118,12 @@ function hasCycle(head) {
 ## reverse a node
 
 ```js
- // Initialize the current, previous, and next pointers
- // Traverse the list
-  // Reverse the link
-  // Move the pointers one step forward
+ // Initialize the next, previous, and current pointers (NPC)
+ //(N is null, P is null, C is the head)
+ // Traverse the list (while loop until C is null)
+ // save the next node (N becomes C.next)
+  // Reverse the link (C.next becomes P)
+  // Move the pointers one step forward (P becomes C and C becomes N)
   // Update the head to point to the new first node
 ```
 
@@ -130,14 +132,15 @@ function hasCycle(head) {
 ```js
 function reverse(head) {
   // Initialize the current, previous, and next pointers
+  let next = null;
   let current = head;
   let previous = null;
-  let next = null;
+
 
   // Traverse the list
   while (current != null) {
     // Save the next node
-    next = current.next;
+    next = current.next; ()
 
     // Reverse the link
     current.next = previous;
@@ -153,6 +156,8 @@ function reverse(head) {
   return head;
 }
 ```
+We are not just picking up the nodes and flipping them around we are 
+
 This function uses three pointers, current, previous, and next, to traverse the list. It starts with the current pointer pointing to the head of the list, the previous pointer pointing to null, and the next pointer pointing to null. It then traverse the list, reversing the link of the current node by assigning the current.next to the previous node, and then moving the pointers one step forward, the previous pointer will now point to the current node, and the current pointer will point to the next node. The next pointer is used to save the next node before reversing the link. Once the end of the list is reached, the head pointer is updated to point to the new first node and the reversed list is returned.
 </details>
 
