@@ -68,8 +68,8 @@ class Node {
 class LinkedList {
   #length = 0
   constructor() {
-    this.head = null; // this will keep track of the front of the list.
-    this.tail = null; // this will keep track of the end of the list.
+    this.head = null; // this will keep track of the front of the list. //O(1) or constant
+    this.tail = null; // this will keep track of the end of the list. //O(1) constant
   }
 
   append(data) { // adds a new node to the end of the list or makes a list with it. 
