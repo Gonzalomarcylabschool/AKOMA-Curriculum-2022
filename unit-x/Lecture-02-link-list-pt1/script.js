@@ -77,7 +77,7 @@ class LinkedList {
     if (!this.head) {//check to see if there is a list If there is no list run the following:
       this.head = newNode; // change the data of this.head from null to the new node to start the list.
     } else { // if there is a node: 
-      this.tail.next = newNode; //the current tail point to null and we need it to point to the new node.
+      this.tail.next = newNode; //the current tail points to null and we need to change it to point to the new node.
     }
     this.tail = newNode; // after the current tail can point to the new node we can make the tail the new node.
     this.#length++;//keeps track of how many nodes we have in our list.
