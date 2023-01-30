@@ -6,7 +6,6 @@ A stack is a last-in, first-out (LIFO) data structure. This means that the last 
 
 Implementing undo/redo functionality in a software program
   when you control/command z something. 
-Evaluating mathematical expressions using postfix notation
 Implementing a back button in a web browser
   When you move back in your browser after you opened a bunch of pages. 
 Keeping track of function calls in a program (call stack)
@@ -17,4 +16,5 @@ Implementing a task scheduler
 Implementing a print spooler
 Handling requests in a web server
 Implementing message queues for inter-process communication
+
 Both stacks and queues are widely used in the computer science and are implemented in many programming languages and libraries. They are also used as building blocks for more complex data structures such as trees and graphs.

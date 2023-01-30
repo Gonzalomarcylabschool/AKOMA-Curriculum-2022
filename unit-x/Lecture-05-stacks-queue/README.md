@@ -81,7 +81,7 @@ class Queue {
     this.size = 0;
   }
 
-  enqueue(val) { //O(1)
+  enqueue(val) { //O(1) like append to tail (from linked list)
     const newNode = new Node(val);
     if (!this.first) {
       this.first = newNode;
@@ -93,7 +93,7 @@ class Queue {
     return ++this.size;
   }
 
-  dequeue() { O(1)
+  dequeue() { //O(1) like removeHead (from linked list)
     if (!this.first) return null;
     const temp = this.first;
     if (this.first === this.last) {
