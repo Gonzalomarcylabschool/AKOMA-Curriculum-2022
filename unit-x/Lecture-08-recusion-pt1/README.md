@@ -73,7 +73,7 @@ A common example of recursion is finding the factorial of a number. The factoria
 A recursive solution for finding the factorial of a number n is as follows:
 ```js
 function fact(n) {
-   return n * factorial(n - 1);// here is our recursion
+   return n * fact(n - 1);// here is our recursion
 }
 ```
 What is the problem with the code above?
@@ -83,7 +83,7 @@ If you guessed we are missing a base case, you are correct!
 ```js
 function factorial(n) {
   if (n === 1) {// here is our base
-    return 1;
+    return ;
   }
   return n * factorial(n - 1);// here is our recursion.
 }

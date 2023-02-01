@@ -1,12 +1,12 @@
-function add(number){
-  print(number);
-  return ++number
-}
+// function add(number){
+//   print(number);
+//   return ++number
+// }
 
-function print(value){
-  console.log(value);
-}
-let num = 10000;
+// function print(value){
+//   console.log(value);
+// }
+let num = 1000;
 // console.log(num);
 // console.log(add(num));
 
@@ -16,7 +16,7 @@ let num = 10000;
 //   printRec(value);
 // }
 
-// console.log(printRec(num));
+// printRec(num);
 
 function printRec(value){ 
   if(value === 0){//base case
@@ -29,16 +29,17 @@ function printRec(value){
 
 // printRec(num);
 
-function fact(n) {
-  return n * factorial(n - 1);
-}
+// function fact(n) {
+//   return n * factorial(n - 1);
+// }
 
-function factorial(n) {
-  if (n === 1) {
-    return 1;
-  }
-  return n * factorial(n - 1);
-}
+// function factorial(n) {
+//   debugger;
+//   if (n === 1) {
+    // return 1;
+//   }
+//   return n * factorial(n - 1);
+// }
 
 function printLoop(value){
   while (value >= 0){
@@ -46,9 +47,9 @@ function printLoop(value){
     value--;
   }
 }
-// console.time();
-// printRec(num)
-// console.timeLog()
-// printLoop(num)
-// console.timeLog()
+console.time();
+printRec(num)
+console.timeLog()
+printLoop(num)
+console.timeLog()
 

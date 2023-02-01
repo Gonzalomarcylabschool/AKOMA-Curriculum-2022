@@ -101,6 +101,32 @@
 * **1/13/23** OO Design pt2 | [Lecture Notes](https://github.com/Gonzalomarcylabschool/AKOMA-Curriculum-2022/tree/main/unit-4/Lecture-11-OO-Design-pt2) | [Lecture Video](https://us02web.zoom.us/rec/share/30d7G2fxUJwCH3Q_iQwLKPbz9bd-rystiMNXLiG56qsUkPxUXNNvPUQOAPPKa6xg.InU2b-eJOhm0y3D_) |
 * **1/17/23** OO Design pt3 | [Lecture Notes](https://github.com/Gonzalomarcylabschool/AKOMA-Curriculum-2022/tree/main/unit-4/Lecture-12-OO-Design-pt3) | [Lecture Video](https://us02web.zoom.us/rec/share/uvmA3J6aKvcScUZPwvJC1ixqX1yfq31maEmIcbrZk07iyA8XFsvivRh5VXZhHhMe.xzfLeItgNY2gap22) |
 * **1/18/23** Unit-4 Review | [Lecture Notes](https://github.com/Gonzalomarcylabschool/AKOMA-Curriculum-2022/tree/main/unit-4/Lecture-13-unit-4-Review) | [Lecture Video](https://drive.google.com/file/d/1g3WslDLh8vbCF4Sp6_2bP5Y3PwPFrcbR/view?usp=share_link)
+
+### Unit X - Data Structures
+
+#### Week 1
+
+* **1/23/2023** Big O Notation | [Lecture files and notes](https://github.com/Gonzalomarcylabschool/AKOMA-Curriculum-2022/tree/main/unit-x/Lecture-01-big-o) | [Lecture Video](https://us02web.zoom.us/rec/share/80d-Hib5705MhEN3x2RzAzkVVI33MQH_VbZLvy_CPdvHgkrYtys85Dhh7FLeaxcq.Rp8QxNNXZ6lJket4) | 
+
+* **1/24/2023** Linked List pt 1 | [Lecture files and notes](https://github.com/Gonzalomarcylabschool/AKOMA-Curriculum-2022/tree/main/unit-x/Lecture-02-link-list-pt1) | [Lecture Video](https://us02web.zoom.us/rec/share/n8-QY7SX8tIfCog-b1R-h2Kd9UqCBOkpVZogmylwYB_7gCpi4poB-Ui7Aa-W276Q.K3c_b_xk18KZq36U) | 
+
+* **1/25/2023** Linked List Pt 2 | [Lecture files and notes](https://github.com/Gonzalomarcylabschool/AKOMA-Curriculum-2022/tree/main/unit-x/Lecture-03-linked-list-pt2) | [Lecture Video](https://us02web.zoom.us/rec/share/YjMQpXFXPLit5x33sN8Cwl5l4liKuTg8lUWVdD6xNAAJqpn5lIZhbWwn28OcU0Ik.13OlqquBEG4TE3pP) | [Lab Review](https://github.com/Gonzalomarcylabschool/AKOMA-Curriculum-2022/tree/main/unit-x/Lecture-03-linked-list-pt2/lab-review) | 
+* **1/26/2023** Linked List pt 3 | [Lecture files and notes](https://github.com/Gonzalomarcylabschool/AKOMA-Curriculum-2022/tree/main/unit-x/Lecture-04-liniked-list-pt3) | [Lecture Video](https://us02web.zoom.us/rec/share/mk8ESufBKQWaWOfrxU3F8jh4cIwGf18CBOMe2qBMmcZ31NYZX-TQSo9neV2O3fF-.T0fbp9QCetZRAb16) |
+
+* **1/27/2023** Stacks and Queues pt1 | [Lecture files and notes](https://github.com/Gonzalomarcylabschool/AKOMA-Curriculum-2022/tree/main/unit-x/Lecture-05-stacks-queue) | [Lecture Video](https://us02web.zoom.us/rec/share/NENiwQTxDDXdEWgZ09IDAVCMuhPJbRx1oIYasno6GOStIUBg4ByphAa96cLr-4hG.EJpLsDwcMx045qbe) | 
+
+#### Week 2
+
+* **1/23/2023** Stack & Queues pt2 | [Lecture files and notes](https://github.com/Gonzalomarcylabschool/AKOMA-Curriculum-2022/tree/main/unit-x/Lecture-06-stacks-queus-pt2) | [Lecture Video](https://us02web.zoom.us/rec/share/zY9iIQqsoAc_pvoMq60Gu667kCc6Rr9pME6fwDu9N63SRuedBELWIW73pRbaS4nY.fcmEIg4eZCcwBOxy) | [Lab Review Video](https://us02web.zoom.us/rec/share/3cEAVv7FGBnZGlOP5_pAOfK0s-IFnuxM-yC3D3nPpVwY7w2L4FJfE0Xprzc9oXqh.MB-F1St_Bots69eS)
+
+* **1/23/2023** Hash Maps | [Lecture files and notes](https://github.com/Gonzalomarcylabschool/AKOMA-Curriculum-2022/tree/main/unit-x/Lecture-07-hash-map) | [Lecture Video](https://us02web.zoom.us/rec/share/pYzn09DtTb3DIC78GycVqx4Lx27yFKDaZCAwTplxS3DKg5agO_Uo_5erAN5isgtn.cW2DdoUm3Oac_wxG) | [Lab Review]() | [Lab Review Video]()
+
+* **2/1/2023** Recursion pt 1 | [Lecture files and notes](https://github.com/Gonzalomarcylabschool/AKOMA-Curriculum-2022/tree/main/unit-x/Lecture-08-recusion-pt1) | [Lecture Video](https://us02web.zoom.us/rec/share/DPpsbXIpONnqg8aFJ9TRj5XGeQYoFoyO6wJQOi0OetWF8rInxGWHPw0JzVysDzp7.ZQBNEb-3tnS2K2mm) | [Lab Review]() | [Lab Review Video]()
+
+* **2/2/2023** Recursion pt 2 | [Lecture files and notes]() | [Lecture Video]() | [Lab Review]() | [Lab Review Video]()
+
+* **2/3/2023** Hash Maps and Recursion review | [Lecture files and notes]() | [Lecture Video]() | [Lab Review]() | [Lab Review Video]()
+
 ### Unit 5 - The Document Object Model (DOM)
 ### Unit 6 - Asynchronous JavaScript
 ### Unit 7 - Server-side Web Development with Node.js
