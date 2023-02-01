@@ -20,7 +20,6 @@ console.log(num);
 console.log(add(num));
 ```
 
-
 Recursion is a technique in programming where a function calls itself in order to solve a problem. 
 
 ```js
@@ -52,11 +51,12 @@ console.log(printRec(num));
 let's rewrite this with a base case.
 ```js
 function printRec(value){ 
-  if (value === 0){
-    return `done`
+  if(value === 0){//base case
+    return;
   }
   console.log(value);
-  printRec(value);
+  value--;
+  printRec(value);// recursion
 }
 
 console.log(printRec(num));
@@ -89,7 +89,40 @@ function factorial(n) {
 }
 ```
 
-
 In this example, the base case is when n is 1, and in that case the function returns 1. When n is not 1, the function calls itself with n - 1, and multiplies the returned value by n.
 
-Recursion can be a powerful tool to solve problems but also can be tricky to implement, as it can be easy to create a infinite loop if the base case is not well defined or if the recursive call is not properly written.
+## Why not iterate instead?
+
+So we can solve many of this problems using iterators as well. 
+
+```js
+function printRec(value){ 
+  if(value === 0){//base case
+    return;
+  }
+  console.log(value);
+  value--;
+  printRec(value);// recursion
+}
+// vs
+
+function printLoop(value){
+  while (value >= 0){
+    console.log(value);
+    value--;
+  }
+}
+```
+
+## Benefits and tradeoffs
+
+Recursion can be a powerful tool to solve problems but also can be tricky to implement. as it can be easy to create a infinite loop if the base case is not well defined or if the recursive call is not properly written.
+
+A recursive solution is an alternative to an iterative solution. 
+Any iterative problem can also be solved recursively (and vice versa).
+
+Some of the tradeoffs of recursion include:
+Recursive solutions can be easier to read and easier to write.
+Problems like graph or tree traversal are inherently recursive
+Recursive solutions take up more space in memory. Every function call is stored on the call stack until the base case is reached.
+Recursive solutions are often slower since function calls are a relatively slow operation.

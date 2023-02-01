@@ -6,7 +6,7 @@ function add(number){
 function print(value){
   console.log(value);
 }
-let num = 5;
+let num = 10000;
 // console.log(num);
 // console.log(add(num));
 
@@ -19,22 +19,19 @@ let num = 5;
 // console.log(printRec(num));
 
 function printRec(value){ 
-  console.log(value);
-  if(value === 0){
-    return done;
+  if(value === 0){//base case
+    return;
   }
+  // console.log(value);
   value--;
-  printRec(value);
+  printRec(value);// recursion
 }
 
- console.log(printRec(num));
+// printRec(num);
 
 function fact(n) {
   return n * factorial(n - 1);
 }
-
-
-
 
 function factorial(n) {
   if (n === 1) {
@@ -43,4 +40,15 @@ function factorial(n) {
   return n * factorial(n - 1);
 }
 
+function printLoop(value){
+  while (value >= 0){
+    // console.log(value);
+    value--;
+  }
+}
+// console.time();
+// printRec(num)
+// console.timeLog()
+// printLoop(num)
+// console.timeLog()
 
