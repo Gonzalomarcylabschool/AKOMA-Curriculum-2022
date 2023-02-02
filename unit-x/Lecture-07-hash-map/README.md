@@ -27,7 +27,7 @@ Overall, a hash map is a powerful data structure that allows for efficient inser
 
 * Hash Maps is made up of Key value pairs.
 * Looking up values in a Hash map should be (or close to) constant time (O(1)).
-* When Inserting data it should be go trhough a hash function where return a hash key
+* When Inserting data it should be go though a hash function where return a hash key
 * The hash key is uses to look up the values.
 
 ### Quick note about Hash functions.
