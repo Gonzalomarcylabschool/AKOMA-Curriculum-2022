@@ -1,5 +1,5 @@
 function twoSum (nums, target){
-
+  debugger;
     // for (let i = 0; i <= nums.length; i++){
     //     for(let j = i+1; j <= nums.length; j++){
     //         if (nums[i] + nums[j] === target ){
@@ -7,6 +7,8 @@ function twoSum (nums, target){
     //         }
     //     }
     // }   
+
+
   let hash = {};
 
   for(let i = 0; i < nums.length; i++) {
@@ -18,3 +20,5 @@ function twoSum (nums, target){
   }
   return [];
 };
+
+
