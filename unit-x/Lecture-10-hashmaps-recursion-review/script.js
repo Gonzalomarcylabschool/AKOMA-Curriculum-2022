@@ -1,15 +1,14 @@
-const hashMap = new Array(30);
+const hashMap = new Array(10);
 
 function hash(string){// pseudo random and a pure function.
   let sum = 0
   for(let i = 0; i < string. length; i++){
     sum += string.charCodeAt (i);
   }
-  return sum % 30;
+  return sum % 10;
 }
 
-
-const gonzaloComputers = ['Macbook Pro M2', 'Mac Mini M2 pro', 'Ubuntu Laptop', 'Main PC Desktop', 'backup PC desktop']
+const gonzaloComputers = ['Macbook Pro M2', 'Macbook Pro M2', 'Macbook Pro M2','Mac Mini M2 pro', 'Ubuntu Laptop', 'Main PC Desktop', 'backup PC desktop']
 
 gonzaloComputers.forEach(computer => {
   let hashKey = hash(computer)
@@ -26,8 +25,21 @@ gonzaloComputers.forEach(computer => {
 const compMap = {};
 
 gonzaloComputers.forEach(computer => {
-  compMap[computer] = true;
+  if (compMap[computer]){
+    compMap[computer]++
+  }else{
+    compMap[computer] = 1;
+  }
+  
 })
+function inMap(comp){
+  if(compMap[comp]){
+    return true
+  }
+  else {
+    return false
+  }
+}
 
 const computerMap = new Map();
 
@@ -36,7 +48,7 @@ gonzaloComputers.forEach(computer => {
 })
 
 
-
+//JSON
 
 const artistsByGenre = {
   jazz: ["Miles Davis", "John Coltrane"],
@@ -55,7 +67,8 @@ const artistsByGenre = {
 }
 
 const getArtistNames = (dataObj, arr = []) => {
-  Object. keys (dataObj) .forEach (key => {
+  
+  Object.keys(dataObj).forEach (key => {
     if (Array.isArray (dataObj [key])) {
       return dataObj[key].forEach(artist => {
       arr.push (artist);
@@ -65,4 +78,4 @@ const getArtistNames = (dataObj, arr = []) => {
   });
   return arr;
   }
-  console. log(getArtistNames (artistsByGenre)) ;
+  console.log(getArtistNames (artistsByGenre));

@@ -21,6 +21,9 @@ The hash function must satisfy two properties:
 Return a unique hash key for each unique key.
 Return the same hash key for the same key every time it is called.
 
+ key          function        hash key
+'string' => (hashFunction) => 15 
+
 Overall, a hash map is a powerful data structure that allows for efficient insertion, deletion, and lookup of key-value pairs, with a time complexity of O(1).
 
 ## lets break this down 
