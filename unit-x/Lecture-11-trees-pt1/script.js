@@ -1,25 +1,25 @@
 class BinaryTree{
   constructor(value){
     this.value = value; // Makes a node
-    this.left = null; // points to the left node
-    this.right = null; //point to the right node
+    this.left = null; // edge to the left node
+    this.right = null; //edge to the right node
   }
 
   getRootValue(){
-    // return the value of the node
+    return this.value;
   }
   
   setRootValue(value){
-    //set the value of the root node
+    this.value = value;
   }
 
   insertLeft(value){
-    // replaces the null value with a new subtree in the left pointer 
+    this.left = new BinaryTree(value)// replaces the null value with a new subtree in the left pointer 
     return this.left
   }
 
   insertRight(value){
-    // replaces the null value with a new subtree in the right pointer 
+    this.right = new BinaryTree(value)// replaces the null value with a new subtree in the right pointer 
     return this.right;
   }
 
@@ -32,7 +32,7 @@ class BinaryTree{
   }
 }
 
-const tree = new BinaryTree(1);
+const tree = new BinaryTree(4);
 
 // class BinarySearchTree{
 //   constructor(value) {
