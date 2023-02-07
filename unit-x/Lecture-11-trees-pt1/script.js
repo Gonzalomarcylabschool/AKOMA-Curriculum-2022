@@ -32,7 +32,19 @@ class BinaryTree{
   }
 }
 
-const tree = new BinaryTree(4);
+const root = new BinaryTree(4);
+
+root.left.left.insertLeft(8);
+
+// function insertNewNode(node, value){
+//   //code
+// }
+
+
+
+
+
+
 
 // class BinarySearchTree{
 //   constructor(value) {
