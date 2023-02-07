@@ -79,6 +79,26 @@ class BinarySearchTree{
       }
     }
   }
+
+  find(target){
+    if (!this.value){
+      false
+    }
+
+    let currentNode = this;
+    let found = false;
+    while(currentNode && ! found) {
+      if(target < currentNode.value){
+        currentNode = currentNode.left;
+      } else if (target > currentNode.value) {
+        currentNode = currentNode.right;
+      } else {
+        return currentNode
+      }
+      
+      return undefined;
+    }
+  }
 }
 
 const bst = new BinarySearchTree(55);
