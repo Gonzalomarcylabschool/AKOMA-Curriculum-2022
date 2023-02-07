@@ -34,7 +34,7 @@ class BinaryTree{
 
 const root = new BinaryTree(4);
 
-root.left.left.insertLeft(8);
+// root.left.left.insertLeft(8);
 
 // function insertNewNode(node, value){
 //   //code
@@ -46,38 +46,42 @@ root.left.left.insertLeft(8);
 
 
 
-// class BinarySearchTree{
-//   constructor(value) {
-//     this.value = value;
-//     this.left = null;
-//     this.right = null;
-//   }
+class BinarySearchTree{
+  constructor(value) {
+    this.value = value;
+    this.left = null;
+    this.right = null;
+  }
 
-//   insert(newValue) {
-//     const newSubtree = new BinarySearchTree(newValue)
-//     if (!this.value) {
-//       this.value = newSubtree;
-//       return this;
-//     } 
+  insert(newValue) {
+    
+    const newSubtree = new BinarySearchTree(newValue)
+    if (!this.value) {
+      this.value = newSubtree;
+      return this;
+    } 
 
-//     let current = this.value;
-//     while (true) {
-//       if (newValue === current) return undefined;
-//       if(newValue < current) {
-//         if(!current.left) {
-//           current.left = newSubtree;
-//           return this;
-//         }
-//         current = current.left;
-//       } else {
-//         if(!current.right) {
-//           current.right = newSubtree;
-//           return this;
-//         }
-//       }
-//     }
-//   }
-// }
+    let current = this.value;
+    let currentNode = this
+    while (true) {
+      if (newValue === current) return undefined;
+      if(newValue < current) {
+        if(!currentNode.left) {
+          currentNode.left = newSubtree;
+          return this;
+        }
+        currentNode = currentNode.left;
+      } else {
+        if(!currentNode.right) {
+          currentNode.right = newSubtree;
+          return this;
+        }
+      }
+    }
+  }
+}
 
-// const bst = new BinarySearchTree(55);
+const bst = new BinarySearchTree(55);
+
+const leftNode = bst.insert(25);
 
