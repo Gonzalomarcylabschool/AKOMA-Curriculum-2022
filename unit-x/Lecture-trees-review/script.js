@@ -99,6 +99,11 @@ function isUnivalTreeHelper(node, value) { //declare the helper function that ta
 }
 
 function invert(node){ 
+  if (node.right !== null && node.left !== null){
+    let left = node.left;
+    node.left = invert(node.right);
+    node.right = invert(left);
+  }
   // check to see the left and right node are not null // this is the base case
     // declare a variable to store to the left
     // store the value returned by invoking function with the right node into the left node

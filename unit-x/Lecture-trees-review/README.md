@@ -112,7 +112,7 @@ function invert(node){
 if (node.left && node.right){ //
     let left = node.left;
     node.left = invert(node.right);
-    node.right = invert(temp);
+    node.right = invert(left);
   }
   return node;
 ```
