@@ -111,16 +111,35 @@ function invert(node){
 function secondMinimumNode(node){
   //base case: if the node is null or  there is no left and right node
     //return -1
-  
-
+    if (!node ||(!node.left && !node.right)){
+      return -1;
+    }
+    let left = node.left.value;
+    let right = node.right.value;
   // store the left value of the node
   //store the right value of the node
+
   //if the left value is === to the node value
     // invoke the function on the left node and store the value that is returned in to the 'left' variable
-  
+    if (left === node.value) {
+      left = secondMinimumNode(node.left);
+    }
   //if the left value is === to the node value
     //invoke the function on the right node and store the value that is returned in to the 'right' variable
-  
+    if(right === node.value){
+      right = secondMinimumNode(node.right);
+    }
+
+    if(left !== -1 && right !== -1) {
+      return Math.min(left,right)
+    }
+
+    if(left !== -1) {
+      return left
+    }
+    else {
+      return right
+    }
   //if the left and right variable are not -1 
     //return the low est value (what method can we use here)
   //check to see if the 'left' is not -1
