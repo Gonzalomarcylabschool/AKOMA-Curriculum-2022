@@ -22,6 +22,12 @@ Improved accessibility: The DOM allows developers to programmatically manipulate
 
 Server-side rendering: The DOM can also be used on the server-side to generate HTML that can be sent to the browser for rendering. This is particularly useful for web applications that need to provide a fast and responsive user experience, even on slow network connections.
 
+## Back to HTML
+
+First lest make a new file and practice doing some HTML.
+
+
+
 ## Accessing Elements
 Before we can update a page, we need to find, or select, the element(s) that we want to update. In order to find an element, we need to search through the document. The syntax for the search looks something like this:
 
@@ -42,7 +48,7 @@ Before we can update a page, we need to find, or select, the element(s) that we 
 
 
 document.getElementById('hello');//points to the h1
-document.querySelector('#hello');//points to the h1
+document.querySelector('.hello');//points to the h1
 document.getElementsByClassName('myText');//points to the h1
 document.getElementsByTagName('h1');//points to the h1
 document.querySelectorAll('.myText')// points to the h1 and p tags
