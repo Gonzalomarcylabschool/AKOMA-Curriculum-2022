@@ -60,15 +60,26 @@ const body = document.body;
 body.append('here is some text');
 body.appendChild('here is some more text'); 
 
-body.append(h1);
-// body.appendChild(h1);
-
-body.appendChild(h3);
+body.append(h3);
+// body.appendChild(h3);
 
 ```
+## Adding content
 
+| Property | Description |
+|----------|----------|
+| innerText | adds text to the page that will be human-readable only (the computer will not recognize if it cannot be seen on the page) |
+| textContent | add text that will always be recognized |
 
 ## Adding and changing attributes
+
+There are a few ways change attributes to our elements. One way is by using the dot notation for that attribute:
+
+```js
+h1.id = 'Hello';
+h1.title = 'this is the h1 of the page';
+```
+This is not always the case, so you will have the following methods to use:
 
 | Property/method | Description |
 |----------|----------|
@@ -76,5 +87,19 @@ body.appendChild(h3);
 | `setAttribute()` | Sets an attribute of an element |
 | `removeAttribute()` | Removes an attribute from an element |
 
+
+## `.remove` `.removeChild`
+
+If we want to remove an element we would use the `.remove` method. If we wanted to remove an element that is a child of an element, we would use the `.remove child`
+
+```js
+const div = document.createElement('div');
+const spanHi = document.createElement('span');
+
+body.append(div, spanHi);
+
+
+
+```
 | Property | Description |
 |----------|----------|
