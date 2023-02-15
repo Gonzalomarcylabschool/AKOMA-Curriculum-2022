@@ -1,0 +1,18 @@
+#child {
+  background-color: green;
+  width:150px;
+  height: 150px;
+}
+#parent{
+  background-color: blue;
+  width: 250px;
+  height: 250px;
+}
+#grandParent{
+  background-color: red;
+  width: 350px;
+  height: 350px;
+}
+div {
+  margin-top: 20px;
+}
