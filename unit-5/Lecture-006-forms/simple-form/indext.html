@@ -4,21 +4,25 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Simple Form</title>
+  <link rel="stylesheet" href="style.css">
   <script defer src="script.js"></script>
 </head>
 <body>
-  <form action="">
-    <label for="name">Input your Name</label>
-    <input id="name" type="text" name="name" placeholder="Name" value="John Smith" />
-    <br>
-    <label for="email">Email</label>
-    <input id="email" type="email" name="email" placeholder="example@email.com" required />
-    <br>
-    <label for="age">Input your Age</label>
-    <input id="age" type="number" name="age" min="13" required placeholder="13 and up" />
-    <br>
-    <input type="submit">
-  </form>
+  <main>
+    <form id='form' action="">
+      <label for="name">Input your Name</label>
+      <input id="name" type="text" name="name" placeholder="Name" value="John Smith" />
+      <br>
+      <label for="email">Email</label>
+      <input id="email" type="email" name="email" placeholder="example@email.com" required />
+      <br>
+      <label for="age">Input your Age</label>
+      <input id="age" type="number" name="age" min="13" required placeholder="13 and up" />
+      <br>
+      <input id='submit' type="submit">
+    </form>
+  </main>
+  
 </body>
 </html>

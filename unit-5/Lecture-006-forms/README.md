@@ -17,7 +17,7 @@ When would users interact with a form?
 
 There are four elements used to create a form: 
 * `<form>`
-    * `<form>` element is used to create an HTML form for user input.  Like the `<section>`, `<footer>`, or `table` element, its a container, but the browser know when it see this tag that its main purpose will be to gather information.
+    * `<form>` element is used to create an HTML form for user input.  Like the `<section>`, `<footer>`, or `<table>` element; its a container, but the browser know when it see this tag that its main purpose will be to gather data.
 * `<label>`
     * The `<label>` tag defines a label for form elements.
     * It's useful for screen-reader users, because the screen-reader will read out loud the label when the user focus on the input element.
@@ -50,6 +50,17 @@ You can just put the input inside of the label like so:
 </label>
 ```
 but using the former is best practice. 
+
+## Let take a look at a simple form.
+
+In this simple form we are doing a few things.
+
+1. We are gathering information from the user? how is this being accomplished?
+2. We are checking to see if we can see the value that the user inputted. What are we using to check it?
+3. We are storing the users input in an array. What data structure do you think each element is?
+
+This is all fine, but how is this all happening? 
+I already have the code written but I want to see if we can write it together using the DOM.
 
 ## What is the default of a form?
 
