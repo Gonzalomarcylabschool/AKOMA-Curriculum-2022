@@ -3,8 +3,9 @@
 
 <head>
   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-  <title>code along</title>
+  <title>Throw Away</title>
   <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
 </head>
 
 <body>
@@ -20,56 +21,53 @@
       </div>
     </header>
     <div class="formCont">
-        <form id="survey-form">
-            <section>
-              <label for="name" id="name-label">Whats your name?</label>
-              <input class="input" id="name" type="text" placeholder="Enter your name" required>
-              <label for="email" id="email-label">Email</label>
-              <input class="input" id="email" type="email" placeholder="Email" required>
-              <label for="number" id="number-label">How old are you </label>
-              <input style="width:75px;"class="input" id="number" type="number" placeholder="13 - 99" min="13" max="99" required>
-            </section>
-            <section> 
-                <label for="emotions">What is the feeling that you want to throw away?</label>
-                <select id="dropdown" name="emotions" id="emotions" required>
-                  <option value="sad">Sad</option>
-                  <option value="angry">Angry</option>
-                  <option value="anxious">Anxious</option>
-                  <option value="depressed">Depressed</option>
-                  <option value="other">Other</option>
-                </select>
-            </section>
-            <section>
-                <label for="user-consistency" id="time">Do you often feel this way?</label>
-                    <input name="user-consistency" value="definitely" type="radio" class="input-radio" checked />
-                    Definitely
-                
-                
-                    <input name="user-consistency" value="maybe" type="radio" class="input-radio">
-                    Maybe
-                
-            
-                    <input name="user-consistency" value="not-sure" type="radio" class="input-radio">
-                    Not sure
-              </label>
-                </section>
-                <section>
-                    <label for="prefer" id="how">How would you like to feel? check all that apply.</label>
-                        <input name="prefer" value="happy" type="checkbox" class="input-checkbox">
-                        Happy
-                        <input name="prefer" value="excited" type="checkbox" class="input-checkbox">
-                        Excited
-                        <input name="prefer" value="glad" type="checkbox" class="input-checkbox">
-                        Glad
-                        <input name="prefer" value="relieved" type="checkbox" class="input-checkbox">
-                        Relieved
+      <form id="survey-form">
+        <section>
+          <label for="name" id="name-label">Whats your name?</label>
+          <input class="input" id="name" type="text" placeholder="Enter your name" required>
+          <label for="email" id="email-label">Email</label>
+          <input class="input" id="email" type="email" placeholder="Email" required>
+          <label for="number" id="number-label">How old are you </label>
+          <input style="width:75px;"class="input" id="number" type="number" placeholder="13 - 99" min="13" max="99" required>
+        </section>
+        <section> 
+            <label for="emotions">What is the feeling that you want to throw away?</label>
+            <select id="dropdown" name="emotions" id="emotions" required>
+              <option value="sad">Sad</option>
+              <option value="angry">Angry</option>
+              <option value="anxious">Anxious</option>
+              <option value="depressed">Depressed</option>
+              <option value="other">Other</option>
+            </select>
+        </section>
+        <section>
+          <label for="user-consistency" id="time">Do you often feel this way?</label>
+            <input name="user-consistency" value="definitely" type="radio" class="input-radio" checked />
+            Definitely
+                        
+            <input name="user-consistency" value="maybe" type="radio" class="input-radio">
+            Maybe
                     
-            </section>
-            <section>
-                <textarea placeholder="enter any additional comments"></textarea>    
-            </section>
-            <button id="submit" type="submit">click</button>
-        </form>
+            <input name="user-consistency" value="not-sure" type="radio" class="input-radio">
+            Not sure
+          </label>
+        </section>
+        <section>
+          <label for="prefer" id="how">How would you like to feel? check all that apply.</label>
+            <input name="prefer" value="happy" type="checkbox" class="input-checkbox">
+            Happy
+            <input name="prefer" value="excited" type="checkbox" class="input-checkbox">
+            Excited
+            <input name="prefer" value="glad" type="checkbox" class="input-checkbox">
+            Glad
+            <input name="prefer" value="relieved" type="checkbox" class="input-checkbox">
+            Relieved
+        </section>
+        <section>
+          <textarea placeholder="enter any additional comments"></textarea>    
+        </section>
+        <button id="submit" type="submit">click</button>
+      </form>
     </div>
   </div>
 </body>
