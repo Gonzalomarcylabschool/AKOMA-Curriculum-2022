@@ -12,10 +12,10 @@ const teachers = [
   {
     firstName: "Ben", 
     lastName: "Spector", 
-    email: "laura@gmail.com"
+    email: "ben@gmail.com"
   }
 ]
-teachers.forEach(t => addInstructor(t.firstName, t. lastName, t.email))
+teachers.forEach(t => addInstructor(t.firstName, t.lastName, t.email))
   
 function addInstructor(fName, lName, email){
   //make the elements to add a new row
@@ -98,19 +98,18 @@ form.addEventListener('submit', e => {
 
 
 // using e to do the same thing!
-/*
-form.addEventListener('submit', e => {
-  e.preventDefault()// stops the default behavior
-  console.log(e)
 
-  //get the values from the inputs
-  const fName = e.target[0].value;
-  const lName = e.target[1].value;
-  const email = e.target[2].value;
+// form.addEventListener('submit', e => {
+//   e.preventDefault()// stops the default behavior
+//   console.log(e)
+
+//   //get the values from the inputs
+//   const fName = e.target[0].value;
+//   const lName = e.target[1].value;
+//   const email = e.target[2].value;
   
-  // pass in the values from the inputs to the functions.
-  addInstructor(fName, lName, email)
-  // reset the inputs to clear.
-  e.target.reset();
-})
-*/
+//   // pass in the values from the inputs to the functions.
+//   addInstructor(fName, lName, email)
+//   // reset the inputs to clear.
+//   e.target.reset();
+// })
