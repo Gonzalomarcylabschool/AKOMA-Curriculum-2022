@@ -71,3 +71,7 @@ This was the common practice of a form from back in the day(early basic days of 
 So what do we do?
 
 `event.preventDefault`
+
+## Taking it to the next level!
+
+When you using the `event` object on the form there is a property that make it so much easer for us to see get the values form the form. Let's take a look at how much easier this will be.
