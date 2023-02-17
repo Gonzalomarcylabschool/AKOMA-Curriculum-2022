@@ -72,7 +72,7 @@ The short answer here is pencil and paper. As you know based on everything we do
 
 ## Quick CFU
 
-What is the some and why should we learn to manipulate it?
+What is the DOM and why should we learn to manipulate it?
 
 <details><summary>some answers</summary>
 * Manipulate webpages using JS
