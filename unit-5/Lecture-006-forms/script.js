@@ -39,20 +39,20 @@ function addInstructor(fName, lName, email){
 const form = document.querySelector('#my-form');
 
 // event for when the form is submitted.
-form.addEventListener('submit', e => {
-  e.preventDefault()// stops the default behavior
-  console.log(e)
+// form.addEventListener('submit', e => {
+//   e.preventDefault()// stops the default behavior
+//   console.log(e)
 
-  //get the values from the inputs
-  const fName = document.querySelector('#first-name-input').value;
-  const lName = document.querySelector('#last-name-input').value;
-  const email = document.querySelector('#email-input').value;
+//   //get the values from the inputs
+//   const fName = document.querySelector('#first-name-input').value;
+//   const lName = document.querySelector('#last-name-input').value;
+//   const email = document.querySelector('#email-input').value;
   
-  // pass in the values from the inputs to the functions.
-  addInstructor(fName, lName, email)
-  // reset the inputs to clear.
-  e.target.reset();
-})
+//   // pass in the values from the inputs to the functions.
+//   addInstructor(fName, lName, email)
+//   // reset the inputs to clear.
+//   e.target.reset();
+// })
 
 //e.preventDefault()
 
@@ -99,17 +99,17 @@ form.addEventListener('submit', e => {
 
 // using e to do the same thing!
 
-// form.addEventListener('submit', e => {
-//   e.preventDefault()// stops the default behavior
-//   console.log(e)
+form.addEventListener('submit', e => {
+  e.preventDefault()// stops the default behavior
+  console.log(e)
 
-//   //get the values from the inputs
-//   const fName = e.target[0].value;
-//   const lName = e.target[1].value;
-//   const email = e.target[2].value;
+  //get the values from the inputs
+  const fName = e.target[0].value;
+  const lName = e.target[1].value;
+  const email = e.target[2].value;
   
-//   // pass in the values from the inputs to the functions.
-//   addInstructor(fName, lName, email)
-//   // reset the inputs to clear.
-//   e.target.reset();
-// })
+  // pass in the values from the inputs to the functions.
+  addInstructor(fName, lName, email)
+  // reset the inputs to clear.
+  e.target.reset();
+})
