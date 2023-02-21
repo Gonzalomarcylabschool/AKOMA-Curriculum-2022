@@ -13,7 +13,7 @@ const lives = document.querySelector('#livesCount')
 
 let score = 0 //keep track of the score
 let blockMove = setInterval(moveBlock, 15); // move the block across the screen
-let blockPos = 720; // position of the block and where it starts
+let blockPos = 759; // position of the block and where it starts
 let livesCount = 5 // how many lives you have.
 
 //function to move the block ac
@@ -63,7 +63,7 @@ function jump() {
       clearInterval(jumpInterval);
       let fallInterval = setInterval(function() {
         if (position <= 191) {
-          debugger;
+          
           position += 1;
           character.style.top = position + "px";
           
@@ -83,6 +83,7 @@ document.addEventListener("keydown", (e) => {
 });
 
 document.addEventListener('submit',(e) => {})
+
 function detectCollision(div1, div2) {
   // Get the positions and dimensions of the two divs
   var div1Rect = div1.getBoundingClientRect();

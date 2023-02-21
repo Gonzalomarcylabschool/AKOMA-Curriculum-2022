@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+#playArea {
+  border: black 5px solid;
+  width: 800px;
+  height: 300px;
+}
+
+#info {
+  display: flex;
+  justify-content: space-around;
+}
+
+#char {
+  background-color: red;
+  width: 40px;
+  height: 80px;
+  position: relative;
+  top: 193px;
+  left: 100px
+}
+
+#obst {
+  background-color: blue;
+  width: 40px;
+  height: 40px;
+  position: relative;
+  top: 153px;
+  left: 759px
+}
