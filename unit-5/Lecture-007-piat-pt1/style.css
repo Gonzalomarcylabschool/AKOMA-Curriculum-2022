@@ -1,0 +1,39 @@
+* {
+margin: 0;
+padding: 0;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#gameArea {
+  border: black 5px solid;
+  width: 800px;
+  height: 300px;
+}
+#info {
+  display: flex;
+  justify-content: space-around;
+}
+#character {
+  width: 40px;
+  height: 80px;
+  background-color: red;
+  position: relative;
+  top: 193px;
+  left: 100px;
+}
+
+#block {
+  width: 40px;
+  height: 40px;
+  background-color: blue;
+  position: relative;
+  top: 153px;
+  left: 0px;
+}
