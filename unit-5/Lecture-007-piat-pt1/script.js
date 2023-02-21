@@ -100,3 +100,4 @@ function detectCollision(div1, div2) {
   // Return true if there is both horizontal and vertical overlap
   return horizontalOverlap && verticalOverlap;
 }
+//check
