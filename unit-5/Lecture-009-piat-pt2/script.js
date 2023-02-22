@@ -1,5 +1,6 @@
 
 
+const gamePlay = document.querySelector('#start');
 //make the variable for the block
 const block = document.querySelector('#block');
 
@@ -23,11 +24,43 @@ const ul = document.querySelector('ul');
 let score = 0 //keep track of the score
 let multi = 1;// multiplier for the score 
 let blockSpeed = 5;// changes the speed of the block
-let blockMove = setInterval(moveBlock, 15); // move the block across the screen
+let blockMove; // move the block across the screen
 let blockPos = 759; // position of the block and where it starts
 let livesCount = 5 // how many lives you have.
 
 //function to move the block ac
+
+
+
+let intervalId;
+let jumpHeight = 125;
+let position = 191;
+let isJumping = false;
+
+function jump() {
+  isJumping = true;
+  let jumpInterval = setInterval(function() {
+    if (position > jumpHeight) {
+      position -= 1;
+      character.style.top = position + "px";
+      
+    } else {
+      clearInterval(jumpInterval);
+      let fallInterval = setInterval(function() {
+        if (position <= 191) {
+          
+          position += 1;
+          character.style.top = position + "px";
+          
+        } else {
+          clearInterval(fallInterval);
+          isJumping = false;
+        }
+      }, 10);
+    }
+  }, .001);
+}
+
 function moveBlock()  { 
   if(blockPos <= 0){
     blockPos = 780; // 
@@ -71,37 +104,6 @@ function moveBlock()  {
     
   // }
 }
-
-
-let intervalId;
-let jumpHeight = 125;
-let position = 191;
-let isJumping = false;
-
-function jump() {
-  isJumping = true;
-  let jumpInterval = setInterval(function() {
-    if (position > jumpHeight) {
-      position -= 1;
-      character.style.top = position + "px";
-      
-    } else {
-      clearInterval(jumpInterval);
-      let fallInterval = setInterval(function() {
-        if (position <= 191) {
-          
-          position += 1;
-          character.style.top = position + "px";
-          
-        } else {
-          clearInterval(fallInterval);
-          isJumping = false;
-        }
-      }, 10);
-    }
-  }, .001);
-}
-
 document.addEventListener("keydown", (e) => {
   
   if (e.key === 'ArrowUp' && !isJumping) { // up key
@@ -112,12 +114,12 @@ document.addEventListener("keydown", (e) => {
 document.addEventListener('submit',(e) => {
   e.preventDefault();
   clearInterval(blockMove);
-   score = 0 //keep track of the score
-   multi = 1;// multiplier for the score 
-   blockSpeed = 5;// changes the speed of the block
-   blockMove = setInterval(moveBlock, 15); // move the block across the screen
-   blockPos = 759; // position of the block and where it starts
-   livesCount = 5 // how many lives you have.
+  score = 0 //keep track of the score
+  multi = 1;// multiplier for the score 
+  blockSpeed = 5;// changes the speed of the block
+  blockMove = setInterval(moveBlock, 15); // move the block across the screen
+  blockPos = 759; // position of the block and where it starts
+  livesCount = 5 // how many lives you have.
   jumpHeight = 125;
   position = 191;
   isJumping = false;
