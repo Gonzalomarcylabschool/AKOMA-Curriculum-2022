@@ -37,3 +37,8 @@ body {
   top: 153px;
   left: 0px;
 }
+
+li {
+  list-style-type: none;
+}
+
