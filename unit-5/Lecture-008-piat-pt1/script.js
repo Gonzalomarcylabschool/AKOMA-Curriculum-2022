@@ -18,7 +18,7 @@ let livesCount = 5 // how many lives you have.
 
 //function to move the block ac
 function moveBlock()  { 
-  if(!blockPos){
+  if(blockPos <= 0){
     blockPos = 780; // 
     score++
     scoreUpdate.textContent = score
@@ -100,4 +100,3 @@ function detectCollision(div1, div2) {
   // Return true if there is both horizontal and vertical overlap
   return horizontalOverlap && verticalOverlap;
 }
-//check

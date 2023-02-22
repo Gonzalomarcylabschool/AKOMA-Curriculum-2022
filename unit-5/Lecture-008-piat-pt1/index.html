@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script defer src="script.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div>
+    <main id="gameArea">
+      <section id="info">
+        <div id="lives"><h1 >Lives: <span id="livesCount">5</span></h1></div>
+        <div id="scores">
+          <h3>Score: <span id="score">0</span> </h3> 
+          
+        </div>
+
+      </section>
+      <section>
+        <img src="https://thumbs.gfycat.com/AmusedThirdHawaiianmonkseal-size_restricted.gif" alt="" id="character">
+        <img src="data:image/png;base64,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" alt="" id="block">
+      </section>
+    </main>
+    <form>
+      <input type="submit" value="reset">
+    </form>
+  </div>
+</body>
+</html>
