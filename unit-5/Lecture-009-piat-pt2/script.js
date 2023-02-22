@@ -1,6 +1,6 @@
 
 
-const gamePlay = document.querySelector('#start');
+const gamePlay = document.querySelector('#start');//new
 //make the variable for the block
 const block = document.querySelector('#block');
 
@@ -13,7 +13,12 @@ const scoreUpdate = document.querySelector('#score')
 //variable for the lives 
 const lives = document.querySelector('#livesCount')
 //variable for top score
+
+const levelUpDate = document.querySelector('#level');
+let level = 1;
+
 const topScoreUpdate = document.querySelector('#bestScore')
+
 let bestScore = 0; // keep track of the top score
 
 //variable to store the ul
@@ -60,7 +65,7 @@ function jump() {
     }
   }, .001);
 }
-
+let modNum = 500
 function moveBlock()  { 
   if(blockPos <= 0){
     blockPos = 780; // 
@@ -96,13 +101,16 @@ function moveBlock()  {
 
     }
   }
-  if (score % 500 === 0){
+  
+  if(score % 1000 === 0 && modNum >0){
+    modNum -=10;
+  }
+  if (score % modNum === 0){
     multi++
     blockSpeed++
+    level++
+    levelUpDate.textContent = level;
   }
-  // if(score % 1000 === 0){
-    
-  // }
 }
 document.addEventListener("keydown", (e) => {
   
