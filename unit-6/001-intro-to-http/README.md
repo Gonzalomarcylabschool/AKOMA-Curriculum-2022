@@ -133,6 +133,8 @@ Although HTTP is a stateless protocol, it is possible to build stateful web appl
 
 The Same Origin Policy (SOP) is a security concept implemented by web browsers that restricts web pages from making requests to a different origin (combination of protocol, domain, and port) than the one that served the web page. This policy is in place to prevent malicious websites from accessing sensitive data from other websites that a user might be logged into.
 
+![SOP mental model](https://danielmiessler.com/images/opRrw.gif)
+
 Cross-Origin Resource Sharing (CORS) is a mechanism that allows a server to specify which origins are allowed to access its resources. It is used to relax the SOP and enable web pages from different origins to communicate with each other. CORS works by adding additional HTTP headers to the response from the server, which specify which origins are allowed to access the resource.
 
 CORS is used to relax the SOP in a controlled manner to allow web pages to communicate with each other without compromising security.
