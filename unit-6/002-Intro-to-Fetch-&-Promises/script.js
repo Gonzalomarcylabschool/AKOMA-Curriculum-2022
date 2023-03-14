@@ -8,11 +8,11 @@ let p = new Promise ((resolve, reject) => {
   }
 })
 
-// p.then((message) => {
-//   console.log(message)
-// }).catch((message) => {
-//   console.log(message)
-// })
+p.then((message) => {
+  console.log(message)
+}).catch((message) => {
+  console.log(message)
+})
 
 
 

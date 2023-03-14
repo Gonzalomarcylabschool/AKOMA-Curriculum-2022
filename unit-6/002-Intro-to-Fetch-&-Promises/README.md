@@ -1,3 +1,7 @@
+## How does our code work?
+
+So far up to know we have been working with code that works from top to bottom. Whatever is written first is executed: (unless it's a function or something that is hoisted).
+
 ## Asynchronous programming
 
 Asynchronous programming is a programming paradigm that allows multiple tasks to run concurrently without blocking each other. In asynchronous programming, a program can perform operations without waiting for the completion of a previous operation. This is achieved by using non-blocking code, which allows a program to continue executing while waiting for an operation to complete.
@@ -73,7 +77,7 @@ Here's an example of using the Fetch API to make a GET request:
 
 ```js
 fetch('https://reqres.in/api/users')
-  .then(response => {
+  .then(response => {// parameter for the 
     if (!response.ok) {
       throw new Error('Network response was not ok');
     }
