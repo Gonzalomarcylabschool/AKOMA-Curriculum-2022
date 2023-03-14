@@ -1,6 +1,6 @@
 ## How does our code work?
 
-So far up to know we have been working with code that works from top to bottom. Whatever is written first is executed: (unless it's a function or something that is hoisted).
+So far up to know we have been working with code that works from top to bottom. Whatever is written first is executed: (unless it's a function or something that is hoisted). This is means that we have so far been working Single threaded programs. This is the processes contain the execution of instructions in a single sequence. In other words, one command is processes at a time.
 
 ## Asynchronous programming
 
