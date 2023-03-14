@@ -8,32 +8,34 @@ let p = new Promise ((resolve, reject) => {
   }
 })
 
-p.then((message) => {
-  console.log(message)
-}).catch((message) => {
-  console.log(message)
-})
+// p.then((message) => {
+//   console.log(message)
+// }).catch((message) => {
+//   console.log(message)
+// })
 
-
-fetch('https://reqres.in/api/users')
-  .then(response => {
-    if (!response.ok) {
-      throw new Error('Network response was not ok');
-    }
-    return response.json();
-  })
-  .then(data => {
-    console.log(data);
-  })
-  .catch(error => {
-    console.error('Error fetching data:', error);
-  });
 
 
 // fetch('https://reqres.in/api/users')
-// .then(res => console.log(res))
-// // .then(response => response.json())
-// // .then(data => console.log(data.0.id))
+// // .then(res => console.log(res))
+// .then(response => response.json())
+// .then(data => console.log(data))
+
+
+
+// fetch('https://reqres.in/api/users')
+//   .then(response => {
+//     if (!response.ok) {
+//       throw new Error('Network response was not ok');
+//     }
+//     return response.json();
+//   })
+//   .then(data => {
+//     console.log(data);
+//   })
+//   .catch(error => {
+//     console.error('Error fetching data:', error);
+//   });
 
 
 // fetch('https://reqres.in/api/users', {
