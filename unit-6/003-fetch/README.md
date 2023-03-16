@@ -93,7 +93,7 @@ console.log(position)
   .then(data=> {
     console.log(data) 
   })
-  get the weather using user's location and sets it on the page
+  //get the weather using user's location and sets it on the page
   fetch('https://api.openweathermap.org/data/2.5/weather?lat='+latitude+'&lon='+longitude+'&units=imperial&appid=b989a956b784b1493fe08339165f3739')
   .then(res=> res.json())
   .then(data=> {

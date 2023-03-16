@@ -43,26 +43,21 @@
 
 
 
-fetch('https://reqres.in/api/users')
-// .then(res => console.log(res))
-.then(response => response.json())
-.then(data => console.log(data.data[0].email))
-
-
-
 // fetch('https://reqres.in/api/users')
-//   .then(response => {
-//     if (!response.ok) {
-//       throw new Error('Network response was not ok');
-//     }
-//     return response.json();
-//   })
-//   .then(data => {
-//     console.log(data);
-//   })
-//   .catch(error => {
-//     console.error('Error fetching data:', error);
-//   });
+// // .then(res => console.log(res))
+// .then(response => response.json())
+// .then(data => console.log(data.data[0].email))
+
+
+
+fetch('https://reqres.i/api/users')
+  .then(response => response.json())
+  .then(data => {
+    console.log(data);
+  })
+  .catch(error => {
+    console.error('Error fetching data:', error);
+  });
 
 
 // fetch('https://reqres.in/api/users', {
