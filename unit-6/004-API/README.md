@@ -3,7 +3,9 @@
 API we will be using for this lecture
 
 [Open Weather Map](https://openweathermap.org/)
+
 [Big cloud data](https://bigdatacloud.net/)
+
 [New York Times](https://developer.nytimes.com/get-started)
 
 Reading and understanding an API’s documentation can seem daunting at first, but by following these steps, you can break it down into manageable pieces:
