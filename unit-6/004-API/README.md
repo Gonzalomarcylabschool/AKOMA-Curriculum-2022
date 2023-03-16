@@ -11,6 +11,7 @@ Reading and understanding an API’s documentation can seem daunting at first, b
 1. Identify the purpose and scope of the API: The first step is to understand what the API does and what its intended use is. This information can usually be found in the introduction or overview section of the documentation.
 
 2. Familiarize yourself with the API’s structure: Most APIs have a specific structure, with endpoints, methods, parameters, and responses. Familiarize yourself with these terms and how they apply to the specific API you are working with.
+
 3. Understand the authentication process: Most APIs require some form of authentication to use them. Make sure you understand the authentication process and what credentials are needed.
 
 4. Read the API reference: The API reference is usually the most detailed part of the documentation. It provides information on the specific endpoints, methods, parameters, and responses that are available. Take the time to read through this section carefully.
