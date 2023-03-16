@@ -14,6 +14,7 @@ Reading and understanding an API’s documentation can seem daunting at first, b
 3. Understand the authentication process: Most APIs require some form of authentication to use them. Make sure you understand the authentication process and what credentials are needed.
 
 4. Read the API reference: The API reference is usually the most detailed part of the documentation. It provides information on the specific endpoints, methods, parameters, and responses that are available. Take the time to read through this section carefully.
+
 5. Try out some sample requests: To get a better understanding of how the API works, try out some sample requests. Most APIs provide sample code or a sandbox environment that you can use to experiment with the API.
 
 6. Look for examples and use cases: Many APIs provide examples and use cases that can help you understand how the API can be used in real-world scenarios.
