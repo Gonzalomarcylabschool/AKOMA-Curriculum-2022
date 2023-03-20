@@ -102,7 +102,7 @@ Here's an example of how async/await can be used to make an HTTP request using t
 ```js
 async function getData() {
   try {
-    const response = await fetch('https://jsonplaceholder.typicode.com/todos/1');
+    const response = await fetch('https://reqres.in/api/users');
     const data = await response.json();
     console.log(data);
   } catch (error) {
