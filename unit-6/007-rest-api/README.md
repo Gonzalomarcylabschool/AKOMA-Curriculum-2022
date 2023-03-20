@@ -19,5 +19,3 @@ As a full stack developer, learning how to use REST APIs is essential for severa
 * _Enables separation of concerns_: REST APIs allow you to separate the concerns of the client and server applications. This means that you can focus on building the front-end client application and the back-end server application independently.
 
 * _Supports mobile development_: REST APIs are commonly used in mobile development because they are lightweight and can be accessed over the internet. This makes them ideal for building mobile applications that need to communicate with a server.
-
-In summary, learning how to use REST APIs is essential for full stack developers because it enables them to build scalable, interoperable, and high-performance applications that can work seamlessly across different platforms and programming languages.* 

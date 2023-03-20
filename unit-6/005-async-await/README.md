@@ -3,9 +3,7 @@
 
 Async/await is a new syntax in JavaScript that was introduced in ES2017 (ES8) and provides a way to write asynchronous code that is more readable and easier to reason about. Async/await is built on top of Promises and provides a way to write asynchronous code that looks and behaves more like synchronous code.
 
-This means that we don't need to use fetch
 
-![no more fetch](https://media0.giphy.com/media/XBEoaajXTXaALzawSn/giphy.gif?cid=6c09b952f3mjj9elvsowusqqbmgixc5go6ubkn5zcdgu5t3o&rid=giphy.gif&ct=g)
 
 The async keyword is used to define a function as asynchronous, which means that it will return a Promise that resolves to the function's return value. Within an async function, the await keyword can be used to wait for a Promise to resolve before continuing execution.
 
