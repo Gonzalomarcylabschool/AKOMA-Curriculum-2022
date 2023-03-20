@@ -3,11 +3,36 @@
 
 Async/await is a new syntax in JavaScript that was introduced in ES2017 (ES8) and provides a way to write asynchronous code that is more readable and easier to reason about. Async/await is built on top of Promises and provides a way to write asynchronous code that looks and behaves more like synchronous code.
 
-This means that we don't need to use fetch
+The async keyword is used to define a function as asynchronous, which means that it will return a Promise that resolves to the function's return value.
 
-![no more fetch](https://media0.giphy.com/media/XBEoaajXTXaALzawSn/giphy.gif?cid=6c09b952f3mjj9elvsowusqqbmgixc5go6ubkn5zcdgu5t3o&rid=giphy.gif&ct=g)
+```js
+function foo() {
+  return Promise.resolve(1);
+}
 
-The async keyword is used to define a function as asynchronous, which means that it will return a Promise that resolves to the function's return value. Within an async function, the await keyword can be used to wait for a Promise to resolve before continuing execution.
+// this can be written as
+
+async function foo() {
+  return 1;
+}
+```
+Notice how we have abstracted the `Promise` and `resolve`. We no longer need it while using `async`.
+
+Within an async function, the await keyword can be used to wait for a Promise to resolve before continuing execution. This is in place of the `.then` method.
+
+```js
+function foo() {
+  return Promise.resolve(1).then(() => undefined);
+}
+
+// can be written as 
+
+async function foo() {
+  await 1;
+}
+```
+Code after each await expression can be thought of as existing in a `.then` callback. In this way a promise chain is progressively constructed with each reentrant step through the function. The return value forms the final link in the chain.
+
 
 Here's an example of using async/await to make an HTTP request using the Fetch API:
 
