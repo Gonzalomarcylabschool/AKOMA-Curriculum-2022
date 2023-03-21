@@ -17,7 +17,8 @@ async function fetchTextFrom(url){
     console.log(`Error has occurred: ${err.stack}`)
   }
 }
-fetchTextFrom('https://api.github.com/zen')
+// fetchTextFrom('https://api.github.com/zen')
+
 
 fetchJSONFrom('https://reqres.in/api/users/')
 
