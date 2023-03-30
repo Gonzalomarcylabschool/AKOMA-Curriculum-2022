@@ -1,0 +1,36 @@
+GET http://localhost:8080/health
+
+########
+
+GET http://localhost:8080/test&para=true
+
+###############
+GET http://localhost:8080/fellows
+
+
+######################
+POST http://localhost:8080/fellows
+Content-Type: application/json
+
+{
+    "fellowName": "Bill"
+}
+
+######################
+POST http://localhost:8080/fellows
+Content-Type: application/json
+
+{
+    "fellowName": "Sarah"
+}
+
+######################
+PATCH http://localhost:8080/fellows/2
+Content-Type: application/json
+
+{
+    "fellowName": "Sara"
+}
+
+######################
+DELETE http://localhost:8080/fellows/2
