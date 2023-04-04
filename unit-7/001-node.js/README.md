@@ -13,13 +13,14 @@
 
 ## Node
 
-Code that runs without a Browser (no UI).
+Node.js is an open-source, cross-platform, server-side JavaScript runtime environment. It runs without a Browser (no UI).
 
 Code that is started using the terminal.
 
 ## Starting a Project
 
 1. `npm init` to create a node project and create a `package.json` file
+    * You can also do `npm init -y` that set everything up with the defaults. 
 2. Create `app.js` as your "entry point" file
 3. Add a `"start"` script to `package.json`: `"start": "node app.js"`
 4. Run `npm start`
@@ -61,7 +62,9 @@ console.log(randomHero);
 
 ## Exports / Require (CommonJS)
 
-We can create our own local modules as well!
+In Node.js, each file is considered a separate module, and a module can export one or more values that can be imported and used in other modules. The values that a module exports can be functions, objects, classes, or other data types.
+
+Here is how we can create our own local modules!
 
 1. Create a `utils.js` file with functions and variables
 2. Export with `module.exports`
@@ -71,7 +74,7 @@ We can create our own local modules as well!
 const rollDie = () => {
     return Math.ceil(Math.random() * 6);
 }
-const INSTRUCTOR_NAME = "BEN";
+const INSTRUCTOR_NAME = "GONZALO";
 module.exports = {
     rollDie,
     INSTRUCTOR_NAME
@@ -81,12 +84,37 @@ module.exports = {
 3. In `app.js`, import functions and variables using `require` and the **relative path**:
 
 ```js
-// app.js
+// In app.js
+//module example 1
+// Using dot notation
 const utils = require("./utils"); // get the whole object
-const { rollDie, INSTRUCTOR_NAME } = require("./utils"); // use destructuring
+const roll = utils.rollDie();//use dot notation to get the values
 
-const roll = rollDie();
-console.log(`${INSTRUCTOR_NAME} rolled a ${roll}`);
+console.log(`${utils.INSTRUCTOR_NAME} rolled a ${roll}`);
+
+// Using destructuring
+const { rollDie, INSTRUCTOR_NAME } = require("./utils"); 
+const roll = rollDie()
+
+console.log(`${INSTRUCTOR_NAME} rolled a ${roll}`)
+```
+### Note
+* When you are importing your modules, you can get the whole object and use dot notation to acces the values, or you can use destructuring to create variables that you can use. 
+
+* Depending on how many values you are importing one might be better than the other, but you should also be consistent with the one you use. 
+
+```js
+// In app.js
+//module example 2
+
+// Using dot notation
+const logger = require('./logger')
+logger.log(logger.URL);
+
+// Using destructuring
+const { log, URL } = require('./logger');
+log(URL);
+
 ```
 
 ## Environment Variables
