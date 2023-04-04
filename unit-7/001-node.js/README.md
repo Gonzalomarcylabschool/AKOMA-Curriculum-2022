@@ -17,6 +17,33 @@ Node.js is an open-source, cross-platform, server-side JavaScript runtime enviro
 
 Code that is started using the terminal.
 
+Normally we use the Browser to run our JavaScript code. This is the way that it was originally intended to be used. This was done by using the V8 engine (in chrome browsers). Meaning that there was no way to run JavaScript on your computer. 
+
+### How does Code run on a computer
+
+![](./how-code-works-one.png)
+
+Then people abstracted assembly code and made C++, which made it much easier for people to be able to write code that will run on your computer.
+
+![](./how-code-works-two.png)
+
+When JavaScript was first introduced it was for web browsers only.  Each modern web browser comes bundled with a JavaScript runtime. Chrome uses an engine called V8, while Firefox uses SpiderMonkey and Safari uses WebKit/JavaScriptCore. 
+
+
+![](./Screenshot%202023-04-04%20at%2010.24.23%20AM.png)
+
+This engine translates the JavaScript into C++ which then the computer does the rest. 
+
+### So, what about node?
+
+![](./js-node-nachine.png)
+
+Node was build on the V8 engine. This is what allows computers to run JavaScript. 
+
+### So Why Should I know how to use Node.js?
+
+We have spent all the this time learning how to code JavaScript so that we can make the front-end of web application. We can learn PHP, Python, Ruby, C#, Java, or many other langues, to runs servers, or we can just use JavaScript which we have learned and know how to use already. 
+
 ## Starting a Project
 
 1. `npm init` to create a node project and create a `package.json` file
@@ -27,6 +54,16 @@ Code that is started using the terminal.
 
 ```
 npm init
+
+package name: (app-folder) //name of the folder(no spaces)
+description: // what is this about
+entry point: // the name of the main JavaScript file. (app.js)
+test command: 
+git repository: //repo file/url path
+author: //Your name
+license: //
+(ISC) if there is any
+Is this OK? (yes) // y or n
 ```
 
 ## Node Package Manager
@@ -98,6 +135,7 @@ const roll = rollDie()
 
 console.log(`${INSTRUCTOR_NAME} rolled a ${roll}`)
 ```
+
 ### Note
 * When you are importing your modules, you can get the whole object and use dot notation to acces the values, or you can use destructuring to create variables that you can use. 
 
@@ -119,6 +157,16 @@ log(URL);
 
 ## Environment Variables
 
-Setting environment variables
+Environment variables provide information about the environment in which the process is running. We use Node environment variables to handle sensitive data like passwords, which we shouldn't hard code, or configuration details that might change between runs, like what port a server should listen on.
+
+In setting environment variables, there are two way you can go about it: 
+
+You can just make a `.evn` and 
+
+API key: secret stuff
+Environment:config stuff
+
+First install `npm i dotenv`
+
 * `port=8080 host='127.0.0.1' node index.js`
 * `process.env`
