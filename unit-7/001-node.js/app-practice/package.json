@@ -1,0 +1,15 @@
+{
+  "name": "app-practice",
+  "version": "1.0.0",
+  "description": "This practice doing node stuff",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "author": "Gonzalo Romero",
+  "license": "ISC",
+  "dependencies": {
+    "supervillains": "^3.1.0"
+  }
+}
