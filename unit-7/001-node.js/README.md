@@ -86,7 +86,12 @@ Examples of NPM packages:
     * Ex: `npm i superheroes`
 
 * `npm i -D package-name` uses the `-D` developer flag which installs packages as a **developer dependency**. 
-    * Ex: `npm i -D jest`
+    * Ex: `npm i -D nodemon`
+
+### nodemon
+
+nodemon is a tool that helps develop Node.js based applications by automatically restarting the node application when file changes in the directory are detected.
+
 
 We can import packages installed via `npm` using `require()`. When doing this, we ONLY provide the name of the package
 
@@ -137,7 +142,7 @@ console.log(`${INSTRUCTOR_NAME} rolled a ${roll}`)
 ```
 
 ### Note
-* When you are importing your modules, you can get the whole object and use dot notation to acces the values, or you can use destructuring to create variables that you can use. 
+* When you are importing your modules, you can get the whole object and use dot notation to access the values, or you can use destructuring to create variables that you can use. 
 
 * Depending on how many values you are importing one might be better than the other, but you should also be consistent with the one you use. 
 
@@ -161,7 +166,7 @@ Environment variables provide information about the environment in which the pro
 
 In setting environment variables, there are two way you can go about it: 
 
-You can just make a `.evn` and 
+You can just make a `.env` and 
 
 API key: secret stuff
 Environment:config stuff
@@ -170,3 +175,15 @@ First install `npm i dotenv`
 
 * `port=8080 host='127.0.0.1' node index.js`
 * `process.env`
+
+## nodemon
+
+nodemon is a tool that helps develop Node.js based applications by automatically restarting the node application when file changes in the directory are detected.
+
+```
+npm install -g nodemon
+
+// or
+
+npm install --save-dev nodemon
+```
