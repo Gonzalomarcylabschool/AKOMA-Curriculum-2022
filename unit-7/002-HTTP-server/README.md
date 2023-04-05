@@ -3,19 +3,22 @@
 `nodemon` makes `npm start` restart the server when there is a file change
 
 ```
-npm i -g nodemon
+npm i nodemon
 ```
+## Ports
+
+A port is a virtual point where network connections start and end. Ports are software-based and managed by a computer's operating system. Each port is associated with a specific process or service. In development some of the ports we use are `3000`, `4000`, `4321`, `8000`, or `8080`. There are more ports that are available for use when testing or developing, but you need to look at list to see what ports are typically available. 
 
 ## Built-In Packages (Don't need to install)
 
-`http` package for creating an HTTP server
-`url` package for parsing URLs
+`http` package for creating an HTTP server ()
+`url` package for parsing URLs (go through the URL that you are given to see what the path is)
 
 ```js
 const http = require('http');
 const url = require('url');
 const host = '127.0.0.1';
-const port = 8000;
+const port = 8080;
 
 // This function will handle all incoming requests and generate responses
 const requestListener = (req, res) => { 
@@ -27,7 +30,7 @@ const requestListener = (req, res) => {
 }
 
 // Create a server object with the provided handler
-const server = http.createServer(requestListener);
+const server = http.createServer(requestListener); //the .createServer Method takes in a 
 
 // Start listening at the provided host:port
 server.listen(port, host, () => {
