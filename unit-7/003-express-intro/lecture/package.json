@@ -4,7 +4,15 @@
   "description": "",
   "main": "src/index.js",
   "scripts": {
-    "start": "nodemon index.js"
+    "start": "nodemon index.js",
+    "basic": "nodemon index-1-basic.js",
+    "middle": "nodemon index-2-middleware-log.js",
+    "model": "nodemon index-3-middleware-model.js",
+    "post": "nodemon index-4-post.js",
+    "delete": "nodemon index-5-delete.js",
+    "static": "nodemon index-6-static.js",
+    "ex": "nodemon index-7-export.js",
+    "fellow": "nodemon index-8-export.js"
   },
   "keywords": [],
   "author": "",

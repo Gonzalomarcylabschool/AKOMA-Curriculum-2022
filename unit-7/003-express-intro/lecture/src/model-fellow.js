@@ -1,7 +1,9 @@
 const { generateId } = require('./utils');
 
 class Fellow {
-  static #all = [];
+  static #all = [{
+    
+  }];
 
   constructor(name) {
     this.id = generateId();
