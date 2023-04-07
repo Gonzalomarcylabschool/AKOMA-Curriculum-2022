@@ -2,11 +2,11 @@ const express = require('express');
 
 const app = express();
 
-// app.use((req, res, next) => {
-//   const time = (new Date()).toLocaleString();
-//   console.log(`${req.method}: ${req.originalUrl} - ${time}`);
-//   next();
-// });
+app.use((req, res, next) => {
+  const time = (new Date()).toLocaleString();
+  console.log(`${req.method}: ${req.originalUrl} - ${time}`);
+  next();
+});
 
 app.get('/', (req, res) => {
   res.send('Hi');

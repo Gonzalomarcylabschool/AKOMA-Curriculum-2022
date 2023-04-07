@@ -20,12 +20,16 @@ app.get('/fellows', (req, res) => {
   res.send(req.Fellow.list());
 });
 
-app.post('/fellows', (req, res) => {
-  const { Fellow, body: { fellowName } } = req;
-  const newFellow = new Fellow(fellowName);
-  res.send(newFellow);
+app.post('/books', (req, res) => {
+  console.log('her');
+  const { Book, body: { title } } = req;
+  const newBook= new Book(title);
+  res.send(newBook);
 });
 
+// app.get('/books/:id', (req, res) => {
+
+// })
 const port = process.env.PORT || 8080;
 const host = process.env.HOST || '127.0.0.1';
 
