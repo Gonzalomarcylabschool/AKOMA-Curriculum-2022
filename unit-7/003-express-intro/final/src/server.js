@@ -25,6 +25,13 @@ app.get('/fellows', (req, res) => {
   res.send(req.Fellow.list());
 });
 
+app.get('/fellows/:id', (req, res) => {
+  const { Fellow, params: { id } } = req;
+  const found = Fellow.find(Number(id))
+  if (!found) return res.sendStatus(404);
+  res.send(found);
+})
+
 app.post('/fellows', (req, res) => {
   const { Fellow, body: { fellowName } } = req;
   const newFellow = new Fellow(fellowName);
@@ -39,7 +46,6 @@ app.patch('/fellows/:id', (req, res) => {
   } = req;
   const updatedFellow = Fellow.editName(Number(id), fellowName);
   if (!updatedFellow) return res.sendStatus(404);
-
   res.send(updatedFellow);
 });
 

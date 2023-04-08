@@ -20,11 +20,10 @@ app.get('/fellows', (req, res) => {
   res.send(req.Fellow.list());
 });
 
-app.post('/books', (req, res) => {
-  console.log('her');
-  const { Book, body: { title } } = req;
-  const newBook= new Book(title);
-  res.send(newBook);
+app.post('/fellow', (req, res) => {
+  const { Fellow, body: { fellow } } = req;
+  const newFellow= new Book(fellow);
+  res.send(newFellow);
 });
 
 // app.get('/books/:id', (req, res) => {
