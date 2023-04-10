@@ -1,5 +1,5 @@
 //imported from the utils file 
-const { generateId } = require("./utils");
+const { generateId } = require("../utils");
 
 // All of the code for the cars live in this Cars class.
 class Cars {
