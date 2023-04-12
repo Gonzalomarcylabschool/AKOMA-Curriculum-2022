@@ -54,9 +54,7 @@ INSERT
 INTO books (title, genre, pages, is_movie) 
 VALUES ('Dune', 'Sci Fi', 500, false);
 
-INSERT 
-INTO books (title, genre, pages, is_movie) 
-VALUES ('1984', 'Sci Fi', 328, true) RETURNING *;
+INSERT INTO books (title, genre, pages, is_movie) VALUES ('1984', 'Sci Fi', 328, true) RETURNING *;
 
 SELECT * 
 FROM books;
