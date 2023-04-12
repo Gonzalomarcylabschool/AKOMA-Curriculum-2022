@@ -41,3 +41,85 @@ There will be 2 types of relationships that we will cover in the next lectures, 
 ## PostgresSQL
 
 PostgreSQL, also known as Postgres, is an open-source relational database management system (RDBMS) that is widely used for enterprise-level applications.
+
+Lets run the intro to SQL practice server so that we can see how this work and how we can use it with some SQL commands.
+
+* INSERT (create)
+* SELECT (read)
+* UPDATE (update)
+* DELETE (delete)
+
+```SQL
+INSERT 
+INTO books (title, genre, pages, is_movie) 
+VALUES ('Dune', 'Sci Fi', 500, false);
+
+INSERT 
+INTO books (title, genre, pages, is_movie) 
+VALUES ('1984', 'Sci Fi', 328, true) RETURNING *;
+
+SELECT * 
+FROM books;
+
+UPDATE books
+SET is_movie=true
+WHERE title='Dune';
+
+DELETE 
+FROM books 
+WHERE title='Dune';
+
+DELETE 
+FROM books;
+```
+
+## Select specific tables and conditions
+
+```sql
+
+SELECT title, genre 
+FROM books;
+
+SELECT * 
+FROM books 
+WHERE pages > 250;
+
+SELECT * 
+FROM books 
+WHERE pages > 250 
+OR is_movie 
+IS true;
+
+SELECT * 
+FROM books 
+WHERE pages > 150 
+and pages < 300;
+
+SELECT * 
+FROM books 
+ORDER BY pages
+
+SELECT * 
+FROM books 
+ORDER BY pages 
+DESC 
+LIMIT 1;
+
+
+
+```
+
+Making an Alias
+
+```sql
+
+SELECT COUNT(*) 
+FROM books;
+
+SELECT genre, COUNT(*) 
+FROM books 
+GROUP BY genre;
+
+SELECT title, is_movie "Already Filmed" 
+FROM books;
+```
