@@ -34,8 +34,20 @@ Example: A bunch of us have the marcy laptops or Mac books and each one would ha
 |3|marcy laptop|2|
 |4|Mac laptop|4|
 |5|marcy laptop|5|
+|6|personal laptop|1|
 
 Let's figure out who these laptops belong to?
+
+## Entity Relationship Diagram (ERD)  
+
+Here we have a diagram of the relationship between person and laptop:
+![](./Screenshot%202023-04-13%20at%2010.48.25%20AM.png)
+
+
+## One to Many `people` to `pets`
+
+One way to know that what kind of relationship you have is just saying it aloud. Does it make sense to say that dog has many owners? NO! She's my dog. But can I say I have many dogs? YES! I have 2 dogs! Let see what the would like on a [spread sheet](https://docs.google.com/spreadsheets/d/1FuMwqEbPTLjct2TXfogmXt49e2bAJt-2o2o3gVPALTg/edit#gid=1490267459). 
+
 
 ```sql
 DROP TABLE IF EXISTS people;
@@ -48,7 +60,7 @@ CREATE TABLE people (id INTEGER PRIMARY KEY, first_name TEXT, last_name TEXT);
 
 CREATE TABLE pets (id INTEGER PRIMARY KEY, name TEXT, species TEXT, owner_id INTEGER);
 
--- SELECT * FROM people JOIN pets ON people.id = pets.owner_id;
+-- SELECT * FROM pet;
 
 ```
 
@@ -88,7 +100,11 @@ When you want to find information about something that is related on two tables 
 Let's take a look at our spread sheet and see how we can join these tables;
 
 ```sql
+
 SELECT * FROM people JOIN pets; 
+
+SELECT * FROM people JOIN pets ON people.id = pets.owner_id;
+
 ```
 ## Data Types
 
