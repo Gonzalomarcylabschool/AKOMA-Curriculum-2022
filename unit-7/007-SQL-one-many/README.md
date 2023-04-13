@@ -48,6 +48,18 @@ Here we have a diagram of the relationship between person and laptop:
 
 One way to know that what kind of relationship you have is just saying it aloud. Does it make sense to say that dog has many owners? NO! She's my dog. But can I say I have many dogs? YES! I have 2 dogs! Let see what the would like on a [spread sheet](https://docs.google.com/spreadsheets/d/1FuMwqEbPTLjct2TXfogmXt49e2bAJt-2o2o3gVPALTg/edit#gid=1490267459). 
 
+Here is the ERD for this relationship:
+
+![](./Screenshot%202023-04-13%20at%2011.03.47%20AM.png)
+
+So in this table we can say the following:
+
+_Has Many_:We say that a person has many pets
+_Belongs to_: We say that a pet belongs to a person 
+
+This is a One to Many Relationship.
+
+## Let put this into SQL and check it out on TablePlus 
 
 ```sql
 DROP TABLE IF EXISTS people;
@@ -82,7 +94,9 @@ INSERT INTO pets (id, name, species, owner_id) VALUES (7, 'Kora', 'cat', 1);
 
 practice quires
 ```sql
+-- list all the cats
 SELECT * FROM pets WHERE species='cat';
+-- count all of the cats
 SELECT COUNT(*) FROM pets WHERE species='cat';
 ```
 
@@ -96,16 +110,45 @@ When you want to find information about something that is related on two tables 
 |3|Isaac|1|marcy laptop|3|
 |4|Ashley|4|Mac laptop|4|
 |5|Randy|5|marcy laptop|5|
+|1|Gonzalo|6|personal laptop|1|
 
-Let's take a look at our spread sheet and see how we can join these tables;
+Let's take a look at our spread sheet and see how we can join these table. Remember You have to join the tables where they connect.
 
 ```sql
-
-SELECT * FROM people JOIN pets; 
-
+-- here we join the tables by people id to owner id
 SELECT * FROM people JOIN pets ON people.id = pets.owner_id;
+--What are all the pets owned by Ann?
+SELECT * FROM people JOIN pets ON people.id = pets.owner_id WHERE people.first_name='Ann';
+--Who is the owner of Frida?
+SELECT * FROM people JOIN pets ON people.id = pets.owner_id WHERE pets.name='Frida';
 
+
+-- this is name spaced people.id / pets.name / pets.owner_id ... etc!
 ```
+
+## `person` + `laptop` 
+
+```sql
+CREATE TABLE person (person_id INTEGER PRIMARY KEY, name TEXT);
+-- SELECT * FROM person;
+CREATE TABLE laptop (laptop_id INTEGER PRIMARY KEY, name TEXT, species TEXT, owner_id INTEGER);
+-- SELECT * FROM laptop
+
+-- insert the persons
+INSERT INTO person (person_id, name) VALUES (1, 'Gonzalo');
+INSERT INTO person (person_id, name) VALUES (2, 'Gonzalo');
+INSERT INTO person (person_id, name) VALUES (3, 'Isaac');
+INSERT INTO person (person_id, name) VALUES (4, 'Ashley');
+INSERT INTO person (person_id, name) VALUES (5, 'Randy');
+-- insert the laptops
+INSERT INTO laptop (laptop_id , laptop, owner_id) VALUES (1, 'marcy laptop', 3);
+INSERT INTO laptop (laptop_id , laptop, owner_id) VALUES (2, 'Mac laptop', 1);
+INSERT INTO laptop (laptop_id , laptop, owner_id) VALUES (3, 'marcy laptop', 2);
+INSERT INTO laptop (laptop_id , laptop, owner_id) VALUES (4, 'Mac laptop', 4);
+INSERT INTO laptop (laptop_id , laptop, owner_id) VALUES (5, 'marcy laptop', 5);
+INSERT INTO laptop (laptop_id , laptop, owner_id) VALUES (6, 'personal laptop', 1);
+```
+
 ## Data Types
 
 There are several data types in SQL that are used to store different types of data. Here are some of the commonly used SQL data types:
