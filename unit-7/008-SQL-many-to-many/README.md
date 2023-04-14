@@ -80,6 +80,15 @@ Check out the [article](https://www.sensedeep.com/blog/posts/stories/building-in
 
 Lets take a look at this [Example](https://docs.google.com/spreadsheets/d/1UsdmFP4Wtcob0WrUBjmsaWY9RD5-Xo1wmCD21HG1huY/edit#gid=2108260734) and the SQL code we can use to see the Many to Many relationship that exist
 
+This is a many to many relationship		
+A customer has many products (through orders)		
+A product has many customers (through orders)		
+		
+The orders table is a JUNCTION table		
+A customer has many orders		
+An order belongs to a customer		
+A product has many orders		
+An order belongs to a product		
 
 ```sql
 DROP TABLE IF EXISTS customers;
@@ -122,8 +131,84 @@ INSERT INTO orders (id, customer_id, product_id, purchase_date) VALUES (7, 1, 2,
 
 SELECT * FROM customers;
 ```
+## Question and Quires for this DB:
 
-Here is another example using books:
+How many orders has Ann put in? 
+<details><summary>Answer</summary>
+Query:
+
+SELECT COUNT(*) FROM customers
+JOIN orders ON customers.id = orders.customer_id
+WHERE customers.name = 'Ann';
+
+Answer:
+
+|count|
+|--|
+|2|
+</details>
+<br>
+
+What are all the items Reuben has purchased? 
+<details><summary>Answer</summary>
+Query:
+
+SELECT products.name FROM customers
+JOIN orders ON customers.id = orders.customer_id
+JOIN products ON products.id = orders.product_id
+WHERE customers.name = 'Reuben';
+
+Answer:
+
+|name|
+|--|
+|Pencil|
+|table|
+|Book|
+
+</details>
+<br>
+
+Who has bought a chair? 
+<details><summary>Answer</summary>
+Query:
+
+SELECT customers.name FROM customers
+JOIN orders ON customers.id = orders.customer_id
+JOIN products ON products.id = orders.product_id
+WHERE products.name = 'Chair';
+
+Answer:
+
+|name|
+|--|
+|Maya|
+|Ann|
+
+
+</details>
+<br>
+
+What are all the items Ann has purchased?
+<details><summary>Answer</summary>
+Query:
+
+SELECT products.name FROM customers
+JOIN orders ON customers.id = orders.customer_id
+JOIN products ON products.id = orders.product_id
+WHERE customers.name = 'Ann';
+
+Answer:
+
+|name|
+|--|
+|Chair|
+|Table|
+
+</details>
+<br>
+
+## Here is another example using books:
 
 ```sql
 DROP TABLE IF EXISTS author_book;
@@ -165,4 +250,86 @@ INSERT INTO author_book(author_id, book_id) VALUES(2, 5);
 INSERT INTO author_book(author_id, book_id) VALUES(3, 3);
 
 SELECT * FROM author_book;
+
+-- to Join all the tables
+
+SELECT * FROM authors JOIN author_book ON authors.id = author_book.author_id JOIN books ON author_book.book_id = books.id;
 ```
+
+Question and Queries:
+
+Who wrote Advanced JavaScript?
+
+<details><summary>Answer</summary>
+Query:
+SELECT
+	authors.first_name, authors.last_name
+FROM
+	authors
+	JOIN author_book ON authors.id = author_book.author_id
+	JOIN books ON author_book.book_id = books.id
+WHERE 
+  books.title = 'Advanced JavaScript';
+
+Answer:
+|first_name|last_name|
+|--|--|
+|James|Baldwin|
+|Maya|Angelou|
+
+</details>
+<br>
+
+
+What are the books written by Maya Angelou?
+<details><summary>Answer</summary>
+Query:
+
+SELECT
+	books.title
+FROM
+	authors
+	JOIN author_book ON authors.id = author_book.author_id
+	JOIN books ON author_book.book_id = books.id
+WHERE
+	authors.first_name = 'Maya' AND	authors.last_name = 'Angelou';
+
+Answer:
+|title|
+|--|
+|HTML for Dummies|
+|Starting Express|
+|Advanced JavaScript|
+
+</details>
+<br>
+
+
+How many authors does each book have? (I put it in ascending order of books.id)
+<details><summary>Answer</summary>
+Query:
+
+SELECT
+	books.id,
+	books.title,
+	COUNT(author_book.author_id)
+FROM
+	authors
+	JOIN author_book ON authors.id = author_book.author_id
+	JOIN books ON author_book.book_id = books.id
+GROUP BY
+	books.id
+ORDER BY
+	books.id ASC;
+
+Answer:
+|id|title|count|
+|--|--|--|
+|1|	Learn to Git With It|1|
+|2|	HTML for Dummies|1|
+|3|	Advanced JavaScript|2|
+|4|Starting Express|1|
+|5|	Node for Newbies|2|
+
+</details>
+<br>
