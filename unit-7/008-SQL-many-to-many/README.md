@@ -133,6 +133,8 @@ SELECT * FROM customers;
 ```
 ## Question and Quires for this DB:
 
+
+
 How many orders has Ann put in? 
 <details><summary>Answer</summary>
 Query:
@@ -333,3 +335,58 @@ Answer:
 
 </details>
 <br>
+
+## Break down of SQL Query
+
+To better help understand the Queries, here is an break down of the clauses:
+
+```SQL
+SELECT column1, column2, ... --what columns you want 
+FROM table1 -- from what table are we getting them
+JOIN table2 ON join_condition -- what tables are we joining to get them
+WHERE condition -- Specifies the conditions that the data must meet in order to be retrieved. >: greater than, < less than, = 
+GROUP BY column --Groups the results by one or more columns.
+HAVING condition -- Specifies the conditions that the groups must meet in order to be returned.
+ORDER BY column [ASC|DESC]; -- Specifies how the results should be sorted, either in ascending or descending order.
+```
+
+### *Operators
+
+=: Equal to
+<> or !=: Not equal to
+<: Less than
+>: Greater than
+<=: Less than or equal to
+>=: Greater than or equal to
+BETWEEN: Between a range of values
+LIKE: Matches a pattern
+IN: Matches any value in a list
+
+
+```sql
+-- Find all employees who have a salary greater than 50000
+SELECT *
+FROM employees
+WHERE salary > 50000;
+
+-- Find all employees who were hired after January 1, 2020
+SELECT *
+FROM employees
+WHERE hire_date > '2020-01-01';
+
+-- Find all products whose price is between 10 and 20
+SELECT *
+FROM products
+WHERE price BETWEEN 10 AND 20;
+
+-- Find all customers whose name starts with 'J'
+SELECT *
+FROM customers
+WHERE name LIKE 'J%';
+
+-- Find all orders where the status is 'Pending' or 'Processing'
+SELECT *
+FROM orders
+WHERE status IN ('Pending', 'Processing');
+
+```
