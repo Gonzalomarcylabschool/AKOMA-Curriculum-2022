@@ -344,31 +344,32 @@ To better help understand the Queries, here is an break down of the clauses:
 SELECT column1, column2, ... --what columns you want 
 FROM table1 -- from what table are we getting them
 JOIN table2 ON join_condition -- what tables are we joining to get them
-WHERE condition -- Specifies the conditions that the data must meet in order to be retrieved. >: greater than, < less than, = 
+WHERE condition -- Specifies the conditions that the data must meet in order to be retrieved (see operators). 
 GROUP BY column --Groups the results by one or more columns.
 HAVING condition -- Specifies the conditions that the groups must meet in order to be returned.
 ORDER BY column [ASC|DESC]; -- Specifies how the results should be sorted, either in ascending or descending order.
 ```
+![](./SQL_order_of_execution_1_xd76fb_feygfm.png)
 
 ### *Operators
 
-=: Equal to
+`=`: Equal to
 
-<> or !=: Not equal to
+`<>` or `!=`: Not equal to
 
-<: Less than
+`<`: Less than
 
->: Greater than
+`>`: Greater than
 
-<=: Less than or equal to
+`<=`: Less than or equal to
 
->=: Greater than or equal to
+`>=`: Greater than or equal to
 
-BETWEEN: Between a range of values
+`BETWEEN`: Between a range of values
 
-LIKE: Matches a pattern
+`LIKE`: Matches a pattern
 
-IN: Matches any value in a list
+`IN`: Matches any value in a list
 
 
 
@@ -399,3 +400,4 @@ FROM orders
 WHERE status IN ('Pending', 'Processing');
 
 ```
+
