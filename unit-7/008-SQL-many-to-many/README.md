@@ -353,14 +353,23 @@ ORDER BY column [ASC|DESC]; -- Specifies how the results should be sorted, eithe
 ### *Operators
 
 =: Equal to
+
 <> or !=: Not equal to
+
 <: Less than
+
 >: Greater than
+
 <=: Less than or equal to
+
 >=: Greater than or equal to
+
 BETWEEN: Between a range of values
+
 LIKE: Matches a pattern
+
 IN: Matches any value in a list
+
 
 
 ```sql
