@@ -74,7 +74,7 @@ For the `order` entity
 
 _Use clear notation_: Use a clear and consistent notation for your ERD, such as the Crow's Foot notation or the Chen notation. Make sure to label all entities, attributes, and relationships clearly.
 
-![]()
+![](./Screenshot%202023-04-17%20at%2010.54.52%20AM.png)
 Test your design: Once you have created your ERD, test it by running sample queries against your database. This will help you identify any potential issues or inefficiencies in your design.
 
 ```SQL
