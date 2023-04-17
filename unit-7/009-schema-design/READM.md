@@ -31,6 +31,139 @@ In other words, the domain model provides a high-level understanding of the doma
 
 An effective schema design should be based on a well-defined and accurate domain model, as this will help to ensure that the database accurately represents the requirements of the business and its stakeholders. The schema design should reflect the key concepts and relationships identified in the domain model, while also taking into account factors such as performance, scalability, and security.
 
+## Making Entity Relationship Diagrams (ERDs)
+
+Here are some best practices to follow when working on Entity Relationship Diagrams (ERDs):
+
+_Identify the entities_: Start by identifying the entities (objects, concepts, or things) that you want to model. Think about what data needs to be stored for each entity, and what relationships exist between them.
+
+EX:`product`, `customer`. 
+
+_Define the attributes_: For each entity, define the attributes (or properties) that describe it. These attributes should be atomic, meaning they cannot be further divided into smaller components.
+
+EX: 
+For the `product` entity:
+`product_id` 
+`product_name`
+`description`
+`price`
+`inventory_count`
+
+For the `customer `entity
+`customer_id`
+`first_name`
+`last_name`
+`email`
+`phone_number`
+
+_Determine the relationships_: Identify the relationships between the entities, and specify the cardinality (the number of instances of one entity that can be associated with a single instance of another entity).
+
+For this relationship, "Product" can be ordered by multiple "Customers", and each "Customer" can order multiple "Products". This creates a many-to-many relationship between the "Product" and "Customer" entities, which we would need to model using a junction table. We'll look at that in a bit.
+
+_Avoid redundancy_: Avoid duplicating information in your ERD. Each piece of information should be stored only once, in a single entity or relationship.
+
+_Normalize your data_: Normalize your data to eliminate redundancy and improve data consistency. This involves organizing your data into separate tables, and eliminating any repeating groups or multivalued attributes.
+
+To normalize our data, we might create separate tables for "Product", "Customer", and "Order". The "Order" table would act as the junction table between "Product" and "Customer", and would contain foreign keys to both of those tables.
+
+For the `order` entity
+`order_id`
+`product_id`
+`customer_id`
+`order_date`
+
+_Use clear notation_: Use a clear and consistent notation for your ERD, such as the Crow's Foot notation or the Chen notation. Make sure to label all entities, attributes, and relationships clearly.
+
+![]()
+Test your design: Once you have created your ERD, test it by running sample queries against your database. This will help you identify any potential issues or inefficiencies in your design.
+
+```SQL
+CREATE TABLE Product (
+  product_id INTEGER PRIMARY KEY,
+  product_name VARCHAR(255) NOT NULL,
+  description TEXT,
+  price DECIMAL(10, 2) NOT NULL,
+  inventory_count INTEGER NOT NULL
+);
+
+CREATE TABLE Customer (
+  customer_id INTEGER PRIMARY KEY,
+  first_name VARCHAR(255) NOT NULL,
+  last_name VARCHAR(255) NOT NULL,
+  email VARCHAR(255) NOT NULL,
+  phone_number VARCHAR(255) NOT NULL
+);
+
+CREATE TABLE Order (
+  order_id INTEGER PRIMARY KEY,
+  product_id INTEGER NOT NULL,
+  customer_id INTEGER NOT NULL,
+  order_date DATE NOT NULL,
+  FOREIGN KEY (product_id) REFERENCES Product(product_id),
+  FOREIGN KEY (customer_id) REFERENCES Customer(customer_id)
+);
+
+-- Insert some sample data
+INSERT INTO Product (product_id, product_name, description, price, inventory_count)
+VALUES (1, 'Product 1', 'A description of product 1', 9.99, 10),
+       (2, 'Product 2', 'A description of product 2', 19.99, 5),
+       (3, 'Product 3', 'A description of product 3', 29.99, 0);
+
+INSERT INTO Customer (customer_id, first_name, last_name, email, phone_number)
+VALUES (1, 'John', 'Doe', 'johndoe@example.com', '123-456-7890'),
+       (2, 'Jane', 'Doe', 'janedoe@example.com', '987-654-3210');
+
+INSERT INTO Order (order_id, product_id, customer_id, order_date)
+VALUES (1, 1, 1, '2022-01-01'),
+       (2, 2, 1, '2022-01-02'),
+       (3, 1, 2, '2022-01-03');
+
+-- Sample queries
+-- List all products
+SELECT * FROM Product;
+
+-- List all customers
+SELECT * FROM Customer;
+
+-- List all orders
+SELECT * FROM Order;
+
+-- List all orders for a specific customer
+SELECT * FROM Order WHERE customer_id = 1;
+
+-- List all orders for a specific product
+SELECT * FROM Order WHERE product_id = 1;
+
+```
+
+## Design a domain with 5 tables
+
+
+## Data Types
+
+There are several data types in SQL that are used to store different types of data. Here are some of the commonly used SQL data types:
+
+INTEGER - Used to store whole numbers (positive or negative).
+
+BIGINT - Used to store very large whole numbers (positive or negative).
+
+DECIMAL/NUMERIC - Used to store exact decimal values with a specified precision and scale.
+
+FLOAT/REAL - Used to store approximate floating-point numbers with a specified precision.
+
+CHAR - Used to store fixed-length character strings.
+
+VARCHAR - Used to store variable-length character strings.
+
+DATE - Used to store dates (year, month, day).
+
+TIME - Used to store times (hours, minutes, seconds).
+
+TIMESTAMP - Used to store date and time values.
+
+BOOLEAN - Used to store boolean values (true or false).
+
+
 ### Learning Assignments:
 - **Article:** [Schema Design](https://medium.com/@kimtnguyen/relational-database-schema-design-overview-70e447ff66f9).
 - **Artilce:** [ONE-TO-MANY Database Relationships](https://blog.supportgroup.com/getting-started-with-relational-databases-one-to-many-relationship)
@@ -41,3 +174,5 @@ An effective schema design should be based on a well-defined and accurate domain
 
 ### Practice:
 2. [Practice Exercises](./practice)
+
+
