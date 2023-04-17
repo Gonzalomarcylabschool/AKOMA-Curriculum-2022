@@ -131,8 +131,14 @@
 ### Unit 6 - Asynchronous JavaScript
 ### Unit 7 - Server-side Web Development with Node.js
 
-#### Week 4
+#### Week1 
 
+* **4/4/23** Intro to node.js [Lecture Video](https://us02web.zoom.us/rec/share/1tj0walt2YynkQjHmRJnIFkCCCS-9WMnSAuoH1iw_StdBj52UfRZipCcb0RHNsZr.T1GAosiQ3KBfnvSY)
+* **4/5/23** HTTP server [Lecture Video](https://us02web.zoom.us/rec/share/RG0_OC5jK0NfQmq2bwV2avqLs0dFXi5AVHcsW5KPujd-8azWmJE7tUajFIqV9wiW.nfR7LjZDcFksEqY8)
+* **4/6/23** Intro to Express [Lecture Video](https://us02web.zoom.us/rec/share/V5AN1V8niCe5cV4k5BPILn1Kt8vPQrfCpxJEazs7Ze-YpE-xVM5a__naR_XE9oZH.vTHp8T0WrYme3nn3)
+* **4/7/23** Review [Lecture Video](https://us02web.zoom.us/rec/share/GUe3Ct3mIFFGvWwpIBfNyZfwY3lvdo1PvW1p-ZEbDfitCliT1O2WRDKk0O3TWoCh.KqZlNI5lQLno5bcD)
+
+#### Week 2
 * **4/10/23** Express & REST [Lecture Video](https://us02web.zoom.us/rec/share/JVrrWGOmZfj6mfuZXaQMxznkIXKTo5UoqHT81ZOosF3h1ljCSF_rIXa-nbPxfqVP.pBnwNFnBzUSMNH8a)
 
 * **4/11/23** Deep work day no lecture.
