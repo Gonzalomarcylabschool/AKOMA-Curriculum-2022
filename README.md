@@ -130,5 +130,21 @@
 ### Unit 5 - The Document Object Model (DOM)
 ### Unit 6 - Asynchronous JavaScript
 ### Unit 7 - Server-side Web Development with Node.js
+
+#### Week 4
+
+* **4/10/23** Express & REST [Lecture Video](https://us02web.zoom.us/rec/share/JVrrWGOmZfj6mfuZXaQMxznkIXKTo5UoqHT81ZOosF3h1ljCSF_rIXa-nbPxfqVP.pBnwNFnBzUSMNH8a)
+
+* **4/11/23** Deep work day no lecture.
+
+* **4/12/23** Intro to SQL [Lecture Video]()
+
+* **4/13/23** One-to-Many Relationships [Lecture Video](https://us02web.zoom.us/rec/share/oaQn28O8pqM0xlJt0V_PuJHy6WZXUvv4xm1FzUKJXwaPaklUwuDbcAMsA5bBZ6zM.t0HKNJiOqyPlT8Z_)
+
+* **4/14/23** Many-to-Many Relationships [Lecture Video](https://us02web.zoom.us/rec/share/z40bz7dkqOxQlxW1o_HgnscDnHeXGdYzJiFJgV-_iDKhRu89uJ4ZrcZwuCdKuPT4.g-fcKB2vx5MobiDD)
+
+#### Week 3
+* **4/17/23** Schema Design [Lecture Video](https://us02web.zoom.us/rec/share/FYP6_ui5YNG-XLRzfbDysLWgEK7x4JEBenLZeZ0pEDYvXepDmYThtJ0eyHC3fR6w.ZmrR7d2SSiuuZ2bb)
+
 ### Unit 8 - React
 ### Unit 9 - Capstone
