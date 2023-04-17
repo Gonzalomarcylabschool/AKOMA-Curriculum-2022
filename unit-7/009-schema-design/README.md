@@ -43,18 +43,18 @@ _Define the attributes_: For each entity, define the attributes (or properties) 
 
 EX: 
 For the `product` entity:
-`product_id` 
-`product_name`
-`description`
-`price`
-`inventory_count`
+* `product_id` 
+* `product_name`
+* `description`
+* `price`
+* `inventory_count`
 
 For the `customer `entity
-`customer_id`
-`first_name`
-`last_name`
-`email`
-`phone_number`
+* `customer_id`
+* `first_name`
+* `last_name`
+* `email`
+* `phone_number`
 
 _Determine the relationships_: Identify the relationships between the entities, and specify the cardinality (the number of instances of one entity that can be associated with a single instance of another entity).
 
