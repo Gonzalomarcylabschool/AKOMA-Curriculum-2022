@@ -69,12 +69,12 @@ const getCutomersProducts = async (userId) => {
 
 const main = async () => {
     await getPets()
-    // await getPetById(1)
-    // await getPeople()
-    // await getPersonsPets(2)
-    // await getCustomerById(3)
-    // await getCutomersOrders(1)
-    // await getCutomersProducts(3)
+    await getPetById(1)
+    await getPeople()
+    await getPersonsPets(2)
+    await getCustomerById(3)
+    await getCutomersOrders(1)
+    await getCutomersProducts(3)
     knex.destroy()
 }
 
