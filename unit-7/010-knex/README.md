@@ -56,10 +56,10 @@ main()
 
 ## 5. Celebrate
 
-You can now run SQL queries from a JavaScript file. This is important because in the future, you will build an Express API using JavaScript, and you will use `knex` to connect to a real database instead of just an in memeory array!
+You can now run SQL queries from a JavaScript file. This is important because in the future, you will build an Express API using JavaScript, and you will use `knex` to connect to a real database instead of just an in memory array!
 
 ## 6. Create More Functions for Practice
-We wrote a function to get all the pets. Write a function to:
+We wrote a function to get all the pets. Remember to use dynamic Queries ()Write a function to:
 * get one pet.
 * get all the people.
 * get one person.
