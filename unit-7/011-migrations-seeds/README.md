@@ -666,6 +666,24 @@ exports.seed = async function(knex) {
   ]);
 };
 ```
+Let's change this to what we want: 
+
+```js
+exports.seed = async function(knex) {
+  // Deletes ALL existing entries
+  await knex('owners').del()
+  await knex('owners').insert([
+    {id: 1, name: 'Gonzalo', age: 35},
+    {id: 2, name: 'Raven', age: 64},
+    {id: 3, name: 'Vincent', age:12}
+  ]);
+};
+```
+Now that we changed the information we can run the command. 
+
+```bash
+npx knex seed:run
+```
 
 ## Editing The Seed
 On your own, you can go into psql and create some owners, pets, and connections. Now *this* is where our protections come in. If you created any connections, look what happens if we were to try this:
