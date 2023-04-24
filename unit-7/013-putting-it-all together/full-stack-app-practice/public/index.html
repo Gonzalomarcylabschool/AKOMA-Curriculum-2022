@@ -4,9 +4,35 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgo=">
+  <link rel="stylesheet" href="./style.css">
+  <script defer src="./script.js"></script>
+  <!--
+    `defer` basically means "start loading script immediately,
+    but don't run it until the dom elements are ready."
+  -->
+
+  <title>Car List</title>
 </head>
 <body>
-  
+  <h1>Car list</h1>
+  <form id="new-cars-form">
+    <label style='display:none' for="new-make-input" id="new-make-label">Make</label>
+    <input placeholder='Make' name="new-make-input" type="text" id="new-make-input">
+
+    <label style='display:none' for="model-input" id="model-label">Model</label>
+    <input placeholder='Model' name="model-input" type="text" id="model-input">
+
+    <label style='display:none' for="year-input" id="year-label">Model</label>
+    <input placeholder='Year' name="year-input" type="number" id="year-input">
+
+    <label style='display:none' for="model-input" id="model-label">Model</label>
+    <input placeholder='Color' name="model-input" type="text" id="model-input">
+
+    <input type="submit" id="new-car-submit" value="Add">
+  </form>
+  <ul id="cars">
+    
+  </ul>
 </body>
 </html>
