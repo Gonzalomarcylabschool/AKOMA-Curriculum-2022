@@ -62,7 +62,7 @@ In our application, we are using cookies to store the `userId` of the currently 
 
 The flow of cookie data looks like this:
 
-![](img/cookies-diagram.svg)
+![](https://raw.githubusercontent.com/The-Marcy-Lab-School/Fall-2022-Curriculum-BMC/1722c72bbf367912de6b38ec1df714c6a59bd3c5/se-unit-7/lesson-11-authentication_authorization/img/cookies-diagram.svg)
 
 ### Routes
 
