@@ -13,20 +13,3 @@ React is compositional in nature because it allows you to break down a complex u
 React components are self-contained, reusable units of code that represent a small piece of a UI. These components can be composed together to form more complex components, which can in turn be composed with other components to create even more complex components. This makes it easy to build and maintain large and complex UIs, as you can reuse components across different parts of your application, and even across different applications.
 
 One of the key benefits of React's compositional model is that it enables developers to build applications with a high level of abstraction. By breaking down the UI into components, developers can create more modular, testable, and maintainable code. It also allows for greater code reuse and makes it easier to reason about the application's behavior.
-
-## What is JSX?
-
-JSX is a syntax extension for JavaScript. It was written to be used with React. JSX code looks a lot like HTML.
-```js
-
-const h1 = <h1>Hello world</h1>
-
-```
-
-What does “syntax extension” mean?
-
-In this case, it means that JSX is not valid JavaScript. Web browsers can’t read it!
-
-If a JavaScript file contains JSX code, then that file will have to be compiled. This means that before the file reaches a web browser, a JSX compiler will translate any JSX into regular JavaScript.
-
-Codecademy’s servers already have a JSX compiler installed, so you don’t have to worry about that for now. Eventually we’ll walk through how to set up a JSX compiler on your personal computer.
