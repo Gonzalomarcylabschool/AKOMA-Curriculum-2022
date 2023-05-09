@@ -6,9 +6,12 @@
 + Component
 + `render`
 + JSX
-+ props
 + React DOM
-+ Virtual DOM
++ Virtual DOM * 
++ props 
++  inject js
+
+ESmodule import react and reactDOM
 
 
 ### Essential Questions:
