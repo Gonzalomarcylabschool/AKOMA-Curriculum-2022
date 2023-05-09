@@ -1,30 +1,21 @@
-ReactDOM.render(<h1>Hello, React!</h1>, document.getElementById('root'))
+// react Declarative code
+// ReactDOM.render(
+// <h1>Hello, React!</h1>
+// , document.getElementById('root')
+// );
 
-// const Pet = (props) => {
-//   return React.createElement("div", {}, [
-//     React.createElement("h1", {}, props.name),
-//     React.createElement("h2", {}, props.animal),
-//     React.createElement("h2", {}, props.breed),
-//   ]);
-// };
+// diffrence between JS DOM and React
 
-// const App = () => {
-//   return React.createElement("div", {}, [
-//     React.createElement("h1", {}, "Adopt Me!"),
-//     React.createElement(Pet, {
-//       name: "Luna",
-//       animal: "Dog",
-//       breed: "Havanese",
-//     }),
-//     React.createElement(Pet, {
-//       name: "Pepper",
-//       animal: "Bird",
-//       breed: "Cockatiel",
-//     }),
-//     React.createElement(Pet, { name: "Doink", animal: "Cat", breed: "Mix" }),
-//   ]);
-// };
+//JS
+const h1 = document.createElement("h1")
+h1.textContent = "This is not JSX"
+h1.className = "header"
+console.log(h1)
+document.getElementById("root").append(h1)
 
-// const container = document.getElementById("root");
-// const root = ReactDOM.createRoot(container);
-// root.render(React.createElement(App));
+
+// JSX
+// const element = <h1 className="header">This is JSX</h1>
+// console.log(element)
+
+// ReactDOM.render(element, document.getElementById("root"))
