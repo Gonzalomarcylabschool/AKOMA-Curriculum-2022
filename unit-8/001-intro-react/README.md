@@ -13,3 +13,77 @@ React is compositional in nature because it allows you to break down a complex u
 React components are self-contained, reusable units of code that represent a small piece of a UI. These components can be composed together to form more complex components, which can in turn be composed with other components to create even more complex components. This makes it easy to build and maintain large and complex UIs, as you can reuse components across different parts of your application, and even across different applications.
 
 One of the key benefits of React's compositional model is that it enables developers to build applications with a high level of abstraction. By breaking down the UI into components, developers can create more modular, testable, and maintainable code. It also allows for greater code reuse and makes it easier to reason about the application's behavior.
+
+## Declarative
+
+```jsx
+//declarative
+ReactDOM.render(<h1 className ='header'>Hello, React!</h1>, document.getElementById("root"))
+
+//imperative
+const h1 = document.createElement("h1")
+h1.textContent = "Hello, React!"
+h1.className = "header"
+document.getElementById("root").append(h1)
+```
+
+## JSX
+
+```jsx
+const h1 = document.createElement("h1")
+h1.textContent = "Hello world"
+h1.className = "header"
+console.log(h1)
+
+// <h1 class="header">
+
+const element = <h1 className="header">This is JSX</h1>
+console.log(element)
+
+/*
+{
+    type: "h1", 
+    key: null, 
+    ref: null, 
+    props: {
+        className: "header", 
+        children: "This is JSX"
+    }, 
+    _owner: null, 
+    _store: {}
+}
+ */
+
+// JSX
+ReactDOM.render(element, document.getElementById("root"))
+```
+
+### Quick note: One parent element
+When you write your JSX that you want to render you, there can only be one parent element
+
+```jsx
+//this is correct
+ReactDOM.render(
+    <h1 className ='header'>Hello, React!</h1>,
+    document.getElementById("root"));
+
+//this is incorrect
+ReactDOM.render(
+    <h1 className ='header'>Hello, React!</h1>
+    <p>This is some text!</p>,
+    document.getElementById("root"));
+
+//this is how we fix it
+ReactDOM.render(
+    <div>
+        <h1 className ='header'>Hello, React!</h1>
+        <p>This is some text!</p>,
+    </div>
+    document.getElementById("root"));
+```
+In this example the first block of code only has one element, so it is seen as the parent element
+
+In the second block of code there are 2 elements, but no parent element. 
+
+in the third example we se that 
+## you can store into variables. 
