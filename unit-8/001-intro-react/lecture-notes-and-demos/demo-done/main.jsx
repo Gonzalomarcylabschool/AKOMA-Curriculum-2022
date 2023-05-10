@@ -18,8 +18,10 @@
 
 
 /* REACT */
-
+import React from 'react'
 import ReactDOM from 'react-dom/client'
+import App from './App'
+import "./styles.css";
 
 // const Header = () => {
 //   return (
@@ -35,23 +37,23 @@ import ReactDOM from 'react-dom/client'
 //   </>
 // )
 
-const NameHeader = (props) => {
-  const { name } = props;
-  return (
-    <h1>Hello! My name is {name}</h1>
-  )
-}
+// const NameHeader = (props) => {
+//   const { name } = props;
+//   return (
+//     <h1>Hello! My name is {name}</h1>
+//   )
+// }
 
-const App = () => {
-  return (
-    <>
-      <NameHeader name="Gonzalo" />
-      <NameHeader name="Laura" />
-      <NameHeader name="Zo" />
-    </>
+// const App = () => {
+//   return (
+//     <>
+//       <NameHeader name="Gonzalo" />
+//       <NameHeader name="Laura" />
+//       <NameHeader name="Zo" />
+//     </>
     
-  )
-}
+//   )
+// }
 
 ReactDOM.createRoot(document.getElementById('root')).render(
  <App />
