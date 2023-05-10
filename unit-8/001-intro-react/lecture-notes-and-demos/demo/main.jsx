@@ -36,16 +36,17 @@ import ReactDOM from 'react-dom/client'
 // )
 
 const NameHeader = (props) => {
-  const { name } = props;
+  const { name, age } = props;
+  console.log(props);
   return (
-    <h1>Hello! My name is {name}</h1>
+    <h1>Hello! My name is {name} and I'm {age}</h1>
   )
 }
 
 const App = () => {
   return (
     <>
-      <NameHeader name="Gonzalo" />
+      <NameHeader name="Gonzalo" age='2' />
       <NameHeader name="Laura" />
       <NameHeader name="Zo" />
     </>
