@@ -25,3 +25,35 @@ When using hooks in React, there are a few rules that you need to follow:
 
 3. Hooks should always be called in the same order, every time your component is rendered.
 
+## `useState`
+
+In React, `useState` is a function that allows us to keep track of information that can change over time, like a number, a piece of text, or a boolean (true/false) value. We call this information "state".
+
+
+The following is an example of how we can use state and the `useState Function to keep track of a counter.
+```jsx
+import React, { useState } from 'react'; // import react using ESM
+
+const Counter = () => { // make your function
+  const [count, setCount] = useState(0); // destruct the use state
+
+  const increment = () => {
+    setCount(count + 1);
+  };
+
+  const decrement = () => {
+    setCount(count - 1);
+  };
+
+  return (
+    <div>
+      <h1>Counter</h1>
+      <p>Count: {count}</p>
+      <button onClick={increment} className='btn btn-info'>Increment</button>
+      <button onClick={decrement} className='btn btn-info'>Decrement</button>
+    </div>
+  );
+}
+
+export default Counter;
+```
