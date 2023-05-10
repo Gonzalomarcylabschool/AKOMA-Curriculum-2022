@@ -32,7 +32,11 @@ React also uses a virtual DOM (Document Object Model) which enables efficient up
 
 React is compositional in nature because it allows you to break down a complex user interface into smaller and simpler components, and then compose these components together to create more complex user interfaces.
 
+![](./lecture-notes-and-demos/box-inside-box.webp)
+
 React components are self-contained, reusable units of code that represent a small piece of a UI. These components can be composed together to form more complex components, which can in turn be composed with other components to create even more complex components. This makes it easy to build and maintain large and complex UIs, as you can reuse components across different parts of your application, and even across different applications.
+
+![](./lecture-notes-and-demos/closures_window.webp)
 
 One of the key benefits of React's compositional model is that it enables developers to build applications with a high level of abstraction. By breaking down the UI into components, developers can create more modular, testable, and maintainable code. It also allows for greater code reuse and makes it easier to reason about the application's behavior.
 
@@ -51,8 +55,8 @@ document.getElementById("root").append(h1) // getElementById to get the element 
 Lets take a look ad how we can set up some react and use the reactDOM object to do the same thing. First lets add some react to our project. Now this is the "easy" way to do this. We will need to add this using `npm` later.
 
 ```html
-    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
-    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
     <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
     <script defer src="App.js" type="text/babel"></script>
 ```
