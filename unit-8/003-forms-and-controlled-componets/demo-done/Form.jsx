@@ -1,9 +1,3 @@
-## htmlFor
-
-like `class`in javaScript, `for` is a reserved keyword used in loops. When you try to make a label, you need to `for` attribute. in place of this you will use the `htmlFor`
-
-
-```jsx
 import React, { useState } from 'react';
 
 const MyForm = () => {
@@ -37,8 +31,3 @@ const MyForm = () => {
 }
 
 export default MyForm
-```
-
-## e
-
-We have used the DOM `e` before. When we learned about DOM we used `e.target`, or `e.preventDefault` etc. As you can see in our code we are using it as well but this is a fake DOM `e`.

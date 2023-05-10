@@ -1,15 +1,13 @@
 
-import Counter from './Counter'
-import TextInput from './TextInput'
-function App() {
+import Counter from './Counter';
+
+const App = () => {
   return (
     <>
       <Counter />
-      <br/>
-      <TextInput />
     </>
    
   )
-}
+};
 
 export default App

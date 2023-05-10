@@ -1,12 +1,14 @@
-
 import Counter from './Counter'
 import TextInput from './TextInput'
-function App() {
+import MyForm from './Form';
+const App = () =>{
   return (
     <>
       <Counter />
       <br/>
       <TextInput />
+      <br/>
+      <MyForm />
     </>
    
   )
