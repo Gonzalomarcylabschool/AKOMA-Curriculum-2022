@@ -19,7 +19,7 @@
 
 /* REACT */
 
-import ReactDOM from 'react-dom/client'
+
 
 // const Header = () => {
 //   return (
@@ -35,25 +35,10 @@ import ReactDOM from 'react-dom/client'
 //   </>
 // )
 
-const NameHeader = (props) => {
-  const { name, age } = props;
-  console.log(props);
-  return (
-    <h1>Hello! My name is {name} and I'm {age}</h1>
-  )
-}
+import ReactDOM from 'react-dom/client'
+import App from './App.jsx'
 
-const App = () => {
-  return (
-    <>
-      <NameHeader name="Gonzalo" age='2' />
-      <NameHeader name="Laura" />
-      <NameHeader name="Zo" />
-    </>
-    
-  )
-}
 
 ReactDOM.createRoot(document.getElementById('root')).render(
- <App />
+  <App />
 )
