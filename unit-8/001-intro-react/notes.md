@@ -193,6 +193,10 @@ const NameHeader = ({ name }) => {
 };
 ```
 
+## html classes in javaScript
+
+In order to set a `class` name in javaScript you need to use `className`. In javaScript the `class` keyword is use to build object classes, so `className` was made so that we can avoid this problem. This is not an exclusive problem to React. This is just the JavaScript API and React uses it.
+
 ## Adding Style
 
 We can add style by using the `className` prop and defining styles for that class in an imported CSS file.
@@ -214,6 +218,8 @@ const App = () => {
   );
 };
 ```
+
+
 
 With this CSS in a `styles/styles.css` file:
 
