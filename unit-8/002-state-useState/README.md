@@ -57,3 +57,112 @@ const Counter = () => { // make your function
 
 export default Counter;
 ```
+
+## Lifting State Up
+
+Suppose we wanted to divide our application's UI into two parts: `CounterButtons` and `CounterDisplay`.
+
+There is one problem: **where should we define the state**?
+
+`CounterDisplay` needs to know the value of `count` AND `CounterButtons` needs to be able to access both `setCount` and `count`.
+
+In these circumstances, we can "lift up" the state value to the shared ancestor component. Then, we pass the state value and setter function down as props.
+
+```jsx
+import CounterButtons from "./components/CounterButtons";
+import CounterDisplay from "./components/CounterDisplay";
+
+const App = () => {
+  const [count, setCount] = useState(0);
+
+  return (
+    <>
+      <CounterButtons count={count} setCount={setCount} />
+      <CounterDisplay count={count} />
+    </>
+  );
+};
+
+export default App;
+```
+
+<details><summary>See the <code>CounterButtons</code> component</summary>
+
+```jsx
+const CounterButtons = ({ count, setCount }) => {
+  const increment = () => setCount(count + 1);
+  const decrement = () => setCount(count - 1);
+
+  return (
+    <>
+      <button onClick={increment}>+</button>
+      <button onClick={decrement}>-</button>
+    </>
+  );
+};
+
+export default CounterButtons;
+```
+
+</details>
+
+<details><summary>See the <code>CounterDisplay</code> component</summary>
+
+```jsx
+const CounterDisplay = ({ count }) => {
+  return <p>{count}</p>;
+};
+
+export default CounterDisplay;
+```
+
+</details><br>
+
+**Important Concept**: The `count` and `setCount` values are tied to the `App` component, where they were created.
+
+Because of this, when `setCount` is invoked it will cause the `App` to re-render, even if the `App` component itself doesn't invoke `setCount`.
+
+### Best Practice: Define _how_ the state can be updated in the same place where the state is created
+
+In the example above, we are passing down the `count` and `setCount` values directly to `CounterButtons`, letting `CounterButtons` decide how it is going to update the sate.
+
+Instead, we may decide to define functions for updating the state in `App` and pass those functions down as props:
+
+```jsx
+import CounterButtons from "./components/CounterButtons";
+import CounterDisplay from "./components/CounterDisplay";
+
+const App = () => {
+  const [count, setCount] = useState(0);
+
+  // define how to update the count here, not in the child component
+  const increment = () => setCount(count + 1);
+  const decrement = () => setCount(count - 1);
+
+  return (
+    <>
+      <CounterButtons increment={increment} decrement={decrement} />
+      <CounterDisplay count={count} />
+    </>
+  );
+};
+
+export default App;
+```
+
+<details><summary>See the updated <code>CounterButtons</code> component</summary>
+
+```jsx
+const CounterButtons = ({ increment, decrement }) => {
+  return (
+    <>
+      <button onClick={increment}>+</button>
+      <button onClick={decrement}>-</button>
+    </>
+  );
+};
+
+export default CounterButtons;
+```
+
+</details><br>
