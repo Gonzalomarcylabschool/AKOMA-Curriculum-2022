@@ -1,6 +1,7 @@
-import Counter from './Counter'
-import TextInput from './TextInput'
-import MyForm from './Form';
+import Counter from './componets/Counter'
+import TextInput from './componets/TextInput'
+import MyForm from './componets/Form';
+import UncontrolledForm from './componets/uncontrolled-form';
 const App = () =>{
   return (
     <>
@@ -9,6 +10,8 @@ const App = () =>{
       <TextInput />
       <br/>
       <MyForm />
+      <br/>
+      <UncontrolledForm />
     </>
    
   )
