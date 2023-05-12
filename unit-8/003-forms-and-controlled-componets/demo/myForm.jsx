@@ -1,18 +1,20 @@
-import React, { useState } from 'react';
+import React, { useState } from 'react';// import what you need
 
-const MyForm = () => {
+const MyForm = () => {// declare component
+  //hooks
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
-  const [text, setText] = useState('');
-  return (
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log(`Submitting form with name: ${name}, email: ${email}, and message: ${message}`);
+  }
+  console.log('my form has rendered')
+  return (// return JSX
     <>
-      <h1>Controlled form</h1>
-      <form onSubmit={(e) => {
-        e.preventDefault();
-        console.log(`Submitting form with name: ${name}, email: ${email}, and message: ${message}`);
-      
-      }}>
+      <h1>This is my form</h1>
+      <form onSubmit={handleSubmit}>
         <label htmlFor='name'>
           Name:
           <input type="text" value={name} onChange={(e) => setName(e.target.value)} />
@@ -29,10 +31,10 @@ const MyForm = () => {
         </label>
         <br />
         <button type="submit">Submit</button>
-        <p>You entered: {text}</p>
       </form>
     </>
+    
   );
-}
 
+}
 export default MyForm
