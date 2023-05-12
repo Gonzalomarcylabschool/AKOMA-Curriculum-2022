@@ -1,3 +1,8 @@
+# forms and Controlled components
+
+In React, a controlled component is a component that has its state controlled by React instead of having its state managed internally by the component itself. In other words, the component's state is controlled by passing it down as props from a parent component, and any changes to the component's state are handled by calling a callback function also passed down as props.
+
+## Uncontrolled
 ## htmlFor
 
 like `class`in javaScript, `for` is a reserved keyword used in loops. When you try to make a label, you need to `for` attribute. in place of this you will use the `htmlFor`
