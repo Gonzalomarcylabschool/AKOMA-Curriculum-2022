@@ -71,3 +71,7 @@ When you wrap your components with the Provider component, you're essentially gi
 The Provider component takes the shared data as a prop called value. This value can be anything—such as a string, object, or even a function. Components that are wrapped within the Provider can then access this data using either the Consumer component or the useContext hook.
 
 Just like the Provider in our school example, React's Provider simplifies the process of sharing data among components by acting as an intermediary that holds the data and makes it accessible to the components that need it.
+
+
+## Lets add some complexity
+
