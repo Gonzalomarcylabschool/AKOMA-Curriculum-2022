@@ -7,13 +7,33 @@ const Header = ({ resourceType }) => {
 }
 function App() {
   const [resourceType, setResourceType] =  useState('posts');
-  // const [items, setItems] = useState([])
+  const [items, setItems] = useState([])
 
-  useEffect (() => {
-    fetch(`https://jsonplaceholder.typicode.com/${resourceType}`)
-      .then (response => response.json ())
-      .then(json => console.log(json))
-    }, [resourceType ])
+  // useEffect (() => {
+  //   fetch(`https://jsonplaceholder.typicode.com/${resourceType}`)
+  //     .then (response => response.json ())
+  //     .then(json => console.log(json))
+  //   }, [resourceType ])
+
+  //  useEffect (async () => {
+  //   try {
+  //     const res = await fetch(`https://jsonplaceholder.typicode.com/${resourceType}`)
+  //     const data = await res.json();
+  //     console.log(data);
+  //   } catch (err) {
+  //     console.log(err)
+  //   }
+  // }, [resourceType ]);
+
+  useEffect(() => {
+    async function useData(){
+      const response = await fetch(`https://jsonplaceholder.typicode.com/${resourceType}`)
+      const data = await response.json();
+      console.log(data);
+      setItems(data);
+    }
+    useData();
+  }, [resourceType])
 
     return (
     <>
@@ -23,9 +43,9 @@ function App() {
         <button onClick={() => setResourceType( 'comments') }>Comments</button> 
       </div> 
       <Header resourceType={resourceType}/>
-      {/* {items.map(item => { 
+      {items.map(item => { 
         return <pre>{JSON.stringify(item)} </pre>
-      })} */}
+      })}
     </>
   )
 }
